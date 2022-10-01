@@ -390,8 +390,9 @@ To deploy this project run
 | Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
 | Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
 | Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
-| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
-| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
+| Njoli Patrick | ------ | Backend developer|      ------           | https://www.linkedin.com/in/ogmaro/ | Njoli Patrick |
+| Sanskar Tyagi | ------ | Web Developer |      ------           | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ | ----- |
+| Ujjwal Sachdeva | Web Developer Intern | Advise on front-end and back-end technicals|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |--- |
 
 
 
@@ -405,8 +406,8 @@ To deploy this project run
   <!-- Useful Links -->
 ## :link: Useful Links
  
-  - ## :scroll: ESGROW Whitepaper 
-   https://docs.google.com/document/d/1ptxKjc9xCLl-hFa4aBdV1O0txK1vv3k70nsGmFG0eOE/edit
+  - ## :scroll: PLEARN Litepaper 
+   https://drive.google.com/file/d/1EQJ59dw4whhuXfA9k2ZHQ3c4rDKeXa8s/view?usp=sharing
    <!-- Demo -->
   - ## :cinema: Demo
   [https://www.youtube.com/watch?v=VwvrdoV2_Bs](https://www.youtube.com/watch?v=dsP6ogSsLFM)
