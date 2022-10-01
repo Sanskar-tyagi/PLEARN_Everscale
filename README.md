@@ -107,7 +107,7 @@ We intend to empower youth with strong financial literacy to be able to make sav
 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
-   
+   XXXX
 
 
 
@@ -196,57 +196,35 @@ We intend to empower youth with strong financial literacy to be able to make sav
 <!-- Features -->
 ## :dart: Features
 
-#### ESGROW Participation conditions
 
-- Participation is open to the public and anyone who has an ESG-related idea and thinks that it could become a succeful project can participate and submit it
-- Each participant will be allowed to submit only one project 
-- Maximum number of accepted projects is 50 
-- Community will vote to choose 10 out of 50 projects
-- Each token holder has 2 votes
-- Batches: 3-4 batches/year
+<!-- Game's Dynamics -->
+#### Game's Dynamics: 
 
-#### Process: 
+![x_gJH7jyw9_SBu2f8XUsmJz_8S2CjKPM9-t7_8gUX9GxKe5Q7oakzhFV3sOAwix7Oxu82uhzugYPKcChFllFLjpUY0Yod5UpBgBiLvO_nqXJK7u6sBkcC3HcrPEN](https://user-images.githubusercontent.com/107268440/193425187-3c618e03-b63f-4ebe-a24c-5f714ac7bee9.png)
 
-- Ideas: people submit their projects
-- Voting: community votes 
-- NFT: Minting NFT for the winning projects
-- Funding: get funds through  the NFT marketplace
 
 
 ---
 #### Stages of a proposal
 
-**1- Proposals**
-People can submit their idea/project through a form.
+**Game’s style**
+The idea of the game is a type of set collecting, where users collect assets (real estate, stocks, auction deals) to gain end-game goals.
 
- **Form:**
-   - Name of the projects
-   - ESG category
-   - Brief description of the idea 
-   - Link to the main documents
+ **Game’s setting:**
+ Multiplayers setting on one board
+   
 
-**2- Voting**
-- Projects will be subject to the community voting system. Community members, once the projects are submitted and after the submission period, will be able to check all the projects and start voting. Each community member will only have two votes; meaning that they can only vote for a maximum of two projects or can vote twice for the same project. Transferring tokens are not allowed during the voting process.
+**End-game goals Knowledge:**
+Users need to pass an amount of challenges to prove their knowledge and skills. Networking: users are required to get connected with an amount of other users in their network and build the knowledge hubs throughout the cities. Educational level Player is required to move till the end of the board to unlock the PvP mode. The game’s theme 26 boards are designed under 26 European Schengen country themes. Each board includes 14 tiles designed as cities/towns belonging to relevant countries.
 
-**Results announcement**
-- After the voting period deadline, the number of votes will be displayed on the dashboard so all community can see the results and winning projects
-- Winners will be invited to an interview with ESGROW team to introduce themselves
-- NFT will be minted for the winning projects to represent the idea of the project
-- This NFT will be fractionalized.
-- NFT will be listed in the marketplace
-- Some of the NFT fractions will be distributed to community members who have voted for the winning projects
+**Game Components**
+Game Components Digital board 1 dice Trading access cards Auction access cards
+    
 
+**Game Setup:**
+ Connect Wallet:Sign-up option required by email, then the users can connect their MetaMask Wallet. Currency in game: users will need to convert their fiat into USDT in case they do not own USDT, otherwise, they can deposit their USDT into the platform and then buy AMBI token to start playing the game. Avatar: is the profile of users, which is NFT, users can add their own NFT into the game, or mint a new one directly on the platform. Fees: players will be paying fees for each transaction they make( the percentage is to be identified)
 
-**NFT Fractionalization features for the winning project**:
-
---Liquidity
---Ultimate price
-
-**Funding**:
-- Funding projects will be split into 3 phases:
-- 30% to fund the project’s first phase 
-- 40% to fund the project’s second phase
-- 30% to fund the project’s 3rd and last phase
+**Game Phases:** Phase 1 PvE (Players vs Environment): in this phase players will be playing against the environment, so, there will be no interaction with other players. Phase 2: PvP (Player vs Player): players will interact with each other. This mode will be unlocked after the player finishes PvE mode. Once players arrive in this phase, they will be able to buy & sell between each other.
 
 ---
   
