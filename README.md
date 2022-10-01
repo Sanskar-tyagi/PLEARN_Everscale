@@ -410,7 +410,7 @@ To deploy this project run
    https://drive.google.com/file/d/1EQJ59dw4whhuXfA9k2ZHQ3c4rDKeXa8s/view?usp=sharing
    <!-- Demo -->
   - ## :cinema: Demo
-  [https://www.youtube.com/watch?v=VwvrdoV2_Bs](https://www.youtube.com/watch?v=dsP6ogSsLFM)
+  
   
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
