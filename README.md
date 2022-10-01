@@ -3,11 +3,11 @@
   
 <img width="523" alt="Screenshot 2022-09-18 at 11 37 50" src="https://user-images.githubusercontent.com/107268440/190895791-a0937a0d-daa0-40cf-8996-b3d6e551be9d.png">
 
-  <h1>ESGROW PROJECT</h1>
+  <h1>PLEARN</h1>
   
-  <p>
-    A crowdfunding launchpad platform 
-  </p>
+  <h1>PLAY.LEARN.EARN</h1>
+  
+ 
   
 <!-- Badges -->
 <p>
@@ -61,26 +61,42 @@
 <!-- About the Project -->
 ## :star2: About the Project
 
-<img width="933" alt="image" src="https://user-images.githubusercontent.com/107268440/190730760-fbb75e4e-620d-4fa4-9643-ed8d77338efb.png">
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/107268440/193422781-2104cc8a-1243-414a-a273-d995c3239577.png">
 
-PLEARN is a virtual board game to raise youths’ awareness about financial literacy. It is the new board game pioneer that introduces a financial management tool to the market that is based on blockchain and built in the Metaverse. Moreover, with the increasing importance of sustainable investments in the financial market, youth will inevitably be confronted with sustainable investment options when deciding how to allocate their assets. But without a proper knowledge of sustainability and its inclusion in financial products, youth will not be able to  make informed investment decisions and achieve efficient market outcomes. When this knowledge is absent or insufficient, youth become prone to possibly misleading marketing and manipulation by financial providers. As a game creator, we intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN  in order to learn how to manage their finances via its four pillars: **Trading deals, Real estate deals, Auction market deals, and ESGROW.**
+After conducting a thorough research, we found that youth lack the basic skills and knowledge to make financial decisions which means that there is a great need to promote financial capability among the young. Introducing financial literacy in a fun and a more engaging way through PLEARN could help youth minimise the costs incurred in managing their financial products, improve their financial safety net in the event of emergencies, and strengthen their financial security. The gap that exists between the amount of financial responsibility given to the young and their demonstrated ability to manage financial decisions and take advantage of financial opportunities, is rapidly widening. Unless significant action is taken to alter this and enable youth to make savvy financial decisions, financial illiteracy will remain an obstacle to youth’ financial security.
+We know that most people think trying to earn more money is the trick to attaining financial freedom, while the real trick is to know how to make your money work for you. The rich know it is not how much you make but what you do with what you make.
+PLEARN It is the only virtual board game for teaching financial literacy that is blockchain-based and allows players to play in order to learn how to manage their finances through investing, trading in the stock & crypto markets and buying real estate.
 
-**ESGROW** is a launchpad platform where users can join to submit their own ESG - related projects. By participating in Impact Investing with the express goal of generating and measuring mission-related social, environmental or economic change alongside financial return then can participate in crowdfunding to help them raise funds for their projects through voting, minting NFTs, and raising funds from the NFT marketplace. Capturing an appropriate return is critical to do so, as this will ensure that the fund will be able to carry out the interests of the users by building stronger alliances with frontline communities most greatly impacted by the extractive economy and working towards a just transition towards regenerative finance.
 
 
-<!-- Problem -->
+
+<!-- ProblemS -->
 ## :bomb: Problem
-Regardless of the ongoing attention and the rise in ESG investments, investors yet people with ESG-related ideas are still finding challenges to collaborate. For investors, they find it challenging in finding a service provider who can provide them with the right information so they can make the right investment  decision and to be greenwashed by false information. From the entrepreneurs' side, they are trying to validate their ideas and provide the information that proves their ESG-related projects.  
+- Basic knowledge: 1 in 5 teens lacks a basic foundation to build on for financial literacy.
+
+- Spending: Annual wasteful consumption of youth (under 39) is approximately $11.7 billion
+
+- Managing: 74% of teens don’t feel confident about their financial education.
+
+- Lack of sustainable finance literacy in school
+
+- Millennials lack the basic skills needed to make savvy financial decisions suggest that there is a great need to promote financial capability among the young
+
+- The gap between the amount of financial responsibility given to the young and their demonstrated ability to manage financial decisions and take advantage of financial opportunities, is rapidly widening. Unless significant action is taken to alter this, financial illiteracy will remain an obstacle to Millennials’ financial security and that is what we are trying to solve through PLEARN. 
 
 <!-- Solution -->
 ## :woman_technologist: Solution
 
-It is all about sustainable finance and its importance in making savvy financial decisions– the integration of environmental, social, and governance factors into the investment decision-making process, has been a trending topic in financial markets in recent years as investors’ money flowed into bonds, stocks, and portfolios with an ESG focus. This trend towards allocating capital for ESG assets and goals is a crucial part of the transformation towards a more sustainable economy. Moreover, everyone should understand these concepts to amplify the beneficial effect on society and induce a change in investment habits for retail investors. As a result, sustainable financial literacy, meaning an understanding of sustainable financial products and their use for promoting sustainable development goals – plays a key role in the integration of ESG factors into financial decisions. The first step in achieving sustainable finance literacy is creating awareness. While the financial sector is advancing at great speed towards integrating ESG factors in financial decision-making, teaching sustainable finance lags behind. Teaching sustainable finance courses is therefore essential. However, to create awareness we need more than specialized courses and here when **ESGROW  was born**.
+We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: trading deals, real estate deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Visualisation(VISI) and manifestation (MANI). 
 
-We have created a crowdfunding launchpad platform, **ESGROW. In ESGROW**, we help both investors as well as entrepreneurs to grow. We aim to ESGROW together. Through introducing a solution where entrepreneurs can share their innovative solutions that are related to poverty, better education, gender equality, clean water and sanitation, life below the water, and climate action with the public for their new projects and involving the public, including investors, to decide if this is a valid idea or not, we have created a space for both parties to meet. We created the space for investors to also study the project before starting to invest in it. through ESGROW platform, everyone can vote for the project that can serve the society more and introduces more innovative solutions to the current problems.
+A Blockchain based-platform
+- Integrates: NFT, real estate, and auction marketplace 
+Gamification
+- Designs: optimal UI, interactive, and creative learning activities through gaming in P2E, P2P, socialisation modes 
+Built in Metaverse
+Interoperability: reflecting the real world activities such as social interactions, lifelike experience, and new opportunities for financial gains
 
-Participants, before submitting their own projects, will go through a learning process. To learn about sustainable finance and how it affects our daily life decisions. This will also help them better understand the importance of the ESG in our daily 
-life. We are creating a platform where entrepreneurs can learn and bring up innovative solutions and share them with the public with full transparency, which in return, investors can have full access to the data and information they need before starting investing their money. Participants, through the platform can submit innovative solutions in many different ESG categories and we give the opportunity to participate and choose the most innovative solution.
+
 
 
 
