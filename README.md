@@ -34,7 +34,7 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  * [Problem](#bomb-Problem)
+  * [Problems](#bomb-Problems)
   * [Solution](#woman_technologist-Solution)
   * [Deployed Dapp URL](#link-Deployed-Dapp-URL)
   * [Screenshots](#camera-screenshots)
@@ -70,8 +70,8 @@ PLEARN It is the only virtual board game for teaching financial literacy that is
 
 
 
-<!-- ProblemS -->
-## :bomb: Problem
+<!-- Problems -->
+## :bomb: Problems
 - Basic knowledge: 1 in 5 teens lacks a basic foundation to build on for financial literacy.
 
 - Spending: Annual wasteful consumption of youth (under 39) is approximately $11.7 billion
@@ -87,14 +87,19 @@ PLEARN It is the only virtual board game for teaching financial literacy that is
 <!-- Solution -->
 ## :woman_technologist: Solution
 
-We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: trading deals, real estate deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Visualisation(VISI) and manifestation (MANI). 
+We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: trading deals, real estate deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Stablecoin(USDC/USDT)and manifestation (MANI). 
 
-A Blockchain based-platform
-- Integrates: NFT, real estate, and auction marketplace 
-Gamification
-- Designs: optimal UI, interactive, and creative learning activities through gaming in P2E, P2P, socialisation modes 
-Built in Metaverse
-Interoperability: reflecting the real world activities such as social interactions, lifelike experience, and new opportunities for financial gains
+**A Blockchain based-platform**
+
+**- Integrates:** NFT, real estate, and auction marketplace 
+
+**Gamification**
+
+**- Designs:** optimal UI, interactive, and creative learning activities through gaming in P2E, P2P, socialisation modes 
+
+**Built in Metaverse**
+
+**- Interoperability:** reflecting the real world activities such as social interactions, lifelike experience, and new opportunities for financial gains
 
 
 
@@ -102,7 +107,7 @@ Interoperability: reflecting the real world activities such as social interactio
 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
-   [[http://esgapp.us-east-1.elasticbeanstalk.com/](http://esgdevnewapp-env.us-west-2.elasticbeanstalk.com/)](https://esgrow-web-3-athon-s3p1jyhiv-esgrow.vercel.app)
+   
 
 
 
@@ -252,10 +257,10 @@ We are facing the challenges of transferring the technology from Web 2 to Web 3.
 The collaboration of the team made achieving the milestones of the project in a short period of time and within the deadline feasible. 
 
 #### What we learned
-We have learned about the GameFi market, the Web 3 ecosystem, and how to integrate sustainable finance in blockchain to create a useful product. We have also learned about the FNFT which is a new topic for our team, however, we have managed to run, the FNFT smart contract, successfully.
+We have learned about the GameFi market, the Web 3 ecosystem, and how to integrate blockchain in the educational model in a fun and interactive way to create a useful product. 
 
-#### What's next for ESGROW?
-ESGROW will be part of a bigger project, **PLEARN**, which is a game aims at teaching financial literacy. ESGROW, will present the fourth pillar of the game which is the ESG-related projects deal. Once it is integrated into the game, participants will have the chance to learn about the importance of sustainable finance in making their financial decisions.
+#### What's next for PLEARN?
+**PLEARN**,as it has four pillars, and now, we are building the first pillar, the real estate, we are in the process of builiding the other three pillars, Tradinf, Auction, and ESG, so that the game can be complete.
 
 ---
 ### GOVERNANCE 
@@ -385,8 +390,8 @@ To deploy this project run
 | Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
 | Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
 | Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
-
-
+| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
+| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
 
 
 
