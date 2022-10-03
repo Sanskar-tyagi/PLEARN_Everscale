@@ -3,11 +3,11 @@
   
 <img width="523" alt="Screenshot 2022-09-18 at 11 37 50" src="https://user-images.githubusercontent.com/107268440/190895791-a0937a0d-daa0-40cf-8996-b3d6e551be9d.png">
 
-  <h1>ESGROW PROJECT</h1>
+  <h1>PLEARN</h1>
   
-  <p>
-    A crowdfunding launchpad platform 
-  </p>
+  <h1>PLAY.LEARN.EARN</h1>
+  
+ 
   
 <!-- Badges -->
 <p>
@@ -34,7 +34,7 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  * [Problem](#bomb-Problem)
+  * [Problems](#bomb-Problems)
   * [Solution](#woman_technologist-Solution)
   * [Deployed Dapp URL](#link-Deployed-Dapp-URL)
   * [Screenshots](#camera-screenshots)
@@ -61,32 +61,54 @@
 <!-- About the Project -->
 ## :star2: About the Project
 
-<img width="933" alt="image" src="https://user-images.githubusercontent.com/107268440/190730760-fbb75e4e-620d-4fa4-9643-ed8d77338efb.png">
-
-PLEARN is a virtual board game to raise youths’ awareness about financial literacy. It is the new board game pioneer that introduces a financial management tool to the market that is based on blockchain and built in the Metaverse. Moreover, with the increasing importance of sustainable investments in the financial market, youth will inevitably be confronted with sustainable investment options when deciding how to allocate their assets. But without a proper knowledge of sustainability and its inclusion in financial products, youth will not be able to  make informed investment decisions and achieve efficient market outcomes. When this knowledge is absent or insufficient, youth become prone to possibly misleading marketing and manipulation by financial providers. As a game creator, we intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN  in order to learn how to manage their finances via its four pillars: **Trading deals, Real estate deals, Auction market deals, and ESGROW.**
-
-**ESGROW** is a launchpad platform where users can join to submit their own ESG - related projects. By participating in Impact Investing with the express goal of generating and measuring mission-related social, environmental or economic change alongside financial return then can participate in crowdfunding to help them raise funds for their projects through voting, minting NFTs, and raising funds from the NFT marketplace. Capturing an appropriate return is critical to do so, as this will ensure that the fund will be able to carry out the interests of the users by building stronger alliances with frontline communities most greatly impacted by the extractive economy and working towards a just transition towards regenerative finance.
+<img width="894" alt="Screenshot 2022-10-01 at 22 06 39" src="https://user-images.githubusercontent.com/107268440/193426578-677b8e6e-661d-400d-8867-750dd8545e33.png">
 
 
-<!-- Problem -->
-## :bomb: Problem
-Regardless of the ongoing attention and the rise in ESG investments, investors yet people with ESG-related ideas are still finding challenges to collaborate. For investors, they find it challenging in finding a service provider who can provide them with the right information so they can make the right investment  decision and to be greenwashed by false information. From the entrepreneurs' side, they are trying to validate their ideas and provide the information that proves their ESG-related projects.  
+After conducting a thorough research, we found that youth lack the basic skills and knowledge to make financial decisions which means that there is a great need to promote financial capability among the young. Introducing financial literacy in a fun and a more engaging way through PLEARN could help youth minimise the costs incurred in managing their financial products, improve their financial safety net in the event of emergencies, and strengthen their financial security. The gap that exists between the amount of financial responsibility given to the young and their demonstrated ability to manage financial decisions and take advantage of financial opportunities, is rapidly widening. Unless significant action is taken to alter this and enable youth to make savvy financial decisions, financial illiteracy will remain an obstacle to youth’ financial security.
+We know that most people think trying to earn more money is the trick to attaining financial freedom, while the real trick is to know how to make your money work for you. The rich know it is not how much you make but what you do with what you make.
+PLEARN It is the only virtual board game for teaching financial literacy that is blockchain-based and allows players to play in order to learn how to manage their finances through investing, trading in the stock & crypto markets and buying real estate.
+
+
+
+
+<!-- Problems -->
+## :bomb: Problems
+- Basic knowledge: 1 in 5 teens lacks a basic foundation to build on for financial literacy.
+
+- Spending: Annual wasteful consumption of youth (under 39) is approximately $11.7 billion
+
+- Managing: 74% of teens don’t feel confident about their financial education.
+
+- Lack of sustainable finance literacy in school
+
+- Millennials lack the basic skills needed to make savvy financial decisions suggest that there is a great need to promote financial capability among the young
+
+- The gap between the amount of financial responsibility given to the young and their demonstrated ability to manage financial decisions and take advantage of financial opportunities, is rapidly widening. Unless significant action is taken to alter this, financial illiteracy will remain an obstacle to Millennials’ financial security and that is what we are trying to solve through PLEARN. 
 
 <!-- Solution -->
 ## :woman_technologist: Solution
 
-It is all about sustainable finance and its importance in making savvy financial decisions– the integration of environmental, social, and governance factors into the investment decision-making process, has been a trending topic in financial markets in recent years as investors’ money flowed into bonds, stocks, and portfolios with an ESG focus. This trend towards allocating capital for ESG assets and goals is a crucial part of the transformation towards a more sustainable economy. Moreover, everyone should understand these concepts to amplify the beneficial effect on society and induce a change in investment habits for retail investors. As a result, sustainable financial literacy, meaning an understanding of sustainable financial products and their use for promoting sustainable development goals – plays a key role in the integration of ESG factors into financial decisions. The first step in achieving sustainable finance literacy is creating awareness. While the financial sector is advancing at great speed towards integrating ESG factors in financial decision-making, teaching sustainable finance lags behind. Teaching sustainable finance courses is therefore essential. However, to create awareness we need more than specialized courses and here when **ESGROW  was born**.
+We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: trading deals, real estate deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Stablecoin(USDC/USDT)and manifestation (MANI). 
 
-We have created a crowdfunding launchpad platform, **ESGROW. In ESGROW**, we help both investors as well as entrepreneurs to grow. We aim to ESGROW together. Through introducing a solution where entrepreneurs can share their innovative solutions that are related to poverty, better education, gender equality, clean water and sanitation, life below the water, and climate action with the public for their new projects and involving the public, including investors, to decide if this is a valid idea or not, we have created a space for both parties to meet. We created the space for investors to also study the project before starting to invest in it. through ESGROW platform, everyone can vote for the project that can serve the society more and introduces more innovative solutions to the current problems.
+**A Blockchain based-platform**
 
-Participants, before submitting their own projects, will go through a learning process. To learn about sustainable finance and how it affects our daily life decisions. This will also help them better understand the importance of the ESG in our daily 
-life. We are creating a platform where entrepreneurs can learn and bring up innovative solutions and share them with the public with full transparency, which in return, investors can have full access to the data and information they need before starting investing their money. Participants, through the platform can submit innovative solutions in many different ESG categories and we give the opportunity to participate and choose the most innovative solution.
+**- Integrates:** NFT, real estate, and auction marketplace 
+
+**Gamification**
+
+**- Designs:** optimal UI, interactive, and creative learning activities through gaming in P2E, P2P, socialisation modes 
+
+**Built in Metaverse**
+
+**- Interoperability:** reflecting the real world activities such as social interactions, lifelike experience, and new opportunities for financial gains
+
+
 
 
 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
-   [[http://esgapp.us-east-1.elasticbeanstalk.com/](http://esgdevnewapp-env.us-west-2.elasticbeanstalk.com/)](https://esgrow-web-3-athon-s3p1jyhiv-esgrow.vercel.app)
+   XXXX
 
 
 
@@ -175,57 +197,36 @@ life. We are creating a platform where entrepreneurs can learn and bring up inno
 <!-- Features -->
 ## :dart: Features
 
-#### ESGROW Participation conditions
 
-- Participation is open to the public and anyone who has an ESG-related idea and thinks that it could become a succeful project can participate and submit it
-- Each participant will be allowed to submit only one project 
-- Maximum number of accepted projects is 50 
-- Community will vote to choose 10 out of 50 projects
-- Each token holder has 2 votes
-- Batches: 3-4 batches/year
 
-#### Process: 
+#### Game's Dynamics: 
 
-- Ideas: people submit their projects
-- Voting: community votes 
-- NFT: Minting NFT for the winning projects
-- Funding: get funds through  the NFT marketplace
+![x_gJH7jyw9_SBu2f8XUsmJz_8S2CjKPM9-t7_8gUX9GxKe5Q7oakzhFV3sOAwix7Oxu82uhzugYPKcChFllFLjpUY0Yod5UpBgBiLvO_nqXJK7u6sBkcC3HcrPEN](https://user-images.githubusercontent.com/107268440/193425187-3c618e03-b63f-4ebe-a24c-5f714ac7bee9.png)
+
 
 
 ---
 #### Stages of a proposal
 
-**1- Proposals**
-People can submit their idea/project through a form.
+#### Game’s style
+The idea of the game is a type of set collecting, where users collect assets (real estate, stocks, auction deals) to gain end-game goals.
 
- **Form:**
-   - Name of the projects
-   - ESG category
-   - Brief description of the idea 
-   - Link to the main documents
+#### Game’s setting:
+ Multiplayers setting on one board
+   
 
-**2- Voting**
-- Projects will be subject to the community voting system. Community members, once the projects are submitted and after the submission period, will be able to check all the projects and start voting. Each community member will only have two votes; meaning that they can only vote for a maximum of two projects or can vote twice for the same project. Transferring tokens are not allowed during the voting process.
+#### End-game goals Knowledge:
+Users need to pass an amount of challenges to prove their knowledge and skills. Networking: users are required to get connected with an amount of other users in their network and build the knowledge hubs throughout the cities. Educational level Player is required to move till the end of the board to unlock the PvP mode. The game’s theme 26 boards are designed under 26 European Schengen country themes. Each board includes 14 tiles designed as cities/towns belonging to relevant countries.
 
-**Results announcement**
-- After the voting period deadline, the number of votes will be displayed on the dashboard so all community can see the results and winning projects
-- Winners will be invited to an interview with ESGROW team to introduce themselves
-- NFT will be minted for the winning projects to represent the idea of the project
-- This NFT will be fractionalized.
-- NFT will be listed in the marketplace
-- Some of the NFT fractions will be distributed to community members who have voted for the winning projects
+#### Game Components
+Game Components Digital board 1 dice Trading access cards Auction access cards
+    
 
+#### Game Setup:
+ Connect Wallet:Sign-up option required by email, then the users can connect their MetaMask Wallet. Currency in game: users will need to convert their fiat into USDT in case they do not own USDT, otherwise, they can deposit their USDT into the platform and then buy AMBI token to start playing the game. Avatar: is the profile of users, which is NFT, users can add their own NFT into the game, or mint a new one directly on the platform. Fees: players will be paying fees for each transaction they make( the percentage is to be identified)
 
-**NFT Fractionalization features for the winning project**:
-
---Liquidity
---Ultimate price
-
-**Funding**:
-- Funding projects will be split into 3 phases:
-- 30% to fund the project’s first phase 
-- 40% to fund the project’s second phase
-- 30% to fund the project’s 3rd and last phase
+#### Game Phases:
+Phase 1 PvE (Players vs Environment): in this phase players will be playing against the environment, so, there will be no interaction with other players. Phase 2: PvP (Player vs Player): players will interact with each other. This mode will be unlocked after the player finishes PvE mode. Once players arrive in this phase, they will be able to buy & sell between each other.
 
 ---
   
@@ -236,21 +237,33 @@ We are facing the challenges of transferring the technology from Web 2 to Web 3.
 The collaboration of the team made achieving the milestones of the project in a short period of time and within the deadline feasible. 
 
 #### What we learned
-We have learned about the GameFi market, the Web 3 ecosystem, and how to integrate sustainable finance in blockchain to create a useful product. We have also learned about the FNFT which is a new topic for our team, however, we have managed to run, the FNFT smart contract, successfully.
+We have learned about the GameFi market, the Web 3 ecosystem, and how to integrate blockchain in the educational model in a fun and interactive way to create a useful product. 
 
-#### What's next for ESGROW?
-ESGROW will be part of a bigger project, **PLEARN**, which is a game aims at teaching financial literacy. ESGROW, will present the fourth pillar of the game which is the ESG-related projects deal. Once it is integrated into the game, participants will have the chance to learn about the importance of sustainable finance in making their financial decisions.
+#### What's next for PLEARN?
+**PLEARN**,as it has four pillars, and now, we are building the first pillar, the real estate, we are in the process of builiding the other three pillars, Tradinf, Auction, and ESG, so that the game can be complete.
 
 ---
-### GOVERNANCE 
+### Token Model 
 
- **Governance Token**
- 
-   - **MANI**: is the governance token of the main project, **PLEARN ( PLAY.LEARN.EARN)**
-     Users can acquire MANI either through buying it directly from the platform, or through the completion of the learning process when they play PLEARN.
-     Only users who hold MANI can participate in submitting/voting process. We will airdrop users with two tokens in order to partipiate in both the submission and the voting process. However, these tokens can be used to vote twice, including their own project.
+**Phase1:**
+
+- AMBI(utility token): for playing and paying transaction fees
+- Players will choose the deal which according to their analysis will help them generate passive income, accumulate wealth, and maximize their portfolio to be able to upgrade to PHASE 2.
+- In PHASE 1, we use an already existed stable coin, for example (USDT, USDC…etc).
+
+**Phase2:** 
+- 2 other tokens will be added in the next stage: 1- Stable coin(USDC/USDT): paying interest for staking (locking a certain amount of money for a certain period of time and gaining interest)
+- In later stages will be used as a borrowing token, in case players would like to leverage and buy more assets. Meaning that, they can borrow this token in order to be able to buy more assets or make big deals in the games.
+
+- MANIFESTATION (MANI)- governance token:
+    - Obtained(gained) through voting and submitting proposals!
+    - Proposals: Players will be asked to submit suggestions in order to improve the game. 
+    - Players will be given a certain period of time to submit their suggestions. After that, players will be voting for those suggestions.
+    - The winning player whose suggestion got the highest number of votes will be rewarded for his winning suggestion (as a way to encourage them to    submit suggestions and participate in the voting process for them). 
+    - This way the game will be improved by its users' suggestions, and they will be rewarded for their own suggestions (win-win situation). 
+    - Control of MANI will enable the gaming community to influence decision making of the PLEAERN development team. Holders will be able to influence game economics (i.e. inflation rates), asset release schedules, game direction, and will otherwise provide some degree of ownership in development decision making.
      
-     <img width="3666" alt="ESGROW-2" src="https://user-images.githubusercontent.com/107268440/182330039-abe56a43-b778-473f-a109-26fc41f4cd5d.png">
+ 
 
 ---
 <!-- Color Reference -->
@@ -369,8 +382,9 @@ To deploy this project run
 | Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
 | Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
 | Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
-
-
+| Njoli Patrick | ------ | Backend developer|      ------           | https://www.linkedin.com/in/ogmaro/ | Njoli Patrick |
+| Sanskar Tyagi | ------ | Web Developer |      ------           | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ | ----- |
+| Ujjwal Sachdeva | Web Developer Intern | Advise on front-end and back-end technicals|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |--- |
 
 
 
@@ -384,11 +398,11 @@ To deploy this project run
   <!-- Useful Links -->
 ## :link: Useful Links
  
-  - ## :scroll: ESGROW Whitepaper 
-   https://docs.google.com/document/d/1ptxKjc9xCLl-hFa4aBdV1O0txK1vv3k70nsGmFG0eOE/edit
+  - ## :scroll: PLEARN Litepaper 
+   https://drive.google.com/file/d/1EQJ59dw4whhuXfA9k2ZHQ3c4rDKeXa8s/view?usp=sharing
    <!-- Demo -->
   - ## :cinema: Demo
-  [https://www.youtube.com/watch?v=VwvrdoV2_Bs](https://www.youtube.com/watch?v=dsP6ogSsLFM)
+  
   
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
