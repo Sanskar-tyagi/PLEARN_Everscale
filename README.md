@@ -394,13 +394,13 @@ To deploy this project run
 
 | Member | Title | Description | Linkedin | GitHub   |
 | ----------- | ----------- | ----------- |----------- |----------- |
-| Nada Jabr | Project Leader | Manage project content |https://www.linkedin.com/in/nada-jabr-15838b39/ | NJ-2021 - CryptoStein |
-| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
-| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
+| Nada Jabr |Project Leader| Manage project content|https://www.linkedin.com/in/nada-jabr-15838b39/| NJ-2021 - CryptoStein |
+| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ |AgentPoles|
+| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719|
 | Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
-| Njoli Patrick | ------ | Backend developer|      ------           | https://www.linkedin.com/in/ogmaro/ | Njoli Patrick |
-| Sanskar Tyagi | ------ | Web Developer |      ------           | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ | ----- |
-| Ujjwal Sachdeva | Web Developer Intern | Advise on front-end and back-end technicals|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |--- |
+| Njoli Patrick | ------ | Backend developer| https://www.linkedin.com/in/ogmaro/ |Njoli Patrick|
+| Sanskar Tyagi | ------ | Web Developer | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ |Sanskar-tyagi|
+| Ujjwal Sachdeva | Web Developer Intern | developing the board of the game|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |Ujjwal Sachdeva|
 
 
 
