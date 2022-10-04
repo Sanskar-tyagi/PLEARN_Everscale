@@ -61,7 +61,8 @@
 <!-- About the Project -->
 ## :star2: About the Project
 
-<img width="894" alt="Screenshot 2022-10-01 at 22 06 39" src="https://user-images.githubusercontent.com/107268440/193426578-677b8e6e-661d-400d-8867-750dd8545e33.png">
+<img width="898" alt="Screenshot 2022-10-04 at 20 14 58" src="https://user-images.githubusercontent.com/107268440/193894942-220ef8fe-c4ba-43fa-9be1-966b489edc42.png">
+
 
 
 After conducting a thorough research, we found that youth lack the basic skills and knowledge to make financial decisions which means that there is a great need to promote financial capability among the young. Introducing financial literacy in a fun and a more engaging way through PLEARN could help youth minimise the costs incurred in managing their financial products, improve their financial safety net in the event of emergencies, and strengthen their financial security. The gap that exists between the amount of financial responsibility given to the young and their demonstrated ability to manage financial decisions and take advantage of financial opportunities, is rapidly widening. Unless significant action is taken to alter this and enable youth to make savvy financial decisions, financial illiteracy will remain an obstacle to youth’ financial security.
@@ -88,7 +89,7 @@ PLEARN It is the only virtual board game for teaching financial literacy that is
 <!-- Solution -->
 ## :woman_technologist: Solution
 
-We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: trading deals, real estate deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Stablecoin(USDC/USDT)and manifestation (MANI). 
+We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: real estate deals, trading deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Stablecoin(USDC/USDT)and manifestation (MANI). 
 
 **A Blockchain based-platform**
 
@@ -102,6 +103,11 @@ We intend to empower youth with strong financial literacy to be able to make sav
 
 **- Interoperability:** reflecting the real world activities such as social interactions, lifelike experience, and new opportunities for financial gains
 
+As first step of developing the game, we will start with developing the first pillar; the Real Estate.
+
+Real-Estate deals Properties
+
+Contains deals relating to buying (minted) and renting (unminted) of virtual lands and properties.
 
 
 
