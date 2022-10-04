@@ -398,8 +398,8 @@ To deploy this project run
 | Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ |AgentPoles|
 | Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719|
 | Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
-| Njoli Patrick | ------ | Backend developer| https://www.linkedin.com/in/ogmaro/ |Njoli Patrick|
-| Sanskar Tyagi | ------ | Web Developer | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ |Sanskar-tyagi|
+| Njoli Patrick | Backend Developer | Marketplace design| https://www.linkedin.com/in/ogmaro/ |Njoli Patrick|
+| Sanskar Tyagi | Web Developer | PLEARN Website- Front end desing | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ |Sanskar-tyagi|
 | Ujjwal Sachdeva | Web Developer Intern | developing the board of the game|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |Ujjwal Sachdeva|
 
 
