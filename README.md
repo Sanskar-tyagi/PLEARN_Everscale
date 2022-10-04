@@ -105,11 +105,29 @@ We intend to empower youth with strong financial literacy to be able to make sav
 
 As first step of developing the game, we will start with developing the first pillar; the Real Estate.
 
-Real-Estate deals Properties
+**Real-Estate deals Properties**
 
 Contains deals relating to buying (minted) and renting (unminted) of virtual lands and properties.
 
+ **- Commission to Land/property owner**
 
+    Land is owned by a landowner if it has been bought. The landowner may choose to hold the property or rent it out, for doing so, they may extract a         commission, in which case this is deducted automatically. By default, the commission is set to 10% on all Land NFTs and this is configurable by the landowner.
+
+**- Modifications to Land NFTs**
+   - Ability to ‘name’ land
+   - Ability to sell advertising links on land
+   - Ability to change Land Rating with
+   - Ability to rent it out and sell it back
+
+
+**- Public Property**
+the assets which belong to the game, which help game providers to supply the resources and facility to support the users to build their network, connect with the experts, and reuse the knowledge.
+
+ **- Private Property**
+The assets which users can buy land and build their own properties (coffee shops, car producers)
+
+  **- Commission to Land/property owner**
+Land is owned by a landowner if it has been bought. The landowner may choose to hold the property or rent it out, for doing so, they may extract a commission, in which case this is deducted automatically. By default, the commission is set to 20% on all Land NFTs and this is configurable by the landowner.
 
 
 <!-- Deployed Dapp URL -->
@@ -356,14 +374,7 @@ To deploy this project run
 <!-- Smart Contract -->
 ## :exploding_head: Smart Contracts
 
-- **NFT Minting Contract Address (ERC115):**  
-- 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
-- **Marketplace Contract address:**
-- 0xbADDE1C2caa34F681515A2d221d1Bb7Af41C2E99
-- **Management Contract Address:**
-- 0x9Ffe65ca50985eE803cA8C03D4848C979604f459 
-- **MANI Contract Address:**
-- 0x71f3513a72fB7e1DE3c8F3Fd55F8D92adCe0a1D4 
+- **TO BE FILLED**
  
 
 <!-- Roadmap -->
@@ -372,9 +383,8 @@ To deploy this project run
 * :white_check_mark: Readme
 * :white_check_mark: Canva sketching
 * :white_check_mark: Front-end design
-* :white_check_mark: MANI token smart contract 
-* :white_check_mark: Managment contract
-* :white_check_mark: Voting and minting smart contract 
+* :white_check_mark: AMBI token smart contract 
+* :white_check_mark: Marketplace Smart Contract 
 * :white_check_mark: Hardhat deployment
 * :white_check_mark: Demo video 
 
