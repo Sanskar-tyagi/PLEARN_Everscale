@@ -61,7 +61,8 @@
 <!-- About the Project -->
 ## :star2: About the Project
 
-<img width="894" alt="Screenshot 2022-10-01 at 22 06 39" src="https://user-images.githubusercontent.com/107268440/193426578-677b8e6e-661d-400d-8867-750dd8545e33.png">
+<img width="898" alt="Screenshot 2022-10-04 at 20 14 58" src="https://user-images.githubusercontent.com/107268440/193894942-220ef8fe-c4ba-43fa-9be1-966b489edc42.png">
+
 
 
 After conducting a thorough research, we found that youth lack the basic skills and knowledge to make financial decisions which means that there is a great need to promote financial capability among the young. Introducing financial literacy in a fun and a more engaging way through PLEARN could help youth minimise the costs incurred in managing their financial products, improve their financial safety net in the event of emergencies, and strengthen their financial security. The gap that exists between the amount of financial responsibility given to the young and their demonstrated ability to manage financial decisions and take advantage of financial opportunities, is rapidly widening. Unless significant action is taken to alter this and enable youth to make savvy financial decisions, financial illiteracy will remain an obstacle to youth’ financial security.
@@ -88,7 +89,7 @@ PLEARN It is the only virtual board game for teaching financial literacy that is
 <!-- Solution -->
 ## :woman_technologist: Solution
 
-We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: trading deals, real estate deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Stablecoin(USDC/USDT)and manifestation (MANI). 
+We intend to empower youth with strong financial literacy to be able to make savvy financial decisions through allowing participants to play PLEARN in order to learn how to manage their finances via its four pillars: real estate deals, trading deals, auction market deals, and ESG-relating project deals. The game has two phases; players vs environment and players vs players. Through the players' journey, they will be using three different tokens ; Ambition (AMBI), Stablecoin(USDC/USDT)and manifestation (MANI). 
 
 **A Blockchain based-platform**
 
@@ -102,8 +103,31 @@ We intend to empower youth with strong financial literacy to be able to make sav
 
 **- Interoperability:** reflecting the real world activities such as social interactions, lifelike experience, and new opportunities for financial gains
 
+As first step of developing the game, we will start with developing the first pillar; the Real Estate.
+
+**Real-Estate deals Properties**
+
+Contains deals relating to buying (minted) and renting (unminted) of virtual lands and properties.
+
+ **- Commission to Land/property owner**
+
+    Land is owned by a landowner if it has been bought. The landowner may choose to hold the property or rent it out, for doing so, they may extract a         commission, in which case this is deducted automatically. By default, the commission is set to 10% on all Land NFTs and this is configurable by the landowner.
+
+**- Modifications to Land NFTs**
+   - Ability to ‘name’ land
+   - Ability to sell advertising links on land
+   - Ability to change Land Rating with
+   - Ability to rent it out and sell it back
 
 
+**- Public Property**
+the assets which belong to the game, which help game providers to supply the resources and facility to support the users to build their network, connect with the experts, and reuse the knowledge.
+
+ **- Private Property**
+The assets which users can buy land and build their own properties (coffee shops, car producers)
+
+  **- Commission to Land/property owner**
+Land is owned by a landowner if it has been bought. The landowner may choose to hold the property or rent it out, for doing so, they may extract a commission, in which case this is deducted automatically. By default, the commission is set to 20% on all Land NFTs and this is configurable by the landowner.
 
 
 <!-- Deployed Dapp URL -->
@@ -350,14 +374,7 @@ To deploy this project run
 <!-- Smart Contract -->
 ## :exploding_head: Smart Contracts
 
-- **NFT Minting Contract Address (ERC115):**  
-- 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
-- **Marketplace Contract address:**
-- 0xbADDE1C2caa34F681515A2d221d1Bb7Af41C2E99
-- **Management Contract Address:**
-- 0x9Ffe65ca50985eE803cA8C03D4848C979604f459 
-- **MANI Contract Address:**
-- 0x71f3513a72fB7e1DE3c8F3Fd55F8D92adCe0a1D4 
+- **TO BE FILLED**
  
 
 <!-- Roadmap -->
@@ -366,9 +383,8 @@ To deploy this project run
 * :white_check_mark: Readme
 * :white_check_mark: Canva sketching
 * :white_check_mark: Front-end design
-* :white_check_mark: MANI token smart contract 
-* :white_check_mark: Managment contract
-* :white_check_mark: Voting and minting smart contract 
+* :white_check_mark: AMBI token smart contract 
+* :white_check_mark: Marketplace Smart Contract 
 * :white_check_mark: Hardhat deployment
 * :white_check_mark: Demo video 
 
@@ -378,13 +394,13 @@ To deploy this project run
 
 | Member | Title | Description | Linkedin | GitHub   |
 | ----------- | ----------- | ----------- |----------- |----------- |
-| Nada Jabr | Project Leader | Manage project content |https://www.linkedin.com/in/nada-jabr-15838b39/ | NJ-2021 - CryptoStein |
-| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
-| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
+| Nada Jabr |Project Leader| Manage project content|https://www.linkedin.com/in/nada-jabr-15838b39/| NJ-2021 - CryptoStein |
+| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ |AgentPoles|
+| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719|
 | Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
-| Njoli Patrick | ------ | Backend developer|      ------           | https://www.linkedin.com/in/ogmaro/ | Njoli Patrick |
-| Sanskar Tyagi | ------ | Web Developer |      ------           | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ | ----- |
-| Ujjwal Sachdeva | Web Developer Intern | Advise on front-end and back-end technicals|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |--- |
+| Njoli Patrick | Backend Developer | Marketplace design| https://www.linkedin.com/in/ogmaro/ |Njoli Patrick|
+| Sanskar Tyagi | Web Developer | PLEARN Website- Front end desing | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ |Sanskar-tyagi|
+| Ujjwal Sachdeva | Web Developer Intern | developing the board of the game|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |Ujjwal Sachdeva|
 
 
 
