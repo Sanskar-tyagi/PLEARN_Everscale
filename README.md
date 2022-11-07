@@ -339,7 +339,7 @@ Install dependencies with npm
 Clone the project
 
 ```bash
-  git clone [https://github.com/Louis3797/awesome-readme-template.git](https://github.com/PLEARN-ESG/ESGROW)
+  git clone [(https://github.com/CryptoStein-PLEARN/LUMOS-HACKATHON/blob/main/README.md)]
 ```
 
 Go to the project directory
