@@ -52,7 +52,7 @@
 - [Team](#wave-Team)
 - [Contact](#handshake-contact)
 - [Useful Links](#link-Useful-Links)
-  * [ESGROW Whitepaper](#scroll-ESGROW-Whitepaper)
+  * [PLEARN Litepaper](#scroll-ESGROW-Whitepaper)
   * [Demo](#cinema-Demo)
 - [Acknowledgments](#gem-Acknowledgements)
 
@@ -295,15 +295,15 @@ We have learned about the GameFi market, the Web 3 ecosystem, and how to integra
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary Color | Green #afd9d5 |
-| Secondary Color | Grass green #7ed957 |
-| Text Color | White #ffffff |
+| Primary Color | rgb(191,214,246 |
+| Secondary Color | rgb(141,189,255) |
+| Text Color | rgb(100,161,244) |
 
 
 <!-- Env Variables -->
 ### :key: Environment Variables
 
-To run ESGROW, you will need to add the following environment variables to your .env file
+To run PLEARN, you will need to add the following environment variables to your .env file
 
 `API_KEY`
 
@@ -396,8 +396,6 @@ To deploy this project run
 | ----------- | ----------- | ----------- |----------- |----------- |
 | Nada Jabr |Project Leader| Manage project content|https://www.linkedin.com/in/nada-jabr-15838b39/| NJ-2021 - CryptoStein |
 | Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ |AgentPoles|
-| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719|
-| Paolino Pagliuso | Social Media Manager| Coordinate social media content| https://www.linkedin.com/in/paolino-pagliuso/ | - |
 | Njoli Patrick | Backend Developer | Marketplace design| https://www.linkedin.com/in/ogmaro/ |Njoli Patrick|
 | Sanskar Tyagi | Web Developer | PLEARN Website- Front end desing | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ |Sanskar-tyagi|
 | Ujjwal Sachdeva | Web Developer Intern | developing the board of the game|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |Ujjwal Sachdeva|
