@@ -132,7 +132,7 @@ Land is owned by a landowner if it has been bought. The landowner may choose to 
 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
-   XXXX
+  (https://incredible-liger-fb1306.netlify.app/)
 
 ![WhatsApp Image 2022-10-30 at 21 02 35](https://user-images.githubusercontent.com/107268440/200332413-d0e9b430-8995-452b-8b5c-2e1aed178872.jpeg)
 
