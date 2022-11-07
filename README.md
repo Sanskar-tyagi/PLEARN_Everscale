@@ -134,6 +134,7 @@ Land is owned by a landowner if it has been bought. The landowner may choose to 
 ## :link: Deployed Dapp URL 
    XXXX
 
+![WhatsApp Image 2022-10-30 at 21 02 35](https://user-images.githubusercontent.com/107268440/200332413-d0e9b430-8995-452b-8b5c-2e1aed178872.jpeg)
 
 
 <!-- Screenshots -->
@@ -141,7 +142,6 @@ Land is owned by a landowner if it has been bought. The landowner may choose to 
 
 <div align="center"> 
  
-<img width="933" alt="image" src="https://user-images.githubusercontent.com/107268440/190730273-3a5183c7-f98c-4ac0-8fae-cf5939bf983d.png">
 
 
 </div>
@@ -415,7 +415,8 @@ To deploy this project run
 ## :link: Useful Links
  
   - ## :scroll: PLEARN Litepaper 
-   https://drive.google.com/file/d/1EQJ59dw4whhuXfA9k2ZHQ3c4rDKeXa8s/view?usp=sharing
+   https://drive.google.com/file/d/1YrY-g8efTvDIfEF9MBC9KmjJs2GRGham/view?usp=sharing
+   
    <!-- Demo -->
   - ## :cinema: Demo
   
