@@ -412,8 +412,6 @@ To deploy this project run
   <!-- Useful Links -->
 ## :link: Useful Links
  
-  - ## :scroll: PLEARN Litepaper 
-   https://drive.google.com/file/d/1YrY-g8efTvDIfEF9MBC9KmjJs2GRGham/view?usp=sharing
    
    <!-- Demo -->
   - ## :cinema: Demo
