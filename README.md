@@ -394,11 +394,11 @@ To deploy this project run
 
 | Member | Title | Description | Linkedin | GitHub   |
 | ----------- | ----------- | ----------- |----------- |----------- |
-| Nada Jabr |Project Leader| Manage project content|https://www.linkedin.com/in/nada-jabr-15838b39/| NJ-2021 - CryptoStein |
-| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ |AgentPoles|
-| Njoli Patrick | Backend Developer | Marketplace design| https://www.linkedin.com/in/ogmaro/ |Njoli Patrick|
-| Sanskar Tyagi | Web Developer | PLEARN Website- Front end desing | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ |Sanskar-tyagi|
-| Ujjwal Sachdeva | Web Developer Intern | developing the board of the game|https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ |Ujjwal Sachdeva|
+| Nada Jabr      | Project Leader  | Manage project content            | https://www.linkedin.com/in/nada-jabr-15838b39/        | NJ-2021 - CryptoStein |
+| Beshoy Shehata | Tech Lead       | Coordinate the project technicals | https://www.linkedin.com/in/beshoy//                   | 0xBeshoy              |
+| Ujjwal-webdev  | Game developer  | Designing the game board          | https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/ | ujjwal-webdev         |
+| Sanskar-tyagi  | Front-End Deve. | ESGROW front-end desing           | https://www.linkedin.com/in/sanskar-tyagi-953a921b1/   | Sanskar-tyagi         |
+| Rawan Mohsen   | Product Owner   | Team coordinator                  | https://www.linkedin.com/in/rawan-mohsen-74563718b/    | rawanmo7sen           |
 
 
 
