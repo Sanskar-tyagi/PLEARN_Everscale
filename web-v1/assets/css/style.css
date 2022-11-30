@@ -15031,7 +15031,7 @@ figcaption {
 }
 
 .fullscreen_image-banner {
-  height: 800px !important;
+ 
   width: 100%;
 }
 
@@ -24318,7 +24318,7 @@ body.active-light-mode {
  
   }
 }
-.font-mm{
-  font-size: 36px !important;
-}
  
+ .fss{
+  font-size: xx-large !important;
+ }
