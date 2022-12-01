@@ -24121,7 +24121,7 @@ body.active-light-mode {
 
     
 .underline,.blu {
-  font-size: calc(60px + 1vh);
+  font-size: calc(30px + 1vh);
  margin-bottom:30px ;
 /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
@@ -24182,11 +24182,11 @@ body.active-light-mode {
   }
 }
 .blu{
-  color: rgb(52, 52, 52); 
+  color: rgb(255, 255, 255); 
   text-shadow:
-      0 0 7px rgb(135, 197, 197),
-      0 0 10px  rgb(153, 251, 251),
-      0 0 21px  rgb(153, 251, 251),
+      0 0 7px rgb(153, 251, 251),
+      0 0 10px  rgb(10, 164, 164),
+      0 0 21px  rgb(10, 164, 164),
       0 0 42px aqua,
       0 0 82px aqua,
       0 0 92px dodgerblue,
@@ -24200,7 +24200,7 @@ body.active-light-mode {
   20%,
   24%,
   55% {
-    color: #111;
+    color: white;
     text-shadow: none;
   }
 
@@ -24215,11 +24215,11 @@ body.active-light-mode {
 /*     color: #fccaff;
     text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
       0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-      color: rgb(52, 52, 52); 
+      color: white; 
       text-shadow:
-          0 0 7px rgb(135, 197, 197),
-          0 0 10px  rgb(153, 251, 251),
-          0 0 21px  rgb(153, 251, 251),
+          0 0 7px rgb(153, 251, 251),
+          0 0 10px  rgb(10, 164, 164),
+          0 0 21px  rgb(10, 164, 164),
           0 0 42px aqua,
           0 0 82px aqua,
           0 0 92px dodgerblue,
@@ -24232,7 +24232,7 @@ body.active-light-mode {
   20%,
   24%,
   55% {
-    color: #111;
+    color: white;
     text-shadow: none;
   }
 
@@ -24247,11 +24247,11 @@ body.active-light-mode {
 /*     color: #fccaff;
     text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
       0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-      color: rgb(52, 52, 52); 
+      color: white; 
       text-shadow:
-          0 0 7px rgb(135, 197, 197),
-          0 0 10px  rgb(153, 251, 251),
-          0 0 21px  rgb(153, 251, 251),
+          0 0 7px rgb(153, 251, 251),
+          0 0 10px   rgb(10, 164, 164),
+          0 0 21px  rgb(10, 164, 164),
           0 0 42px aqua,
           0 0 82px aqua,
           0 0 92px dodgerblue,
@@ -24261,9 +24261,9 @@ body.active-light-mode {
 }
 
 
- .fs-m {
-  font-size: 36px !important;
- margin-bottom:30px ;
+ .fs-m {  font-size: calc(30px + 1vh);
+
+ margin-top:30px ;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff;
