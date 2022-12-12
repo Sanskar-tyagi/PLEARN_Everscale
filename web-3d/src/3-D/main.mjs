@@ -1,7 +1,5 @@
 import "./style.css";
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-
+import * as THREE from "https://unpkg.com/three@0.124.0/build/three.module.js";
 // Setup
 
 const scene = new THREE.Scene();
@@ -59,15 +57,15 @@ Array(360).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("src/3-D/space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load("src/3-D/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("src/3-D/normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
