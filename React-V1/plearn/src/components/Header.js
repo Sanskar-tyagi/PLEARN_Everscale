@@ -1,7 +1,19 @@
 import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 
-export default function Header() {
+export default function Header({userLoggedIn}) {
+
+  const startGame = () => {
+    if(userLoggedIn == false)
+    {
+      alert("Please connect MetaMask wallet in order to start the game.");
+    }
+    else
+    {
+      window.open("https://google.com");
+    }
+  }
+
   return (
     <div>
       <section className="hero wf-section">
@@ -43,10 +55,10 @@ export default function Header() {
                 <a href="index.html" className="btn btn--yellow">
                   Explore Around{" "}
                 </a>
-
-                <a href="index.html" className="btn">
+              
+                <button className="btn" onClick={startGame}>
                   Play The Game{" "}
-                </a>
+                </button>
               </div>
 
               <div className="hero__intro-stats">

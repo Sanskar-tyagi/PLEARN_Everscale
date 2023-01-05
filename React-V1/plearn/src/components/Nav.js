@@ -1,6 +1,60 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import logo_plearn from "../assets/Images/Logo_Plearn.png";
-export default function Nav() {
+import {ethers} from 'ethers';
+import axios from 'axios';
+
+export default function Nav({setUserLoggedIn}) {
+  const [userAccount, setUserAccount] = useState(null);
+	const [connButtonText, setConnButtonText] = useState('Connect Wallet');
+  const [welcomeMessage, setWelcomeMessage] = useState('');
+
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+	const connectWalletHandler = () => {
+		if (window.ethereum && window.ethereum.isMetaMask) {
+			console.log('MetaMask Here!');
+
+			window.ethereum.request({ method: 'eth_requestAccounts'})
+			.then(result => {
+				accountChangedHandler(result);
+				console.log(result); // Array which contains the accounts.
+				setConnButtonText('Wallet Connected');
+			})
+			.catch(error => {
+        console.log(error.message);
+			});
+
+		} else {
+			console.log('Need to install MetaMask');
+			alert("Please install MetaMask extension.");
+		}
+	}
+
+	// update account, will cause component re-render
+	const accountChangedHandler = (newAccount) => {
+		setUserAccount(newAccount[0]);
+    setUserLoggedIn(true);
+    setWelcomeMessage("Welcome, ")
+	}
+
+  useEffect(() => {
+    if(userAccount != null)
+    {
+      axios.post("http://localhost:8080/", {userAccount})
+      .then(res => {
+        alert(res.data.message)
+      });
+    }
+  }, [userAccount])
+
+	const chainChangedHandler = () => {
+		// reload the page to avoid any errors with chain change mid use of application
+		window.location.reload();
+	}
+    
+	// listen for account changes
+	window.ethereum.on('accountsChanged', accountChangedHandler);
+	window.ethereum.on('chainChanged', chainChangedHandler);
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong ">
@@ -28,12 +82,10 @@ export default function Nav() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="index.html"
-                >
+                  href="index.html">
                   Home
                 </a>
               </li>
-
               <li className="nav-item">
                 <a className="nav-link " aria-current="page" href="index.html">
                   About
@@ -61,7 +113,13 @@ export default function Nav() {
                   NFT
                 </a>
               </li>
+              <li className="nav-item">
+                <button onClick={connectWalletHandler}>{connButtonText}</button>
+              </li>
             </ul>
+            <span>
+					    {welcomeMessage}{userAccount}
+				    </span>
           </div>
         </div>
       </nav>
