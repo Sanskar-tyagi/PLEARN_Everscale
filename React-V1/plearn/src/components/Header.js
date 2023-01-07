@@ -1,16 +1,32 @@
+import axios from "axios";
 import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 
-export default function Header({userLoggedIn}) {
+export default function Header({userAccount}) {
 
   const startGame = () => {
-    if(userLoggedIn == false)
+    if(userAccount == null)
     {
       alert("Please connect MetaMask wallet in order to start the game.");
     }
     else
     {
-      window.open("https://google.com");
+      getPlayerDetails(userAccount);
+      window.open("http://127.0.0.1:5500/index.html");
+    }
+  }
+
+  const getPlayerDetails = async (userAccount) => {
+    try
+    {
+      const response  = await axios.get(`http://localhost:8080/playerdetail/${userAccount}`)
+      const player = response.data;
+      console.log(player);
+      //now use characterID here to differentiate b/w new player and old player.
+    }
+    catch(error)
+    {
+      console.error(error);
     }
   }
 

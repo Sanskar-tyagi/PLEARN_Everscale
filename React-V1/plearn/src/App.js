@@ -6,12 +6,16 @@ import { useState } from "react";
 
 function App() {
 
-  const [userLoggedIn, setUserLoggedIn] = useState(false);
+  const [userAccount, setUserAccount] = useState(null);
+
+  const handleUserAccountChange = (newUserAccount) => {
+    setUserAccount(newUserAccount);
+  };
 
   return (
     <>
-      <Nav setUserLoggedIn={setUserLoggedIn}></Nav>
-      <Header userLoggedIn={userLoggedIn}/>
+      <Nav onUserAccountChange={handleUserAccountChange}></Nav>
+      <Header userAccount={userAccount}/>
       <GameSection></GameSection>
     </>
   );

@@ -3,7 +3,7 @@ import logo_plearn from "../assets/Images/Logo_Plearn.png";
 import {ethers} from 'ethers';
 import axios from 'axios';
 
-export default function Nav({setUserLoggedIn}) {
+export default function Nav({onUserAccountChange}) {
   const [userAccount, setUserAccount] = useState(null);
 	const [connButtonText, setConnButtonText] = useState('Connect Wallet');
   const [welcomeMessage, setWelcomeMessage] = useState('');
@@ -32,7 +32,7 @@ export default function Nav({setUserLoggedIn}) {
 	// update account, will cause component re-render
 	const accountChangedHandler = (newAccount) => {
 		setUserAccount(newAccount[0]);
-    setUserLoggedIn(true);
+    onUserAccountChange(newAccount[0]); // Callback function - Passing the value to the parent component which is App.js
     setWelcomeMessage("Welcome, ")
 	}
 

@@ -26,13 +26,16 @@ const userDetail = new mongoose.model("metamask_login_table", userDetailSchema, 
 // Table for saving Player game data
 const playerDetailSchema = new mongoose.Schema({
     userAccount: {type: String},
-    // userName: {type: String},
-    //
-    //
+    playerName: {type: String, default: ''},
+    coins: {type: Number, default: 0},
+    tileNumber: {type: Number, default: 0},
+    characterID: {type: Number, default: -1}
 })
 const playerDetail = new mongoose.model("player_detail_table", playerDetailSchema, "player_detail_table");
 
 //Routes
+
+//For registering the user in 'metamask_login_table' and 'player_detail_table' through website.
 app.post("/", (req,res) => {
     const {userAccount} = req.body;
     userDetail.findOne({userAccount: userAccount}, (err, user) => {
@@ -57,12 +60,29 @@ app.post("/", (req,res) => {
                 else
                 {
                     res.send({message: "Successfully Registered!" + " " + userAccount});
-                    player.save();
+                    player.save(); // Saving the user in 'player_detail_table' as well.
                 }
             });
         }
     })
 })
+
+//For fetching details of player from 'player_detail_table'.
+app.get('/playerdetail/:playerAccount', (req,res) => {
+    const { playerAccount } = req.params;
+    playerDetail.findOne({userAccount: playerAccount}, (err, player) => {
+        if(player)
+        {
+            res.send(player);
+        }
+        else
+        {
+            res.send(err);
+        }
+    })
+})
+
+
 app.get('/test', (req,res) => {
     res.send("Hello User");
 })
@@ -75,6 +95,7 @@ app.get('/test', (req,res) => {
 //         res.sendFile(path.resolve(__dirname,'client','build','index.html'));
 //     })
 // }
+
 //Start the server
 app.listen(port,() => {
     console.log("Backend Started on " + port);
