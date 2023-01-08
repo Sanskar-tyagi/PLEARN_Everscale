@@ -55,27 +55,22 @@ export default function Nav({ onUserAccountChange }) {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong ">
+      <nav className="navbar navbar-expand-lg  bg-black navbar-dark shadow-5-strong ">
         <div className="container-fluid">
           <div className="logo-thumbnail navbar-brand logo-custom-css">
             {" "}
             <img src={logo_plearn} alt="Bootstrap" />
           </div>
-
           <button
-            className="navbar-toggler"
             type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="index.htmlnavbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            className="navbar-toggler wltBtn"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          > 
             <i className="fas fa-bars"></i>
           </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <ul className="navbar-nav mb-2 mb-lg-0 me-auto">
               <li className="nav-item">
                 <a
                   className="nav-link active"
@@ -112,10 +107,14 @@ export default function Nav({ onUserAccountChange }) {
                   NFT
                 </a>
               </li>
-              <li className="nav-item">
-                <button onClick={connectWalletHandler}>{connButtonText}</button>
-              </li>
+              <li className="nav-item "></li>
             </ul>
+            <a
+              className="nav-link btn  px-3 py-2  wltBtn"
+              onClick={connectWalletHandler}
+            >
+              {connButtonText}
+            </a>
             <span>
               {welcomeMessage}
               {userAccount}
