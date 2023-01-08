@@ -2,33 +2,28 @@ import axios from "axios";
 import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 
-export default function Header({userAccount}) {
-
+export default function Header({ userAccount }) {
   const startGame = () => {
-    if(userAccount == null)
-    {
+    if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
-    }
-    else
-    {
+    } else {
       getPlayerDetails(userAccount);
       window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`);
     }
-  }
+  };
 
   const getPlayerDetails = async (userAccount) => {
-    try
-    {
-      const response  = await axios.get(`http://localhost:8080/playerdetail/${userAccount}`)
+    try {
+      const response = await axios.get(
+        `http://localhost:8080/playerdetail/${userAccount}`
+      );
       const player = response.data;
       console.log(player);
       //now use characterID here to differentiate b/w new player and old player.
-    }
-    catch(error)
-    {
+    } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   return (
     <div>
@@ -68,12 +63,16 @@ export default function Header({userAccount}) {
               {/* remove extra texts and make it view more */}
 
               <div className="hero__intro-cta animated-box mss">
-                <a href="index.html" className="btn btn--yellow">
-                  Explore Around{" "}
-                </a>
-              
-                <button className="btn" onClick={startGame}>
-                  Play The Game{" "}
+                <button className="btnply" onClick={startGame}>
+                  Play Now{" "}
+                  <div id="clip">
+                    <div id="leftTop" class="corner"></div>
+                    <div id="rightBottom" class="corner"></div>
+                    <div id="rightTop" class="corner"></div>
+                    <div id="leftBottom" class="corner"></div>
+                  </div>
+                  <span id="rightArrow" class="arrow"></span>
+                  <span id="leftArrow" class="arrow"></span>
                 </button>
               </div>
 
