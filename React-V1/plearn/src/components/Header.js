@@ -3,27 +3,35 @@ import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 
 export default function Header({ userAccount }) {
-  const startGame = () => {
-    if (userAccount == null) {
+
+  const startGame = async () => {
+    if (userAccount == null) 
+    {
       alert("Please connect MetaMask wallet in order to start the game.");
-    } else {
-      getPlayerDetails(userAccount);
-      window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`);
+    } 
+    else 
+    {
+      // const playerDetails = await getPlayerDetails(userAccount);
+      // console.log(`Player Details: ${playerDetails}`);
+      window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
     }
   };
 
-  const getPlayerDetails = async (userAccount) => {
-    try {
-      const response = await axios.get(
-        `http://localhost:8080/playerdetail/${userAccount}`
-      );
-      const player = response.data;
-      console.log(player);
-      //now use characterID here to differentiate b/w new player and old player.
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  //No use :(
+  // const getPlayerDetails = async (userAccount) => {
+  //   try
+  //   {
+  //     const response = await axios.get(
+  //       `http://localhost:8080/playerdetail/${userAccount}` // Making GET request to fetch details about the player using their Account in db.
+  //     );
+  //     const player = response.data;
+  //     return player;
+  //   } 
+  //   catch(error) 
+  //   {
+  //     console.error(error);
+  //   }
+  // };
 
   return (
     <div>

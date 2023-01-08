@@ -6,7 +6,7 @@ import axios from "axios";
 export default function Nav({ onUserAccountChange }) {
   const [userAccount, setUserAccount] = useState(null);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
-  const [welcomeMessage, setWelcomeMessage] = useState("");
+  // const [welcomeMessage, setWelcomeMessage] = useState("");
 
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const connectWalletHandler = () => {
@@ -33,7 +33,7 @@ export default function Nav({ onUserAccountChange }) {
   const accountChangedHandler = (newAccount) => {
     setUserAccount(newAccount[0]);
     onUserAccountChange(newAccount[0]); // Callback function - Passing the value to the parent component which is App.js
-    setWelcomeMessage("Welcome, ");
+    // setWelcomeMessage("Welcome, ");
   };
 
   useEffect(() => {
@@ -115,10 +115,10 @@ export default function Nav({ onUserAccountChange }) {
             >
               {connButtonText}
             </a>
-            <span>
+            {/* <span>
               {welcomeMessage}
               {userAccount}
-            </span>
+            </span> */}
           </div>
         </div>
       </nav>

@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Nav onUserAccountChange={handleUserAccountChange}></Nav>
+      <Nav onUserAccountChange={handleUserAccountChange}></Nav> {/* retrieving userAccount from Nav component and passing the userAccount to the function above */}
       <Header userAccount={userAccount} />
       <GameSection></GameSection>
       <ShowCase />
