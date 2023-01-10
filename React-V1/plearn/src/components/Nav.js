@@ -42,6 +42,10 @@ export default function Nav({ onUserAccountChange }) {
         alert(res.data.message);
       });
     }
+    else
+    {
+      setConnButtonText("Connect Wallet");
+    }
   }, [userAccount]);
 
   const chainChangedHandler = () => {
