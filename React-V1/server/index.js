@@ -29,7 +29,8 @@ const playerDetailSchema = new mongoose.Schema({
     playerName: {type: String, default: ''},
     coins: {type: Number, default: 0},
     tileNumber: {type: Number, default: 0},
-    characterID: {type: Number, default: -1}
+    characterID: {type: Number, default: -1},
+    level: {type: Number, default: 0}
 })
 const playerDetail = new mongoose.model("player_detail_table", playerDetailSchema, "player_detail_table");
 
