@@ -1,11 +1,13 @@
 const express = require("express");
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+const bodyParser = require('body-parser');
 const cors = require("cors");
 require('dotenv').config()
 const {port,mongoURI} = require('./config/keys')
 
 const app = express();
 app.use(express.json());
+app.use(bodyParser.json());
 app.use(express.urlencoded());
 app.use(cors());
 
@@ -83,6 +85,21 @@ app.get('/playerdetail/:playerAccount', (req,res) => {
     })
 })
 
+//For saving details of player in 'player_detail_player'.
+app.post('/saveDetails', (req, res) => {
+    const userAccount = req.body.userAccount;
+    const playerName = req.body.playerName;
+    const selectedCharacter = req.body.selectedCharacter;
+
+    playerDetail.updateOne({userAccount: userAccount}, {$set: {playerName: playerName, characterID: selectedCharacter} }, (err) => {
+        if(err)
+        {
+            console.error(err);
+            return res.sendStatus(500);
+        }
+        res.sendStatus(200);
+    })
+});
 
 app.get('/test', (req,res) => {
     res.send("Hello User");
