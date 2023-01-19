@@ -1,5 +1,11 @@
 import React from "react";
-
+import a1 from "../assets/Images/NFTS/nsf (1).jpg";
+import a2 from "../assets/Images/NFTS/nsf (2).jpg";
+import a3 from "../assets/Images/NFTS/nsf (3).jpg";
+import a4 from "../assets/Images/NFTS/nsf (4).jpg";
+import a5 from "../assets/Images/NFTS/nsf (5).jpg";
+import a6 from "../assets/Images/NFTS/nsf (6).jpg";
+import a7 from "../assets/Images/NFTS/nsf (7).jpg";
 export default function GameSection() {
   return (
     <div>
@@ -15,10 +21,7 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="140"
                       >
-                        <img
-                          src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1414-2.png"
-                          alt="Summer Ape collection"
-                        />
+                        <img src={a1} alt="Summer Ape collection" />
                         <div className="nft-showcase__overlay">
                           <h3>Summer Ape Collection</h3>
                           <a href="https://nftly-theme.pxsquad.com/demo1/product-category/bored-apes/">
@@ -31,10 +34,7 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="140"
                       >
-                        <img
-                          src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1415-2.png"
-                          alt="The Scary Face 2022"
-                        />
+                        <img src={a2} alt="The Scary Face 2022" />
                         <div className="nft-showcase__overlay">
                           <h3>The Scary Face 2022</h3>
                           <a href="https://nftly-theme.pxsquad.com/demo1/product-category/bored-apes/">
@@ -50,7 +50,7 @@ export default function GameSection() {
                         data-elapsed="180"
                       >
                         <img
-                          src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1416-2.png"
+                          src={a3}
                           alt="Scared faces going crazy with a robotic touch and feel suited for youngsters"
                         />
                         <div className="nft-showcase__overlay">
@@ -66,10 +66,7 @@ export default function GameSection() {
                       </div>
                       <div className="nft-showcase__item nft-showcase__item--row nft-showcase__item--473 animated-box mt--20">
                         <div className="nft-showcase__item nft-showcase__item--220">
-                          <img
-                            src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1417-6.png"
-                            alt="Wide character collection"
-                          />
+                          <img src={a4} alt="Wide character collection" />
                           <div className="nft-showcase__overlay">
                             <h3>Wide character collection</h3>
                             <a href="https://nftly-theme.pxsquad.com/demo1/product-category/hape/">
@@ -82,10 +79,7 @@ export default function GameSection() {
                           className="nft-showcase__item nft-showcase__item--220 animated-box"
                           data-elapsed="180"
                         >
-                          <img
-                            src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1418-4.png"
-                            alt="Melted faces collection"
-                          />
+                          <img src={a5} alt="Melted faces collection" />
                           <div className="nft-showcase__overlay">
                             <h3>Melted faces collection</h3>
                             <a href="https://nftly-theme.pxsquad.com/demo1/product-category/hape/">
@@ -101,10 +95,7 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="200"
                       >
-                        <img
-                          src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1417-5.png"
-                          alt="Summer bandanas going wild"
-                        />
+                        <img src={a2} alt="Summer bandanas going wild" />
                         <div className="nft-showcase__overlay">
                           <h3>Summer bandanas going wild</h3>
                           <a href="https://nftly-theme.pxsquad.com/demo1/product-category/cat-gang">
@@ -117,10 +108,7 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="180"
                       >
-                        <img
-                          src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1418-5.png"
-                          alt="The music techno beats NFTs"
-                        />
+                        <img src={a1} alt="The music techno beats NFTs" />
                         <div className="nft-showcase__overlay">
                           <h3>The music techno beats NFTs</h3>
                           <a href="https://nftly-theme.pxsquad.com/demo1/product-category/cat-gang">

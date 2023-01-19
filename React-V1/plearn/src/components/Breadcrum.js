@@ -6,7 +6,7 @@ const videoSrc = {
   type: "video",
   sources: [
     {
-      src: "https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=1&modestbranding=1&controls=0&mute=1",
+      src: "https://www.youtube.com/embed/gMXCwZ9i0Cs",
       provider: "youtube",
     },
   ],
@@ -34,7 +34,7 @@ const options = {
 export default function BreadCrums() {
   return (
     <div>
-      <div className="wrapper">
+      <div className="wrapper ">
         {/* <h2>
           <strong>
             All Charachters<span>( 4 )</span>
@@ -80,7 +80,7 @@ export default function BreadCrums() {
         </div> */}
 
         <h2>
-          <strong>What's new?</strong>
+          <strong>What's Plearn?</strong>
         </h2>
 
         <div className="news">
@@ -90,15 +90,6 @@ export default function BreadCrums() {
               src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png"
             /> */}
             <MyComponent className="ifm" />
-            <figcaption>
-              <h3>Update</h3>
-
-              <p>
-                Just in time for Lunar New Year and the Rat’s time in the
-                cyclical place of honor, the Treasure of Unbound Majesty is now
-                available.
-              </p>
-            </figcaption>
           </figure>
         </div>
       </div>

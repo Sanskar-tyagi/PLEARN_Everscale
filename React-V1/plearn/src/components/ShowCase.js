@@ -1,6 +1,11 @@
 import React from "react";
-
+import a1 from "../assets/Images/NFTS/nft (32).jpg";
+import a2 from "../assets/Images/NFTS/nft (33).jpg";
+import a3 from "../assets/Images/NFTS/nft (34).jpg";
+import a4 from "../assets/Images/NFTS/nft (35).jpg";
 export default function ShowCase() {
+  const eth =
+    "https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png";
   return (
     <div>
       <section className="section-item bg-black pb-20">
@@ -23,7 +28,7 @@ export default function ShowCase() {
                   <img
                     width="378"
                     height="390"
-                    src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1415-6.jpg"
+                    src={a1}
                     className="imgT"
                     alt=""
                   />{" "}
@@ -33,7 +38,7 @@ export default function ShowCase() {
                     <div className="marketplace__meta-author">
                       <h3 className="marketplace__meta-title">
                         <a href="index.html" className="">
-                          Blonde jacket #19
+                          CASA BLANCA
                         </a>
                       </h3>{" "}
                     </div>
@@ -42,10 +47,7 @@ export default function ShowCase() {
                 <div className="marketplace_go-to">
                   <div className="marketplace__favs">
                     <div className="marketplace__additional-first">
-                      <img
-                        src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png"
-                        alt="marketplace-icon"
-                      />
+                      <img src={eth} alt="marketplace-icon" />
                       <div>4,322 ETH </div>
                     </div>
                   </div>
@@ -66,7 +68,7 @@ export default function ShowCase() {
                   <img
                     width="378"
                     height="390"
-                    src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1414-8.jpg"
+                    src={a2}
                     className="imgT"
                     alt=""
                   />{" "}
@@ -76,7 +78,7 @@ export default function ShowCase() {
                     <div className="marketplace__meta-author">
                       <h3 className="marketplace__meta-title">
                         <a href="index.html" className="">
-                          Cool kid #91
+                          TAJ MAHAL
                         </a>
                       </h3>{" "}
                     </div>
@@ -85,10 +87,7 @@ export default function ShowCase() {
                 <div className="marketplace_go-to">
                   <div className="marketplace__favs">
                     <div className="marketplace__additional-first">
-                      <img
-                        src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png"
-                        alt="marketplace-icon"
-                      />
+                      <img src={eth} alt="marketplace-icon" />
                       <div>1,502 ETH </div>
                     </div>
                   </div>
@@ -109,7 +108,7 @@ export default function ShowCase() {
                   <img
                     width="378"
                     height="390"
-                    src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1420-2.jpg"
+                    src={a3}
                     className="imgT"
                     alt=""
                   />{" "}
@@ -119,7 +118,7 @@ export default function ShowCase() {
                     <div className="marketplace__meta-author">
                       <h3 className="marketplace__meta-title">
                         <a href="index.html" className="">
-                          Two-faced flower mask #11
+                          ORANGE OASIS
                         </a>
                       </h3>{" "}
                     </div>
@@ -128,10 +127,7 @@ export default function ShowCase() {
                 <div className="marketplace_go-to">
                   <div className="marketplace__favs">
                     <div className="marketplace__additional-first">
-                      <img
-                        src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png"
-                        alt="marketplace-icon"
-                      />
+                      <img src={eth} alt="marketplace-icon" />
                       <div>14,523 ETH </div>
                     </div>
                   </div>
@@ -152,7 +148,7 @@ export default function ShowCase() {
                   <img
                     width="378"
                     height="390"
-                    src="https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Rectangle-1419-2.jpg"
+                    src={a4}
                     className="imgT"
                     alt=""
                   />{" "}
@@ -162,7 +158,7 @@ export default function ShowCase() {
                     <div className="marketplace__meta-author">
                       <h3 className="marketplace__meta-title">
                         <a href="index.html" className="">
-                          Blood menace
+                          BEIGE BAY
                         </a>
                       </h3>{" "}
                     </div>
@@ -171,10 +167,7 @@ export default function ShowCase() {
                 <div className="marketplace_go-to">
                   <div className="marketplace__favs">
                     <div className="marketplace__additional-first">
-                      <img
-                        src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png"
-                        alt="marketplace-icon"
-                      />
+                      <img src={eth} alt="marketplace-icon" />
                       <div>1,445 ETH </div>
                     </div>
                   </div>
