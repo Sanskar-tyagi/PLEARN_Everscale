@@ -8,8 +8,8 @@ import a6 from "../assets/Images/NFTS/nsf (6).jpg";
 import a7 from "../assets/Images/NFTS/nsf (7).jpg";
 export default function GameSection() {
   return (
-    <div>
-      <section className="hero wf-section mt--65">
+    <div className="pt">
+      <section className="hero wf-section ">
         <div className="container container--relative">
           <div className="hero__blocks flxend">
             <div className="hero__nft-placeholder">

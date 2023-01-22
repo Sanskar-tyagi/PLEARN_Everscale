@@ -8,6 +8,9 @@ import BreadCrums from "./components/Breadcrum";
 import CTAsection from "./components/CTAsection";
 import Hype from "./components/Hype";
 import Gamedes from "./components/Gamedes";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
+import Toke from "./components/toke";
 
 function App() {
   const [userAccount, setUserAccount] = useState(null);
@@ -22,13 +25,15 @@ function App() {
       {/* retrieving userAccount from Nav component and passing the userAccount to the function above */}
       <Header userAccount={userAccount} />
       <GameSection></GameSection>
-      <ShowCase />
+      <Gamedes></Gamedes>
       <div className="vidbg">
         <BreadCrums></BreadCrums>
-        <Gamedes></Gamedes>
-        <Hype></Hype>
-        <CTAsection></CTAsection>
+        <ShowCase />
+        <Toke />
+        <Faq></Faq>
+        <CTAsection></CTAsection>{" "}
       </div>
+      <Footer />
     </>
   );
 }
