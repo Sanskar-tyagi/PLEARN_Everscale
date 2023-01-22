@@ -11,27 +11,9 @@ export default function Header({ userAccount }) {
     } 
     else 
     {
-      // const playerDetails = await getPlayerDetails(userAccount);
-      // console.log(`Player Details: ${playerDetails}`);
       window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
     }
   };
-
-  //No use :(
-  // const getPlayerDetails = async (userAccount) => {
-  //   try
-  //   {
-  //     const response = await axios.get(
-  //       `http://localhost:8080/playerdetail/${userAccount}` // Making GET request to fetch details about the player using their Account in db.
-  //     );
-  //     const player = response.data;
-  //     return player;
-  //   } 
-  //   catch(error) 
-  //   {
-  //     console.error(error);
-  //   }
-  // };
 
   return (
     <div>
