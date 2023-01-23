@@ -37,6 +37,6 @@ app.get('/test', (req,res) => {
 // }
 
 //Start the server
-app.listen(process.env.port || 8080,() => {
+app.listen(process.env.PORT || 8080,() => {
     console.log("Backend Started!");
 });
