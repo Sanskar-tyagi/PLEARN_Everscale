@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Carousel from "../utils/slider";
 
 export default function Gamedes() {
   const [index, setIndex] = useState(0);
-  function handleIndexChange(index) {
-    setIndex(index);
-  }
+
   //through investing, buying and selling real estate, and owning and upgrading NFTs
   const text1_options = [
     "Virtual board game that teaches financial literacy",
@@ -16,10 +14,17 @@ export default function Gamedes() {
     "In-game knowledge templates to learn while playing",
     "Opportunities to earn through buying NFTs, properties, and virtual land",
   ];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % text1_options.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Container>
       <div className="ms">
-        <Carousel onIndexChange={handleIndexChange} />
+        <Carousel />
         <div
           class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9f81c8"
           data-id="b9f81c8"
@@ -35,7 +40,7 @@ export default function Gamedes() {
               <div class="elementor-widget-container">
                 <div class="qodef-shortcode qodef-m qodef-section-title qodef-alignment--right qodef--has-appear qodef--appeared">
                   <span class="qodef-m-tagline">
-                    <span class="qodef-m-tagline-inner">TEMPLATES </span>
+                    <span class="qodef-m-tagline-inner">PLEARN </span>
                   </span>
                   <h2 class="qodef-m-title">
                     <span class="qodef-m-title-inner">
@@ -54,7 +59,7 @@ export default function Gamedes() {
                       target="_self"
                     >
                       {" "}
-                      <span class="qodef-m-text">VIEW MORE</span>
+                      <span class="qodef-m-text">KNOW MORE</span>
                     </a>{" "}
                   </div>
                 </div>
@@ -74,15 +79,12 @@ const Container = styled.div`
   flex-direction: column;
   .ms {
     display: flex;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: #fff;
     transition: background 0.3s, border 0.3s, border-radius 0.3s,
       box-shadow 0.3s;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/landing-image-1.jpg);
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

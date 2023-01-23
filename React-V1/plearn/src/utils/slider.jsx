@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Carousel = (props) => {
@@ -12,24 +12,12 @@ const Carousel = (props) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNextClick = () => {
-    setCurrentIndex((currentIndex + 1) % background.length);
-    setTimeout(() => {
-      carousel.classList.remove("anim-next");
-    }, 650);
-    props.onIndexChange(currentIndex);
-  };
-
-  const handlePreviousClick = () => {
-    setCurrentIndex(
-      currentIndex === 0 ? background.length - 1 : currentIndex - 1
-    );
-    props.onIndexChange(currentIndex);
-
-    setTimeout(() => {
-      carousel.classList.remove("anim-previous");
-    }, 650);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % background.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Container>
@@ -37,15 +25,7 @@ const Carousel = (props) => {
         <div
           id="menu"
           style={{ background: `url(${background[currentIndex]})` }}
-        >
-          <button id="previous-option" onClick={handlePreviousClick}>
-            {" "}
-            <span className="pvr"></span>
-          </button>
-          <button id="next-option" onClick={handleNextClick}>
-            <span className="nxt"></span>
-          </button>
-        </div>
+        ></div>
       </div>
     </Container>
   );
