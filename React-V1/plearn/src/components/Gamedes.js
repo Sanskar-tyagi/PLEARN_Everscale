@@ -43,9 +43,9 @@ export default function Gamedes() {
                     </span>
                   </h2>
                   <p class="qodef-m-text-area">
-                    Artorias comes with a huge collection of practical and
-                    carefully designed layouts for presenting your team,
-                    displaying FAQs, contact forms and more.
+                    PLEARN is a 3D game that teaches players the basics of managing money and investments. 
+                    PLEARN has a varity of features, interactive graphics, realistic scenarios, 
+                    and entertaining educational elements that keep players engaged.
                   </p>
                   <div class="btm btn">
                     <a

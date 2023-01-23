@@ -38,7 +38,7 @@ export default function Nav({ onUserAccountChange }) {
 
   useEffect(() => {
     if (userAccount != null) {
-      axios.post("http://localhost:8080/", { userAccount }).then((res) => {
+      axios.post("https://plearn-backend.onrender.com/", { userAccount }).then((res) => {
         alert(res.data.message);
       });
     }
