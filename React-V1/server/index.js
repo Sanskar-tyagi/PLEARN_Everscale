@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 const cors = require("cors");
 require('dotenv').config()
-const {port,mongoURI} = require('./config/keys')
+const {mongoURI} = require('./config/dev')
 
 const app = express();
 app.use(express.json());
@@ -37,6 +37,6 @@ app.get('/test', (req,res) => {
 // }
 
 //Start the server
-app.listen(port,() => {
-    console.log("Backend Started on " + port);
+app.listen(process.env.port || 8080,() => {
+    console.log("Backend Started!");
 });
