@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import logo_plearn from "../assets/Images/Logo_Plearn.png";
 import { ethers } from "ethers";
 import axios from "axios";
+import {ColorRing} from 'react-loader-spinner';
 
 export default function Nav({ onUserAccountChange }) {
   const [userAccount, setUserAccount] = useState(null);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
-  // const [welcomeMessage, setWelcomeMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  // const provider = new ethers.providers.Web3Provider(window.ethereum);
   const connectWalletHandler = () => {
     if (window.ethereum && window.ethereum.isMetaMask) {
       console.log("MetaMask Here!");
@@ -17,13 +18,12 @@ export default function Nav({ onUserAccountChange }) {
         .request({ method: "eth_requestAccounts" })
         .then((result) => {
           accountChangedHandler(result);
-          console.log(result); // Array which contains the accounts.
-          setConnButtonText("Wallet Connected");
         })
         .catch((error) => {
           console.log(error.message);
         });
-    } else {
+    } 
+    else {
       console.log("Need to install MetaMask");
       alert("Please install MetaMask extension.");
     }
@@ -33,14 +33,24 @@ export default function Nav({ onUserAccountChange }) {
   const accountChangedHandler = (newAccount) => {
     setUserAccount(newAccount[0]);
     onUserAccountChange(newAccount[0]); // Callback function - Passing the value to the parent component which is App.js
-    // setWelcomeMessage("Welcome, ");
   };
 
   useEffect(() => {
     if (userAccount != null) {
-      axios.post("https://plearn-backend.onrender.com/", { userAccount }).then((res) => {
+      setIsLoading(true);
+      axios.post("https://plearn-backend.onrender.com/", { userAccount })
+      .then((res) => {
+        setConnButtonText("Wallet Connected");
         alert(res.data.message);
-      });
+        setIsLoading(false);
+      })
+      .catch((error) => 
+      {
+        console.log(error);
+        setIsLoading(false);
+        alert("An error occurred, please try again later.");
+      })
+      
     }
     else
     {
@@ -54,8 +64,11 @@ export default function Nav({ onUserAccountChange }) {
   };
 
   // listen for account changes
-  window.ethereum.on("accountsChanged", accountChangedHandler);
-  window.ethereum.on("chainChanged", chainChangedHandler);
+  if (typeof window.ethereum !== 'undefined') 
+  {
+    window.ethereum.on("accountsChanged", accountChangedHandler);
+    window.ethereum.on("chainChanged", chainChangedHandler);
+  }
 
   return (
     <div>
@@ -119,10 +132,19 @@ export default function Nav({ onUserAccountChange }) {
             >
               {connButtonText}
             </a>
-            {/* <span>
-              {welcomeMessage}
-              {userAccount}
-            </span> */}
+            {isLoading ? 
+              <span>
+                <ColorRing
+                  visible={true}
+                  height="40"
+                  width="40"
+                  ariaLabel="blocks-loading"
+                  wrapperStyle={{}}
+                  wrapperClass="blocks-wrapper"
+                  colors={['purple', 'purple', 'purple', 'purple', 'purple']}
+                />
+              </span> : null
+            }
           </div>
         </div>
       </nav>
