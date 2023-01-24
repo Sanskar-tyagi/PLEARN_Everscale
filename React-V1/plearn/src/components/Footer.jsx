@@ -31,7 +31,7 @@ export default function Footer() {
                           <img
                             itemprop="image"
                             src={idea}
-                            width="277"
+                            width="156"
                             height="110"
                             alt=""
                           />{" "}
