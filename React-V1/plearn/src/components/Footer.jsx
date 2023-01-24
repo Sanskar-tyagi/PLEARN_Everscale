@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import idea from "../assets/Images/idea.png";
 export default function Footer() {
   return (
     <Container>
@@ -30,7 +30,7 @@ export default function Footer() {
                           {" "}
                           <img
                             itemprop="image"
-                            src="https://artorias.qodeinteractive.com/wp-content/uploads/2022/11/footer-logo-img.png"
+                            src={idea}
                             width="277"
                             height="110"
                             alt=""

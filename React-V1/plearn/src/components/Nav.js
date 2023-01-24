@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo_plearn from "../assets/Images/Logo_Plearn.png";
 import { ethers } from "ethers";
 import axios from "axios";
-import {ColorRing} from 'react-loader-spinner';
+import { ColorRing } from "react-loader-spinner";
 
 export default function Nav({ onUserAccountChange }) {
   const [userAccount, setUserAccount] = useState(null);
@@ -22,8 +22,7 @@ export default function Nav({ onUserAccountChange }) {
         .catch((error) => {
           console.log(error.message);
         });
-    } 
-    else {
+    } else {
       console.log("Need to install MetaMask");
       alert("Please install MetaMask extension.");
     }
@@ -38,22 +37,19 @@ export default function Nav({ onUserAccountChange }) {
   useEffect(() => {
     if (userAccount != null) {
       setIsLoading(true);
-      axios.post("https://plearn-backend.onrender.com/", { userAccount })
-      .then((res) => {
-        setConnButtonText("Wallet Connected");
-        alert(res.data.message);
-        setIsLoading(false);
-      })
-      .catch((error) => 
-      {
-        console.log(error);
-        setIsLoading(false);
-        alert("An error occurred, please try again later.");
-      })
-      
-    }
-    else
-    {
+      axios
+        .post("https://plearn-backend.onrender.com/", { userAccount })
+        .then((res) => {
+          setConnButtonText("Wallet Connected");
+          alert(res.data.message);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.log(error);
+          setIsLoading(false);
+          alert("An error occurred, please try again later.");
+        });
+    } else {
       setConnButtonText("Connect Wallet");
     }
   }, [userAccount]);
@@ -64,8 +60,7 @@ export default function Nav({ onUserAccountChange }) {
   };
 
   // listen for account changes
-  if (typeof window.ethereum !== 'undefined') 
-  {
+  if (typeof window.ethereum !== "undefined") {
     window.ethereum.on("accountsChanged", accountChangedHandler);
     window.ethereum.on("chainChanged", chainChangedHandler);
   }
@@ -83,7 +78,7 @@ export default function Nav({ onUserAccountChange }) {
             className="navbar-toggler wltBtn"
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
-          > 
+          >
             <i className="fas fa-bars"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
@@ -132,7 +127,7 @@ export default function Nav({ onUserAccountChange }) {
             >
               {connButtonText}
             </a>
-            {isLoading ? 
+            {isLoading ? (
               <span>
                 <ColorRing
                   visible={true}
@@ -141,10 +136,10 @@ export default function Nav({ onUserAccountChange }) {
                   ariaLabel="blocks-loading"
                   wrapperStyle={{}}
                   wrapperClass="blocks-wrapper"
-                  colors={['purple', 'purple', 'purple', 'purple', 'purple']}
+                  colors={["purple", "purple", "purple", "purple", "purple"]}
                 />
-              </span> : null
-            }
+              </span>
+            ) : null}
           </div>
         </div>
       </nav>
