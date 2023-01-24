@@ -4,16 +4,21 @@ import Carousel from "../utils/slider";
 
 export default function Gamedes() {
   const [index, setIndex] = useState(0);
+  // "Virtual board game that teaches financial literacy",
+  //   "Customizable game settings and different rules to keep gameplay fresh and challenging",
+  //   "Variety of NFTs to purchase and collect",
+  //   "Customizable dice and game boards for a personalized gaming experience",
+  //   "In-game knowledge templates to learn while playing",
+  //   "Opportunities to earn through buying NFTs, properties, and virtual land",
 
   //through investing, buying and selling real estate, and owning and upgrading NFTs
   const text1_options = [
-    "Virtual board game that teaches financial literacy",
-    "Customizable game settings and different rules to keep gameplay fresh and challenging",
-    "Variety of NFTs to purchase and collect",
-    "Customizable dice and game boards for a personalized gaming experience",
-    "In-game knowledge templates to learn while playing",
-    "Opportunities to earn through buying NFTs, properties, and virtual land",
+    "This brightly colored dice is a perfect choice, with its vibrant design and smooth edges,",
+    "This stylish hat, crafted with a unique modern look.",
+    "A new classic sports car with sleek lines and powerful engine",
+    "This virtual villa has stunning graphics and intricate details, ",
   ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % text1_options.length);
@@ -48,9 +53,10 @@ export default function Gamedes() {
                     </span>
                   </h2>
                   <p class="qodef-m-text-area">
-                    PLEARN is a 3D game that teaches players the basics of managing money and investments. 
-                    PLEARN has a varity of features, interactive graphics, realistic scenarios, 
-                    and entertaining educational elements that keep players engaged.
+                    PLEARN is a 3D game that teaches players the basics of
+                    managing money and investments. PLEARN has a varity of
+                    features, interactive graphics, realistic scenarios, and
+                    entertaining educational elements that keep players engaged.
                   </p>
                   <div class="btm btn">
                     <a

@@ -11,7 +11,6 @@ import Gamedes from "./components/Gamedes";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Toke from "./components/toke";
-
 function App() {
   const [userAccount, setUserAccount] = useState(null);
 
@@ -21,17 +20,16 @@ function App() {
 
   return (
     <>
-      <Nav onUserAccountChange={handleUserAccountChange}></Nav>{" "}
-      {/* retrieving userAccount from Nav component and passing the userAccount to the function above */}
+      <Nav onUserAccountChange={handleUserAccountChange}></Nav>
       <Header userAccount={userAccount} />
       <GameSection></GameSection>
-      <Gamedes></Gamedes>
+      {/* <Gamedes></Gamedes> */}
       <div className="vidbg">
         <BreadCrums></BreadCrums>
         <ShowCase />
         <Toke />
         <Faq></Faq>
-        <CTAsection></CTAsection>{" "}
+        <CTAsection></CTAsection>
       </div>
       <Footer />
     </>

@@ -3,12 +3,11 @@ import styled from "styled-components";
 
 const Carousel = (props) => {
   const background = [
-    "https://iili.io/Hc8ZrOv.md.png",
-    "https://iili.io/Hc8pscP.md.png",
-    "https://images.unsplash.com/photo-1506073828772-2f85239b6d2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80",
-    "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+    "https://iili.io/Hlr7vLv.jpg",
+    "https://iili.io/Hlr7SBR.jpg",
+    "https://iili.io/Hlr742I.jpg",
+    "https://iili.io/Hlr7grN.jpg",
   ];
-  const carousel = document.getElementById("carousel-wrapper");
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
