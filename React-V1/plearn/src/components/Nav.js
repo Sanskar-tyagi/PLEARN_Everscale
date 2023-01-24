@@ -8,8 +8,9 @@ export default function Nav({ onUserAccountChange }) {
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   // const [welcomeMessage, setWelcomeMessage] = useState("");
 
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  // const provider = new ethers.providers.Web3Provider(window.ethereum);
   const connectWalletHandler = () => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
     if (window.ethereum && window.ethereum.isMetaMask) {
       console.log("MetaMask Here!");
 
@@ -18,7 +19,7 @@ export default function Nav({ onUserAccountChange }) {
         .then((result) => {
           accountChangedHandler(result);
           console.log(result); // Array which contains the accounts.
-          setConnButtonText("Wallet Connected");
+          // setConnButtonText("Wallet Connected");
         })
         .catch((error) => {
           console.log(error.message);
@@ -39,6 +40,7 @@ export default function Nav({ onUserAccountChange }) {
   useEffect(() => {
     if (userAccount != null) {
       axios.post("https://plearn-backend.onrender.com/", { userAccount }).then((res) => {
+        setConnButtonText("Wallet Connected");
         alert(res.data.message);
       });
     }
