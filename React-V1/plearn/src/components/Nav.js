@@ -9,7 +9,7 @@ export default function Nav({ onUserAccountChange }) {
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   const [isLoading, setIsLoading] = useState(false);
 
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  // const provider = new ethers.providers.Web3Provider(window.ethereum);
   const connectWalletHandler = () => {
     if (window.ethereum && window.ethereum.isMetaMask) {
       console.log("MetaMask Here!");
@@ -22,7 +22,8 @@ export default function Nav({ onUserAccountChange }) {
         .catch((error) => {
           console.log(error.message);
         });
-    } else {
+    } 
+    else {
       console.log("Need to install MetaMask");
       alert("Please install MetaMask extension.");
     }
@@ -63,8 +64,11 @@ export default function Nav({ onUserAccountChange }) {
   };
 
   // listen for account changes
-  window.ethereum.on("accountsChanged", accountChangedHandler);
-  window.ethereum.on("chainChanged", chainChangedHandler);
+  if (typeof window.ethereum !== 'undefined') 
+  {
+    window.ethereum.on("accountsChanged", accountChangedHandler);
+    window.ethereum.on("chainChanged", chainChangedHandler);
+  }
 
   return (
     <div>
@@ -132,8 +136,8 @@ export default function Nav({ onUserAccountChange }) {
               <span>
                 <ColorRing
                   visible={true}
-                  height="80"
-                  width="80"
+                  height="40"
+                  width="40"
                   ariaLabel="blocks-loading"
                   wrapperStyle={{}}
                   wrapperClass="blocks-wrapper"
