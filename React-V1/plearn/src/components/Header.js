@@ -6,10 +6,10 @@ export default function Header({ userAccount }) {
   const startGame = async () => {
     if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
-    } else {
-      window.open(
-        `http://127.0.0.1:5500/index.html?userAccount=${userAccount}`
-      ); // Opening the game, sending userAccount.
+    } 
+    else 
+    {
+      window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
     }
   };
 
