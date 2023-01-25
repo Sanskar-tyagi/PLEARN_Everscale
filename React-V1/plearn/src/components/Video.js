@@ -64,10 +64,19 @@ const Container = styled.div`
     display: flex;
     padding: 2rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     strong {
       text-decoration: underline;
       cursor: pointer;
+      font-size: 46px !important;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .txtcls {
+      padding: 1rem;
+      strong {
+        font-size: 32px !important;
+      }
     }
   }
   .rotate-sm {

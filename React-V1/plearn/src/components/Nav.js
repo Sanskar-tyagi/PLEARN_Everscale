@@ -3,7 +3,7 @@ import logo_plearn from "../assets/Images/Logo_Plearn.png";
 import { ethers } from "ethers";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
-
+import toast from "react-hot-toast";
 export default function Nav({ onUserAccountChange }) {
   const [userAccount, setUserAccount] = useState(null);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
@@ -24,7 +24,7 @@ export default function Nav({ onUserAccountChange }) {
         });
     } else {
       console.log("Need to install MetaMask");
-      alert("Please install MetaMask extension.");
+      toast("Please install MetaMask extension.");
     }
   };
 

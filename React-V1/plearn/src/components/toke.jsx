@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "../utils/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -79,6 +79,29 @@ export default function Toke() {
     },
     // more users
   ]);
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  const [num, setNum] = useState(4);
+
+  useEffect(() => {
+    function handleResize() {
+      setViewportWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    if (viewportWidth < 1000) {
+      setNum(3);
+    }
+    if (viewportWidth < 800) {
+      setNum(2);
+    }
+    if (viewportWidth <= 500) {
+      setNum(1);
+    }
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [viewportWidth]);
 
   return (
     <Main>
@@ -103,7 +126,7 @@ export default function Toke() {
       </Container>
       <Team />
       <Swiper
-        slidesPerView={4}
+        slidesPerView={num}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -182,6 +205,75 @@ const Container = styled.div`
       -ms-word-wrap: break-word;
       word-wrap: break-word;
     }
+    @media only screen and (max-width: 1200px) {
+      .title {
+        width: 74vw;
+        font-size: 16px;
+      }
+      button,
+      button::after {
+        padding: 9px 17px !important;
+        font-size: 14px !important;
+      }
+      button:hover {
+        top: 120% !important;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      button:hover {
+        top: 140% !important;
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      .title {
+        width: 94vw;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        font-size: large;
+        top: 26%;
+        font-size: 33px;
+        cursor: pointer;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: Rubik, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        -webkit-letter-spacing: 0.06em;
+        -moz-letter-spacing: 0.06em;
+        -ms-letter-spacing: 0.06em;
+        letter-spacing: 0.06em;
+        font-size: 12px;
+        line-height: 1.5em;
+        margin: 25px 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      button,
+      button::after {
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+        background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+        border: 0;
+        color: #fff;
+        -webkit-letter-spacing: 3px;
+        -moz-letter-spacing: 3px;
+        -ms-letter-spacing: 3px;
+        letter-spacing: 2px;
+        line-height: 1;
+        box-shadow: 6px 0px 0px #00e6f6;
+        outline: transparent;
+      }
+      button:hover {
+        top: 135% !important;
+      }
+    }
+
     button {
       position: absolute;
       top: 50%;
@@ -304,6 +396,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
+  margin-top: 100px;
   .card-wrapper {
     display: flex;
     align-items: center;

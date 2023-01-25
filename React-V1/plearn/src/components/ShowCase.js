@@ -11,7 +11,7 @@ export default function ShowCase() {
       <section className="section-item bg-black pb-20">
         <div className="container">
           <div className="section__head mts">
-            <h2 className="section__header-title animated-box">
+            <h2 className="section__header-title">
               The best NFT’s at your glance, explore more than 1000k colections
               right away{" "}
             </h2>

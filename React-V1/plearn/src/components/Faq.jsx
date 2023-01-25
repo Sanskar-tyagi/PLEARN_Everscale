@@ -79,7 +79,7 @@ export default function Faq() {
 
                           <div
                             className={`qodef-accordion-content ${
-                              open[data.id] ? "open" : ""
+                              open[data.id] ? "" : "open"
                             }`}
                           >
                             <div className="qodef-accordion-content-inner">

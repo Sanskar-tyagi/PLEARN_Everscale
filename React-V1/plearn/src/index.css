@@ -210,7 +210,10 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   .hero__intro-title {
-    font-size: 42px;
+    font-size: 32px;line-height: 142%;
+  }
+  p{
+    font-size: 14px;
   }
 }
 
@@ -269,7 +272,7 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   .hero__intro-stats {
-    margin-top: 64px;
+    margin-top: 64px !important;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     flex-wrap: wrap;
@@ -618,6 +621,7 @@ p {
 }
 .pt{ 
   padding-top: 75px;
+  padding-bottom: 78px;
 }
 
 .nft-showcase__item--220 {
@@ -1464,8 +1468,23 @@ transform: perspective (600px) translate3d(0px, 2.4988px, 0px);
  .section__header-title{
   max-width: 720px;
  }
+ 
+ @media only screen and (max-width: 1000px) {
+ .section__header-title{
+font-size: 22px;
+ }
+ .mts{
+  display: flex;
+  flex-direction: column;
+ }
+ .body .btn{
+  margin: 20px; 
+  padding: 0.4em 2em !important;
+ }
+}
 
  .body .btn {
+  margin: 20px; 
   font-size: 1rem;
   padding: 0.8em 2em;
   background-color: #000;

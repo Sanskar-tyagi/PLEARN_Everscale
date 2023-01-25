@@ -3,25 +3,23 @@ import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 
 export default function Header({ userAccount }) {
-
   const startGame = async () => {
-    if (userAccount == null) 
-    {
+    if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
-    } 
-    else 
-    {
-      window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
+    } else {
+      window.open(
+        `http://127.0.0.1:5500/index.html?userAccount=${userAccount}`
+      ); // Opening the game, sending userAccount.
     }
   };
 
   return (
     <div>
-      <section className="hero wf-section">
+      <section className="hero">
         <div className="container container--relative">
           <div className="hero__blocks">
             <div className="hero__intro">
-              <div className="block-title-inline animated-box mss">
+              <div className="block-title-inline mss">
                 <img
                   src={boxicon}
                   loading="lazy"

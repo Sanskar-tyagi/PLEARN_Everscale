@@ -96,7 +96,7 @@ const Container = styled.div`
   .card .img {
     display: flex;
     margin: 30px auto 10px auto;
-    width: 15.55vw;
+    width: 15.55vw !important;
     height: 32vh;
     background-size: cover;
     border-radius: 50%;
@@ -161,5 +161,27 @@ const Container = styled.div`
     left: 85px;
     opacity: 1;
     transition: all 0.7s;
+  }
+  @media only screen and (max-width: 1008px) {
+    .card .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 22vw !important;
+    }
+  }
+
+  @media only screen and (max-width: 708px) {
+    .card .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 32vw !important;
+    }
+  }
+  @media only screen and (max-width: 555px) {
+    .card .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 45vw !important;
+    }
   }
 `;
