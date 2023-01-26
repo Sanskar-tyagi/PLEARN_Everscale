@@ -17,9 +17,14 @@ app.use(cors({
     optionsSuccessStatus: 200 
 }));
 app.options("*", cors());
+var allowedOrigins = ['https://plearngame.netlify.app', 'https://cryptostein.itch.io', 'https://itch.io/', 'https://cryptostein.itch.io/plearn'];
 app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://cryptostein.itch.io");
+    var origin = req.headers.origin;
+    if (allowedOrigins.indexOf(origin) > -1) {
+        res.setHeader("Access-Control-Allow-Origin", origin);
+    }
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Credentials", "true");
     next();
     });
 
