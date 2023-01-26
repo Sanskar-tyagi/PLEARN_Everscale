@@ -17,7 +17,7 @@ app.use(cors({
     optionsSuccessStatus: 200 
 }));
 app.options("*", cors());
-var allowedOrigins = ['https://plearngame.netlify.app', 'https://cryptostein.itch.io', 'https://itch.io/', 'https://cryptostein.itch.io/plearn'];
+var allowedOrigins = ['https://plearngame.netlify.app', 'https://cryptostein.itch.io', 'https://itch.io/', 'https://cryptostein.itch.io/plearn', 'https://v6p9d9t4.ssl.hwcdn.net'];
 app.use(function (req, res, next) {
     var origin = req.headers.origin;
     if (allowedOrigins.indexOf(origin) > -1) {
