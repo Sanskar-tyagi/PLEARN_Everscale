@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded());
 app.use(cors());
 
+//Giving access to itch.io
 app.use(cors({
     origin: ['https://cryptostein.itch.io','https://cryptostein.itch.io/plearn'],
     optionsSuccessStatus: 200 
