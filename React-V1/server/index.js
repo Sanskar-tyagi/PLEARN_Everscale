@@ -16,6 +16,12 @@ app.use(cors({
     origin: ['https://cryptostein.itch.io/','https://cryptostein.itch.io/plearn', 'https://itch.io/'],
     optionsSuccessStatus: 200 
 }));
+app.options("*", cors());
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "https://cryptostein.itch.io");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+    });
 
 const router = require("./routes/routes");
 app.use("/", router);
