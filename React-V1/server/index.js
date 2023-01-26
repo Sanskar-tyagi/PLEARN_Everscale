@@ -11,6 +11,11 @@ app.use(bodyParser.json());
 app.use(express.urlencoded());
 app.use(cors());
 
+app.use(cors({
+    origin: ['https://cryptostein.itch.io','https://cryptostein.itch.io/plearn'],
+    optionsSuccessStatus: 200 
+}));
+
 const router = require("./routes/routes");
 app.use("/", router);
 
