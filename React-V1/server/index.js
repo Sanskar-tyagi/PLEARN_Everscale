@@ -14,18 +14,18 @@ app.use(cors());
 
 //Giving access to itch.io
 app.use(helmet.frameguard({ action: 'SAMEORIGIN' }));
-app.use(cors({
-    origin: ['cryptostein.itch.io/','cryptostein.itch.io/plearn', 'itch.io/'],
-    optionsSuccessStatus: 200 
-}));
-app.options("*", cors());
-var allowedOrigins = ['https://plearngame.netlify.app', 'cryptostein.itch.io', 'itch.io/', 'cryptostein.itch.io/plearn', 'v6p9d9t4.ssl.hwcdn.net'];
+// app.use(cors({
+//     origin: ['cryptostein.itch.io/','cryptostein.itch.io/plearn', 'itch.io/'],
+//     optionsSuccessStatus: 200 
+// }));
+// app.options("*", cors());
+var allowedOrigins = ['*'];
 app.use(function (req, res, next) {
     var origin = req.headers.origin;
     if (allowedOrigins.indexOf(origin) > -1) {
         res.setHeader("Access-Control-Allow-Origin", origin);
-        res.setHeader('X-Frame-Options', 'allow');
-        res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+        // res.setHeader('X-Frame-Options', 'allow');
+        // res.setHeader('X-Frame-Options', 'SAMEORIGIN');
     }
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Credentials", "true");
