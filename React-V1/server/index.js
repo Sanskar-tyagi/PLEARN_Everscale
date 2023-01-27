@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 require('dotenv').config()
 const {mongoURI} = require('./config/dev')
+const helmet = require('helmet');
 
 const app = express();
 app.use(express.json());
@@ -12,6 +13,7 @@ app.use(express.urlencoded());
 app.use(cors());
 
 //Giving access to itch.io
+app.use(helmet.frameguard({ action: 'SAMEORIGIN' }));
 app.use(cors({
     origin: ['cryptostein.itch.io/','cryptostein.itch.io/plearn', 'itch.io/'],
     optionsSuccessStatus: 200 
