@@ -13,11 +13,11 @@ app.use(cors());
 
 //Giving access to itch.io
 app.use(cors({
-    origin: ['https://cryptostein.itch.io/','https://cryptostein.itch.io/plearn', 'https://itch.io/'],
+    origin: ['cryptostein.itch.io/','cryptostein.itch.io/plearn', 'itch.io/'],
     optionsSuccessStatus: 200 
 }));
 app.options("*", cors());
-var allowedOrigins = ['https://plearngame.netlify.app', 'https://cryptostein.itch.io', 'https://itch.io/', 'https://cryptostein.itch.io/plearn', 'https://v6p9d9t4.ssl.hwcdn.net'];
+var allowedOrigins = ['https://plearngame.netlify.app', 'cryptostein.itch.io', 'itch.io/', 'cryptostein.itch.io/plearn', 'v6p9d9t4.ssl.hwcdn.net'];
 app.use(function (req, res, next) {
     var origin = req.headers.origin;
     if (allowedOrigins.indexOf(origin) > -1) {
