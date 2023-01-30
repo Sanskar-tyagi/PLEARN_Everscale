@@ -10,7 +10,7 @@ export default function Header({ userAccount }) {
     else 
     {
       // window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
-      window.open(`https://cryptostein.itch.io/plearn?userAccount=${userAccount}`);
+      window.open(`https://singular-granita-0e1259.netlify.app?userAccount=${userAccount}`);
     }
   };
 
