@@ -6,11 +6,11 @@ export default function Header({ userAccount }) {
   const startGame = async () => {
     if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
-    } 
-    else 
-    {
+    } else {
       // window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
-      window.open(`https://singular-granita-0e1259.netlify.app?userAccount=${userAccount}`);
+      window.open(
+        `https://singular-granita-0e1259.netlify.app?userAccount=${userAccount}`
+      );
     }
   };
 
@@ -22,8 +22,7 @@ export default function Header({ userAccount }) {
             <div className="hero__intro">
               <div className="block-title-inline mss">
                 <img
-                  src={boxicon}
-                  loading="lazy"
+                  src={boxicon} 
                   alt="NFT promo"
                   className="image"
                 />

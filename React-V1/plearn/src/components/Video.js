@@ -40,6 +40,17 @@ export default function BreadCrums() {
           <h2>
             <span className="rotate-sm"> PLEARN</span>
             <strong>What's Plearn?</strong>
+            <p>
+              {" "}
+              PLEARN is a virtual board game aims to raise the awareness of
+              financial literacy. PLEARN has a variety of features, interactive
+              graphics, realistic scenarios, and entertaining educational
+              elements that keep players engaged. The game tests the players'
+              problem-solving skills. And also has levels that progressively
+              increase in difficulty, allowing players to learn more as they
+              advance. Players could track their learning and playing progress
+              through the game, while earning rewards and unlocking new areas.
+            </p>
           </h2>
         </div>
 
@@ -103,5 +114,9 @@ const Container = styled.div`
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb;
     writing-mode: vertical-lr;
+  }
+  p {
+    padding: 50px;
+    padding-bottom: 0px;
   }
 `;

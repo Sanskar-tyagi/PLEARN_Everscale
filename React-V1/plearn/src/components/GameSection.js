@@ -1,11 +1,13 @@
 import React from "react";
-import a1 from "../assets/Images/NFTS/nsf (1).jpg";
-import a2 from "../assets/Images/NFTS/nsf (2).jpg";
-import a3 from "../assets/Images/NFTS/nsf (3).jpg";
+import a1 from "../assets/NFTs3/nfts (4).avif";
+import a2 from "../assets/NFTs3/nfts (2).avif";
+import a3 from "../assets/NFTs3/nfts (1).avif";
 import a4 from "../assets/Images/NFTS/nsf (4).jpg";
-import a5 from "../assets/Images/NFTS/nsf (5).jpg";
+import a5 from "../assets/NFTs3/nfts (3).avif";
 import a6 from "../assets/Images/NFTS/nsf (6).jpg";
-import a7 from "../assets/Images/NFTS/nsf (7).jpg";
+import a7 from "../assets/Images/NFTS/nsf.jpg";
+import a8 from "../assets/Images/NFTS/nsf (8).jpg";
+import a9 from "../assets/Images/NFTS/nsf (9).jpg";
 export default function GameSection() {
   return (
     <div className="pt">
@@ -95,7 +97,7 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="200"
                       >
-                        <img src={a2} alt="Summer bandanas going wild" />
+                        <img src={a8} alt="Summer bandanas going wild" />
                         <div className="nft-showcase__overlay">
                           <h3>Summer bandanas going wild</h3>
                           <a href="https://nftly-theme.pxsquad.com/demo1/product-category/cat-gang">
@@ -108,7 +110,7 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="180"
                       >
-                        <img src={a1} alt="The music techno beats NFTs" />
+                        <img src={a7} alt="The music techno beats NFTs" />
                         <div className="nft-showcase__overlay">
                           <h3>The music techno beats NFTs</h3>
                           <a href="https://nftly-theme.pxsquad.com/demo1/product-category/cat-gang">

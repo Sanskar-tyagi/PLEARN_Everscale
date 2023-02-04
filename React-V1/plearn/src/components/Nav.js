@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import logo_plearn from "../assets/Images/Logo_Plearn.png";
 import { ethers } from "ethers";
 import axios from "axios";
@@ -26,6 +26,32 @@ export default function Nav({ onUserAccountChange }) {
       console.log("Need to install MetaMask");
       toast("Please install MetaMask extension.");
     }
+  };
+  const nav_list = [
+    { name: " Home" },
+    { name: "About" },
+    { name: "Tokenomics" },
+    { name: " Real Estate" },
+    { name: "  Trading" },
+    { name: "  NFT" },
+  ];
+
+  const Navcomp = () => {
+    const listItems = useMemo(() => {
+      return nav_list.map((item) => (
+        <li className="nav-item" key={item.name}>
+          <a
+            className="nav-link active"
+            aria-current="page"
+            href={`/${item.name.toLowerCase()}`}
+          >
+            {item.name}
+          </a>
+        </li>
+      ));
+    }, [nav_list]);
+
+    return <ul className="navbar-nav mb-2 mb-lg-0 me-auto">{listItems}</ul>;
   };
 
   // update account, will cause component re-render
@@ -82,43 +108,8 @@ export default function Nav({ onUserAccountChange }) {
             <i className="fas fa-bars"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
+            <Navcomp />
             <ul className="navbar-nav mb-2 mb-lg-0 me-auto">
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="index.html"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="index.html">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="index.html">
-                  Tokenomics
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="index.html">
-                  {" "}
-                  Real Estate
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="index.html">
-                  Trading
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="index.html">
-                  {" "}
-                  NFT
-                </a>
-              </li>
               <li className="nav-item "></li>
             </ul>
             <a

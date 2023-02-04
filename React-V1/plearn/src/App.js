@@ -60,7 +60,7 @@ function App() {
           <div className="vidbg">
             <BreadCrums />
             <ShowCase />
-            <Toke />
+            {/* <Toke /> */}
             <Faq />
             <CTAsection />
           </div>

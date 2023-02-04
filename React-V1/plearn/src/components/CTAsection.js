@@ -12,30 +12,29 @@ export default function CTAsection() {
   };
   return (
     <Container>
-      <section class="section-item animated-box" data-elapsed="240">
-        <div class="container">
-          <div class="section__content">
-            <div class="promo-banner-fw">
-              <div class="block-title-inline">
+      <section className="section-item animated-box">
+        <div className="container">
+          <div className="section__content">
+            <div className="promo-banner-fw">
+              <div className="block-title-inline">
                 <img
                   src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/newsletter-i.png"
-                  loading="lazy"
                   alt="Newsletter icon"
-                  class="image"
+                  className="image"
                 />
-                <h4 class="heading-3">MY NEWSLETTER </h4>
+                <h4 className="heading-3">MY NEWSLETTER </h4>
               </div>
-              <h2 class="promo-banner-fw__heading">
+              <h2 className="promo-banner-fw__heading">
                 Subscribe! to our newsletter so you can always be up to date
                 with PLEARN{" "}
               </h2>
 
-              <div class="tnp-subscription-nft animated-box" data-elapsed="180">
-                <form method="post" class="sub-nft">
+              <div className="tnp-subscription-nft animated-box">
+                <form method="post" className="sub-nft">
                   <input type="hidden" name="nlang" value="" />
-                  <div class="tnp-field tnp-field-email">
+                  <div className="tnp-field tnp-field-email">
                     <input
-                      class="tnp-email"
+                      className="tnp-email"
                       type="email"
                       name="ne"
                       value={mail}
@@ -45,20 +44,20 @@ export default function CTAsection() {
                     />
                   </div>
 
-                  <div class="tnp-field tnp-field-button">
+                  <div className="tnp-field tnp-field-button">
                     <input
-                      class="tnp-button"
+                      className="tnp-button"
                       type="submit"
                       value="Sign up now"
                     />
                   </div>
                 </form>{" "}
-                <div class="w-form">
-                  <div name="email-form" class="form">
-                    <label class="w-checkbox checkbox-field">
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                <div className="w-form">
+                  <div name="email-form" className="form">
+                    <label className="w-checkbox checkbox-field">
+                      <div className="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
                         <span
-                          class={
+                          className={
                             `material-symbols-outlined ` +
                             (check === false ? "" : "d-none")
                           }
@@ -73,15 +72,21 @@ export default function CTAsection() {
                         onClick={handlecheck}
                       />
                       <span
-                        class="checkbox-label w-form-label"
+                        className="checkbox-label w-form-label"
                         for="Checkbox-2"
                       >
                         By entering your email, you agree to our{" "}
-                        <a href="#" class="link form__newsletter-link--green">
+                        <a
+                          href="#"
+                          className="link form__newsletter-link--green"
+                        >
                           Terms &amp; Conditions
                         </a>{" "}
                         {`& `}
-                        <a href="#" class="link-2 form__newsletter-link--green">
+                        <a
+                          href="#"
+                          className="link-2 form__newsletter-link--green"
+                        >
                           Privacy Policy
                         </a>
                         .
