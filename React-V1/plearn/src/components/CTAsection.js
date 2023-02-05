@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Styled from "styled-components";
-
+import bg from "../assets/NFTs V04/bg.png";
 export default function CTAsection() {
   const [mail, setmail] = useState("");
   const handlemail = (e) => {
@@ -15,7 +15,12 @@ export default function CTAsection() {
       <section className="section-item animated-box">
         <div className="container">
           <div className="section__content">
-            <div className="promo-banner-fw">
+            <div
+              className="promo-banner-fw"
+              style={{
+                backgroundImage: `url(${bg})`,
+              }}
+            >
               <div className="block-title-inline">
                 <img
                   src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/newsletter-i.png"
@@ -114,28 +119,18 @@ const Container = Styled.div`.section-item {
     .container {
         width: 1200px;
         .section__content{
-            .promo-banner-fw{
-            
+            .promo-banner-fw{ 
+    background-position: right; 
                     height: 345px;
                     padding-left: 62px;
                     border-radius: 16px;
-                    background-color: #f0f2f6;
-                    background-size: 100%;
+                    background-color:rgb(217,238,255);
+                    background-size: 35%;
                     color: var(--color-grey);
-                    background-repeat: no-repeat;
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-flex-direction: column;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    -webkit-box-pack: center;
-                    -webkit-justify-content: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    background-size: cover;
-                    background-image: url(https://nftly-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Newsletter-5.jpg);
+                    background-repeat: no-repeat; 
+                    display: flex; 
+                    flex-direction: column; 
+                    justify-content: center; 
            
                 .block-title-inline {
                     display: -webkit-box;
