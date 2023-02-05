@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import a1 from "../assets/NFTs3/nfts (4).avif";
 import a2 from "../assets/NFTs3/nfts (2).avif";
 import a3 from "../assets/NFTs3/nfts (1).avif";
 import a4 from "../assets/Images/NFTS/nsf (4).jpg";
 import a5 from "../assets/NFTs3/nfts (3).avif";
 import a6 from "../assets/Images/NFTS/nsf (6).jpg";
-import a7 from "../assets/Images/NFTS/nsf.jpg";
+import a7 from "../assets/NFTs V04/boots.jpeg";
 import a8 from "../assets/Images/NFTS/nsf (8).jpg";
-import a9 from "../assets/Images/NFTS/nsf (9).jpg";
+import a9 from "../assets/NFTs V04/Crown.avif";
 export default function GameSection() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const text =
+    "This brightly colored dice is a perfect choice, with its vibrant design and smooth edges, it will bring an added level of fun and excitement for you";
   return (
     <div className="pt">
       <section className="hero wf-section ">
@@ -25,9 +29,9 @@ export default function GameSection() {
                       >
                         <img src={a1} alt="Summer Ape collection" />
                         <div className="nft-showcase__overlay">
-                          <h3>Summer Ape Collection</h3>
-                          <a href="https://nftly-theme.pxsquad.com/demo1/product-category/bored-apes/">
-                            Read more{" "}
+                          <h3>Summer PinkPeak Collection</h3>
+                          <a href="/">
+                            BUY NOW{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -38,9 +42,9 @@ export default function GameSection() {
                       >
                         <img src={a2} alt="The Scary Face 2022" />
                         <div className="nft-showcase__overlay">
-                          <h3>The Scary Face 2022</h3>
-                          <a href="https://nftly-theme.pxsquad.com/demo1/product-category/bored-apes/">
-                            Read more{" "}
+                          <h3> DiceDash collection</h3>
+                          <a href="/">
+                            BUY NOW
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -52,16 +56,17 @@ export default function GameSection() {
                         data-elapsed="180"
                       >
                         <img
-                          src={a3}
+                          src={a5}
                           alt="Scared faces going crazy with a robotic touch and feel suited for youngsters"
                         />
                         <div className="nft-showcase__overlay">
                           <h3>
-                            Scared faces going crazy with a robotic touch and
-                            feel suited for youngsters
+                            This virtual villa has stunning graphics and
+                            intricate details, you'll feel as though you've
+                            stepped into a completely different world
                           </h3>
-                          <a href="https://nftly-theme.pxsquad.com/demo1/product-category/hape/">
-                            Read more{" "}
+                          <a href="/">
+                            Know more{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -70,9 +75,9 @@ export default function GameSection() {
                         <div className="nft-showcase__item nft-showcase__item--220">
                           <img src={a4} alt="Wide character collection" />
                           <div className="nft-showcase__overlay">
-                            <h3>Wide character collection</h3>
-                            <a href="https://nftly-theme.pxsquad.com/demo1/product-category/hape/">
-                              Read more{" "}
+                            <h3>IceRise collection</h3>
+                            <a href="/">
+                              BUY NOW{" "}
                               <span className="icon-arrow icon-arrow--white"></span>
                             </a>
                           </div>
@@ -81,11 +86,11 @@ export default function GameSection() {
                           className="nft-showcase__item nft-showcase__item--220 animated-box"
                           data-elapsed="180"
                         >
-                          <img src={a5} alt="Melted faces collection" />
+                          <img src={a7} alt="Melted faces collection" />
                           <div className="nft-showcase__overlay">
-                            <h3>Melted faces collection</h3>
-                            <a href="https://nftly-theme.pxsquad.com/demo1/product-category/hape/">
-                              Read more{" "}
+                            <h3>SneakerStride collection</h3>
+                            <a href="/">
+                              BUY NOW{" "}
                               <span className="icon-arrow icon-arrow--white"></span>
                             </a>
                           </div>
@@ -97,11 +102,14 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="200"
                       >
-                        <img src={a8} alt="Summer bandanas going wild" />
+                        <img src={a9} alt="Summer bandanas going wild" />
                         <div className="nft-showcase__overlay">
-                          <h3>Summer bandanas going wild</h3>
-                          <a href="https://nftly-theme.pxsquad.com/demo1/product-category/cat-gang">
-                            Read more{" "}
+                          <h3>
+                            Crown designed for heroes who act like kings without
+                            fear
+                          </h3>
+                          <a href="/">
+                            Know more{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -110,11 +118,15 @@ export default function GameSection() {
                         className="nft-showcase__item nft-showcase__item--338 animated-box"
                         data-elapsed="180"
                       >
-                        <img src={a7} alt="The music techno beats NFTs" />
+                        <img src={a3} alt="The music techno beats NFTs" />
                         <div className="nft-showcase__overlay">
-                          <h3>The music techno beats NFTs</h3>
-                          <a href="https://nftly-theme.pxsquad.com/demo1/product-category/cat-gang">
-                            Read more{" "}
+                          <h3>
+                            {" "}
+                            A new classic sports car with sleek lines and
+                            powerful engine
+                          </h3>
+                          <a href="/">
+                            Know more{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -168,8 +180,3 @@ export default function GameSection() {
     </div>
   );
 }
-
-// className="vc_row wpb_row vc_row-fluid overflow-visible vc_row-no-padding"
-// style="position: relative; left: -189.6px; box-sizing: border-box; width: 1519px;"
-// className="pn-catan-section-container border-style-1 style- hide-gradient-"
-// style="background-image: url('https://catanuniverse.com/wp-content/uploads/2019/07/Catan_World_Basis_Cover_ohne_Personen.jpg')"

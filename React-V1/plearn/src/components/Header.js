@@ -21,11 +21,7 @@ export default function Header({ userAccount }) {
           <div className="hero__blocks">
             <div className="hero__intro">
               <div className="block-title-inline mss">
-                <img
-                  src={boxicon} 
-                  alt="NFT promo"
-                  className="image"
-                />
+                <img src={boxicon} alt="NFT promo" className="image" />
                 <h4>Play Learn Earn</h4>
               </div>
 
@@ -33,19 +29,22 @@ export default function Header({ userAccount }) {
                 PLEARN
               </h1>
               <p>
-                PLEARN is a virtual board game that allows players to gain
-                financial literacy through investing, buying and selling real
-                estate, owning and upgrading NFTs, and most importantly, having
-                fun.
+                Welcome to PLEARN, the virtual board game that combines
+                education with entertainment! PLEARN provides a fun and
+                interactive way to learn financial literacy and make smart
+                investments.
               </p>
               <p>
-                The player's goal is to gain knowledge, make the best decisions
-                by choosing the best offers, and earn a higher income.
+                Invest, buy, sell real estate, and own unique NFTs as you play
+                your way through the game. Put your problem-solving skills to
+                the test and make the best decisions to earn a higher income.
+                With progressively increasing difficulty levels, you'll learn
+                more as you advance.
               </p>
               <p>
-                The game has various NFTs that can be purchased, along with
-                things like customizable dice, different game boards, and other
-                settings with different rules.
+                From customizable dice and game boards to different rules and
+                settings, PLEARN offers endless possibilities. Join the fun and
+                become a financial literacy expert today!
               </p>
 
               {/* remove extra texts and make it view more */}

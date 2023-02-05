@@ -444,7 +444,10 @@ p {
 
 .nft-showcase {
   display: flex;
-  grid-gap: 26px;
+  grid-gap: 26px; 
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .nft-showcase {

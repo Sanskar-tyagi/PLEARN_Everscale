@@ -1,63 +1,69 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 export default function Card(props) {
   const { user } = props;
-  const [thumbnail, removeThumbnail] = useState(false);
+  console.log(user);
   return (
     <Container>
-      <div
-        className="card"
-        onMouseEnter={() => {
-          removeThumbnail(true);
-        }}
-        onMouseLeave={() => {
-          removeThumbnail(false);
-          console.log(user.Image);
-        }}
-      >
-        <div className="blob"></div>
-        <div
-          className="img"
-          style={{
-            background: `url(${
-              thumbnail === false ? `${user.thumbnail}` : `${user.Image}`
-            })`,
-            backgroundSize: "cover",
-          }}
-        ></div>
-        <h2>{user.name}</h2>
-        <span className="desc">{user.description}</span>
-        <p>
-          <a href="">
-            {" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              fill="currentColor"
-              className="bi bi-linkedin"
-              viewBox="0 0 16 16"
+      <div className="card">
+        {" "}
+        {/* <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div> */}
+        <img src={`${user.Image}`} alt="" />
+        <div className="content">
+          <p className="title">
+            {user.name}
+            <br />
+            <span>{user.description}</span>
+          </p>
+          <ul className="sci">
+            <li
+              style={{
+                display: `${user.gitLink === "null" ? "none" : "block"}`,
+              }}
             >
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg>
-          </a>
-          <a
-            href=""
-            style={{ display: `${user.gitLink === "null" ? "none" : ""}` }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              fill="currentColor"
-              className="bi bi-github"
-              viewBox="0 0 16 16"
+              {console.log(user.gitLink)}
+              <a href={user.gitLink}>
+                <svg
+                  class="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                >
+                  <path d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
+                </svg>
+              </a>
+            </li>
+
+            <li
+              style={{
+                background: "#6b64f3",
+              }}
             >
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-          </a>
-        </p>
+              <a href="#">
+                <svg
+                  className="fa-brands fa-linkedin-in"
+                  width="34"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </Container>
   );
@@ -65,123 +71,121 @@ export default function Card(props) {
 
 const Container = styled.div`
   .card {
-    width: 240px;
-    cursor: pointer;
-    height: 344px;
-    background: #f0f0f0;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.5s;
-  }
-
-  .card:hover {
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
-    background-color: #4bb8ff;
-  }
-
-  .card .blob {
-    height: 10px;
-    width: 75%;
-    border-radius: 0 0 30px 30px;
-    margin: 0 auto;
-    background-color: #4bb8ff;
-    visibility: visible;
-    transition: all 0.3s;
-  }
-
-  .card:hover .blob {
-    height: 0;
-  }
-
-  .card .img {
+    position: relative;
+    width: 295px;
+    height: 391px;
+    background: none;
     display: flex;
-    margin: 30px auto 10px auto;
-    width: 15.55vw !important;
-    height: 32vh;
-    background-size: cover;
-    border-radius: 50%;
-    font-size: 11px;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+
+    .user-picture {
+      overflow: hidden;
+      object-fit: cover;
+      position: absolute;
+      z-index: 9999;
+      width: 280px;
+      height: 290px;
+      background: white;
+      top: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
-  .card:hover .img {
-    width: 100%;
-    height: 70%;
-    background-size: cover;
-    border-radius: 10px 0 0;
-    margin: 0 auto;
-    transition: all 0.7s;
-    z-index: 99999;
-  }
-
-  .card h2 {
-    padding: 15px 10px;
-    font-size: 25px;
-    transition: all 0.1s;
-    color: black !important;
-    line-height: 17px;
-  }
-
-  .card span {
-    font-size: 16px;
-  }
-  .card .desc {
-    margin-top: 10px;
-    display: none;
-    margin-bottom: 10px;
-  }
-  .card:hover .desc {
-    display: block;
-  }
-  .card:hover h2 {
-    opacity: 0;
-    display: none;
-    transition: all 0.7s;
-  }
-
-  .card > p {
-    opacity: 0;
-    transition: all 0.1s;
-    gap: 1rem;
+  .card b {
     position: absolute;
-    left: 208px;
-    display: inline-flex;
+    inset: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
   }
 
-  .card > p > a > svg {
-    padding: 5px;
+  .card img {
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+    scale: 0.8;
+    transition: 0.5s;
+  }
+
+  .card:hover img {
+    scale: 0.8;
+    opacity: 0.9;
+  }
+  .user-picture:hover {
+    scale: 0.9;
+    opacity: 0.9;
+  }
+  .card .content {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card .content {
+    bottom: 5px;
+  }
+
+  .content .title {
+    position: relative;
     color: white;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
   }
 
-  .card:hover > p {
-    position: absolute;
-    bottom: 15px;
-    left: 85px;
-    opacity: 1;
-    transition: all 0.7s;
-  }
-  @media only screen and (max-width: 1008px) {
-    .card .img {
-      display: flex;
-      margin: 30px auto 10px auto;
-      width: 22vw !important;
-    }
+  .content .title span {
+    font-weight: 300;
+    font-size: 0.5em;
   }
 
-  @media only screen and (max-width: 708px) {
-    .card .img {
-      display: flex;
-      margin: 30px auto 10px auto;
-      width: 32vw !important;
-    }
+  .content .sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    padding: 0px;
   }
-  @media only screen and (max-width: 555px) {
-    .card .img {
-      display: flex;
-      margin: 30px auto 10px auto;
-      width: 45vw !important;
-    }
+
+  .sci li {
+    list-style: none;
+    border-radius: 10%;
+  }
+
+  .sci li .fa-brands {
+    width: 14px;
+  }
+
+  .sci li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+
+  .sci li a:hover {
+    fill: currentColor;
+    color: rgba(255, 255, 255, 1);
   }
 `;

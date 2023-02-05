@@ -77,7 +77,7 @@ export default function CTAsection() {
                       >
                         By entering your email, you agree to our{" "}
                         <a
-                          href="#"
+                          href="/"
                           className="link form__newsletter-link--green"
                         >
                           Terms &amp; Conditions

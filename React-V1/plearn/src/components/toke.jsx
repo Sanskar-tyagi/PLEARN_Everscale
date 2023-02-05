@@ -61,8 +61,9 @@ export default function Toke() {
     {
       id: 5,
       name: "Ujjwal Sachdeva",
-      gitLink: "https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/",
-      description: " Game |Backend  developer ",
+      linkedInLink: "https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/",
+      gitLink: "https://github.com/ujjwal-webdev",
+      description: " Game | Backend  developer ",
       thumbnail:
         "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: Ujjwal,
@@ -105,7 +106,7 @@ export default function Toke() {
 
   return (
     <Main>
-      <Container>
+      {/* <Container>
         <div className="wills">
           <img
             src="https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/p2-img-1.jpg"
@@ -123,7 +124,7 @@ export default function Toke() {
           </p>
           <button>About Us</button>
         </div>
-      </Container>
+      </Container> */}
       <Team />
       <Swiper
         slidesPerView={num}
