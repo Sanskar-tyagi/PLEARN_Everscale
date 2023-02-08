@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
+import NFT from "../assets/Images/NFT_Card.png";
 export default function Faq() {
-  const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState({});
 
   const handleClick = (id) => {
@@ -65,6 +64,13 @@ export default function Faq() {
                             </span>
                             <span className="qodef-accordion-mark">
                               <svg
+                                style={{
+                                  transform: `scaleY(${
+                                    open[data.id] ? "-1" : "1"
+                                  })`,
+                                  transition:
+                                    "transform 0.4s cubic-bezier(0.39, .1, 0, .98)",
+                                }}
                                 className="qodef-svg--accordion-arrow"
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -103,12 +109,9 @@ export default function Faq() {
                       <img
                         width="505"
                         height="503"
-                        src="https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/nft-home-img-10.jpg"
+                        src={NFT}
                         class="attachment-full size-full"
                         alt="d"
-                        decoding="async"
-                        loading="lazy"
-                        srcset="https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/nft-home-img-10.jpg 505w, https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/nft-home-img-10-100x100.jpg 100w, https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/nft-home-img-10-300x300.jpg 300w, https://artorias.qodeinteractive.com/wp-content/uploads/2022/10/nft-home-img-10-150x150.jpg 150w"
                         sizes="(max-width: 505px) 100vw, 505px"
                       />{" "}
                     </div>
@@ -130,6 +133,7 @@ const Container = styled.div`
       width: 1400px;
       max-width: 1400px;
       margin: 0 auto;
+      align-items: center;
       padding-top: 5%;
       display: flex;
       position: relative;

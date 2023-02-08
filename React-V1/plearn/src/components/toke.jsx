@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "../utils/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
-import beshoy from "../assets/Images/Images/beshoy.jpg";
-import nada from "../assets/Images/Images/nada.jpg";
-import Paolino from "../assets/Images/Images/Paolino.jpg";
-import Rawan from "../assets/Images/Images/Rawan.jpg";
-import Ujjwal from "../assets/Images/Images/Ujjwal.jpg";
-import Sanskar from "../assets/Images/Images/Sanskar.jpg";
+import beshoy from "../assets/Images/Images/Beshoy.png";
+import nada from "../assets/Images/Images/Nada.png";
+import Paolino from "../assets/Images/Images/Paolino.png";
+import Rawan from "../assets/Images/Images/RAWAN.png";
+import Ujjwal from "../assets/Images/Images/Ujjwal.png";
+import Sanskar from "../assets/Images/Images/Sanskar.png";
+import Souad from "../assets/Images/Images/Souad.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,8 +24,6 @@ export default function Toke() {
       gitLink: "null",
       linkedInLink: "https://www.linkedin.com/in/nada-jabr-15838b39/",
       description: "Founder | CEO",
-      thumbnail:
-        "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: nada,
     },
     {
@@ -33,8 +32,6 @@ export default function Toke() {
       gitLink: "null",
       linkedInLink: "https://www.linkedin.com/in/beshoy/",
       description: "Tech Lead",
-      thumbnail:
-        "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: beshoy,
     },
     {
@@ -44,8 +41,6 @@ export default function Toke() {
       linkedInLink: "https://www.linkedin.com/in/nada-jabr-15838b39/",
       description: "Project Manager|Product Owner",
       email: "",
-      thumbnail:
-        "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: Rawan,
     },
     {
@@ -54,28 +49,30 @@ export default function Toke() {
       gitLink: "null",
       linkedInLink: "https://www.linkedin.com/in/paolino-pagliuso/",
       description: "Social Media Manager",
-      thumbnail:
-        "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: Paolino,
     },
     {
       id: 5,
+      name: " Souad",
+      gitLink: "null",
+      linkedInLink: "https://www.linkedin.com/in/souad-allahham-084618129",
+      description: "Financial officer",
+      Image: Souad,
+    },
+    {
+      id: 6,
       name: "Ujjwal Sachdeva",
       linkedInLink: "https://www.linkedin.com/in/ujjwal-sachdeva-5064651b4/",
       gitLink: "https://github.com/ujjwal-webdev",
       description: " Game | Backend  developer ",
-      thumbnail:
-        "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: Ujjwal,
     },
     {
-      id: 6,
+      id: 7,
       name: "Sanskar Tyagi ",
       gitLink: "https://github.com/Sanskar-tyagi",
       linkedInLink: "https://www.linkedin.com/in/sanskar-tyagi-953a921b1/ ",
       description: "Front-end developer",
-      thumbnail:
-        "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       Image: Sanskar,
     },
     // more users
@@ -410,7 +407,8 @@ const Main = styled.div`
   }
 
   .swiper-slide {
-    margin-top: 140px;
+    margin-top: 80px;
+
     margin-bottom: 140px;
     text-align: center;
     font-size: 18px;

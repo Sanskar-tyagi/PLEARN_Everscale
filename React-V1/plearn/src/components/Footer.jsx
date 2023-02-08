@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import idea from "../assets/Images/idea.png";
+import bg from "../assets/1.png";
 export default function Footer() {
   return (
     <Container>
@@ -14,36 +15,27 @@ export default function Footer() {
               <div class="qodef-grid-inner clear">
                 <div class="qodef-grid-item">
                   <div
-                    id="artorias_core_single_image-4"
                     class="widget widget_artorias_core_single_image"
-                    data-area="qodef-footer-top-area-column-1"
+                    style={{ marginBottom: "0px", marginTop: "80px" }}
                   >
                     <div class="qodef-shortcode qodef-m  qodef-single-image qodef-layout--default  qodef--retina   ">
                       {" "}
                       <div class="qodef-m-image">
                         {" "}
-                        <a
-                          itemprop="url"
-                          href="https://artorias.qodeinteractive.com/"
-                          target="_self"
-                        >
+                        <a itemprop="url" href="/" target="_self">
                           {" "}
                           <img
                             itemprop="image"
-                            src={idea}
-                            width="156"
-                            height="110"
+                            src={bg}
+                            width="276"
+                            height="210"
                             alt=""
                           />{" "}
                         </a>{" "}
                       </div>{" "}
                     </div>
                   </div>
-                  <div
-                    id="artorias_core_separator-2"
-                    class="widget widget_artorias_core_separator"
-                    data-area="qodef-footer-top-area-column-1"
-                  >
+                  <div>
                     <div class="qodef-shortcode qodef-m  qodef-separator clear qodef-position--center ">
                       {" "}
                       <div class="qodef-m-line"></div>
@@ -60,41 +52,31 @@ export default function Footer() {
                           id="menu-item-3147"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3147"
                         >
-                          <a href="https://artorias.qodeinteractive.com/">
-                            Home
-                          </a>
+                          <a href="/">Home</a>
                         </li>
                         <li
                           id="menu-item-3148"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3148"
                         >
-                          <a href="https://artorias.qodeinteractive.com/about-me/">
-                            About
-                          </a>
+                          <a href="/about-me/">About</a>
                         </li>
                         <li
                           id="menu-item-3149"
                           class="menu-item menu-item-type-post_type menu-item-object-esports-team menu-item-3149"
                         >
-                          <a href="https://artorias.qodeinteractive.com/esports-team/frosters/">
-                            Tokenomics
-                          </a>
+                          <a href="/esports-team/frosters/">Tokenomics</a>
                         </li>
                         <li
                           id="menu-item-3150"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3150"
                         >
-                          <a href="https://artorias.qodeinteractive.com/portfolio-standard/">
-                            Learnings
-                          </a>
+                          <a href="/portfolio-standard/">Learnings</a>
                         </li>
                         <li
                           id="menu-item-3151"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151"
                         >
-                          <a href="https://artorias.qodeinteractive.com/blog/right-sidebar/">
-                            Blog
-                          </a>
+                          <a href="/blog/right-sidebar/">Blog</a>
                         </li>
                       </ul>
                     </div>
@@ -105,7 +87,7 @@ export default function Footer() {
                     data-area="qodef-footer-top-area-column-1"
                   >
                     {" "}
-                    <div class="qodef-svg-icon-widget">
+                    <div class="qodef-svg-icon-widget widget">
                       <a href="https://www.twitch.tv/" target="_blank">
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
@@ -126,11 +108,8 @@ export default function Footer() {
                     data-area="qodef-footer-top-area-column-1"
                   >
                     {" "}
-                    <div class="qodef-svg-icon-widget">
-                      <a
-                        href="https://twitter.com/qodeinteractive"
-                        target="_blank"
-                      >
+                    <div class="qodef-svg-icon-widget widget">
+                      <a href="https://twitter.com/CryptoStein2022">
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
                             <svg
@@ -150,11 +129,8 @@ export default function Footer() {
                     data-area="qodef-footer-top-area-column-1"
                   >
                     {" "}
-                    <div class="qodef-svg-icon-widget">
-                      <a
-                        href="https://www.youtube.com/QodeInteractiveVideos"
-                        target="_blank"
-                      >
+                    <div class="qodef-svg-icon-widget widget">
+                      <a href="https://www.youtube.com/channel/UCn5qOdVJDN4KIjPN9Po9BGg">
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
                             <svg
@@ -174,11 +150,8 @@ export default function Footer() {
                     data-area="qodef-footer-top-area-column-1"
                   >
                     {" "}
-                    <div class="qodef-svg-icon-widget">
-                      <a
-                        href="https://www.facebook.com/QodeInteractive/"
-                        target="_blank"
-                      >
+                    <div class="qodef-svg-icon-widget widget">
+                      <a href="https://www.facebook.com/cryptostein/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
                             <svg
@@ -204,7 +177,6 @@ export default function Footer() {
                         href="https://qodeinteractive.com/"
                         data-type="URL"
                         data-id="https://qodeinteractive.com/"
-                        target="_blank"
                         rel="noreferrer noopener"
                       >
                         PLEARN
@@ -236,13 +208,13 @@ const Container = styled.div`
     width: 100%;
     vertical-align: top;
     #qodef-page-footer-top-area-inner {
-      margin: 0px 60px 60px 60px;
+      margin: 60px 60px 60px 60px;
       --footer-margin-responsive: 0 7% 7%;
       border-width: 1px;
       border-style: solid;
       border: 0 solid white;
-      padding-bottom: 28px;
-      padding-top: 122px;
+      padding-bottom: 0px;
+      padding-top: 0px;
       .qodef-grid {
         position: relative;
         display: inline-block;
@@ -261,7 +233,7 @@ const Container = styled.div`
             min-height: 1px;
             float: left;
             .widget {
-              margin: 0 0 58px;
+              margin: 40px 0 30px;
               color: #ccc;
               a {
                 color: white;
@@ -373,7 +345,7 @@ const Container = styled.div`
     margin-top: 90px !important;
   }
   .widget p {
-    margin-top: 58px;
+    margin-top: 18px;
     color: #ccc;
   }
 `;

@@ -72,13 +72,13 @@ export default function Card(props) {
 const Container = styled.div`
   .card {
     position: relative;
-    width: 295px;
+    width: 352px;
+    border: none;
     height: 391px;
     background: none;
     display: flex;
     justify-content: center;
     align-items: center;
-
     .user-picture {
       overflow: hidden;
       object-fit: cover;
@@ -115,11 +115,12 @@ const Container = styled.div`
   }
 
   .card:hover img {
-    scale: 0.8;
+    scale: 1;
+    cursor: grab;
     opacity: 0.9;
   }
   .user-picture:hover {
-    scale: 0.9;
+    scale: 1;
     opacity: 0.9;
   }
   .card .content {
@@ -132,7 +133,7 @@ const Container = styled.div`
   }
 
   .card .content {
-    bottom: 5px;
+    bottom: -55px;
   }
 
   .content .title {

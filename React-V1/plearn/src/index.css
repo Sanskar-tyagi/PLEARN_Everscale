@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --color-primary: #DCFF03;
   --color-secondary: #5200ff;
@@ -669,7 +671,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  margin-top: 65px;
+  margin-top: 100px;
 }
 
 .section__head:not(:last-of-type) {
@@ -1066,6 +1068,10 @@ strong,
 
 .wrapper {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper h2 {
@@ -1096,7 +1102,11 @@ strong,
 
 .cards,
 .news {
-  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards .card,
@@ -1183,11 +1193,37 @@ strong,
 .news .article {
   overflow: hidden;
   box-sizing: border-box;
-  width: 80%;
+  width: 20vw;
   height: 100%;
   margin: 20px;
 }
 
+@media only screen and (max-width: 1000px){
+  .flex{
+ display: flex;
+ flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .news .article{
+  width: 30vw !important;
+  }
+}
+@media only screen and (max-width: 700px){
+  .news .article{
+    width: 60vw!important;
+  }
+}
+.VIEW{
+  width: 70vw !important;
+}
+ 
+@media only screen and (max-width: 1000px){
+  .news .VIEW{
+    width: 80vw !important;
+  }
+}
+ 
 .news .article .ifm {
   width: 100%;
   min-height: 100%;
@@ -1523,10 +1559,10 @@ font-size: 22px;
   border: 1px solid blue;
 }
 .vidbg{
-  background: url(https://nftly-theme.pxsquad.com/demo3/wp-content/uploads/2022/06/COVER-12.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    background-position: 4% -7%;
-    padding-bottom: 50px;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
 }
  
  

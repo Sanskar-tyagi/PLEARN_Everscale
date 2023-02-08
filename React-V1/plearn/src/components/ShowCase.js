@@ -3,12 +3,13 @@ import a1 from "../assets/Images/NFTS/nft (32).jpg";
 import a2 from "../assets/Images/NFTS/nft (33).jpg";
 import a3 from "../assets/Images/NFTS/nft (34).jpg";
 import a4 from "../assets/Images/NFTS/nft (35).jpg";
+
 export default function ShowCase() {
   const eth =
     "https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png";
   return (
     <div>
-      <section className="section-item bg-black pb-20">
+      <section className="section-item   pb-20">
         <div className="container">
           <div className="section__head mts">
             <h2 className="section__header-title">
