@@ -134,8 +134,9 @@ const Container = styled.div`
     writing-mode: vertical-lr;
   }
   p {
-    padding: 50px;
+    padding: 60px;
     padding-bottom: 0px;
+    padding-right: 45px;
   }
   .wrapper {
     .button,

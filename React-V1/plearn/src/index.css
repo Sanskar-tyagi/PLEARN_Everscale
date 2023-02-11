@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1300px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -115,12 +115,17 @@ body {
 
 .hero__intro {
   width: 100%;
-  max-width: 590px;
+  max-width: 555px;
   flex: 0 0 auto;
   position: relative;
   z-index: 1;
 }
 
+@media only screen and (max-width: 1380px) {
+.hero__intro{
+  max-width: 452px;
+}
+}
 .mss {
   transform: translateY(0px);
   opacity: 1;
@@ -274,9 +279,9 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   .hero__intro-stats {
-    margin-top: 64px !important;
+    margin-top: 36px !important;
     grid-column-gap: 24px;
-    grid-row-gap: 24px;
+    grid-row-gap: 20px;
     flex-wrap: wrap;
   }
 }
@@ -346,7 +351,7 @@ h1 {
   .hero__nft-placeholder-img {
     width: 415px;
     height: 634px;
-    right: -50px;
+    left: 15px !important;
   }
 }
 
@@ -436,7 +441,8 @@ p {
 }
 
 .lft {
-  left: -150px;
+  left: -70px;
+  top:55px;
 }
 
 .mt--85 {
@@ -1193,7 +1199,7 @@ strong,
 .news .article {
   overflow: hidden;
   box-sizing: border-box;
-  width: 20vw;
+  width: 40vw;
   height: 100%;
   margin: 20px;
 }
@@ -1206,7 +1212,7 @@ strong,
 }
 @media only screen and (max-width: 1000px){
   .news .article{
-  width: 30vw !important;
+  width: 50vw !important;
   }
 }
 @media only screen and (max-width: 700px){
@@ -1220,7 +1226,7 @@ strong,
  
 @media only screen and (max-width: 1000px){
   .news .VIEW{
-    width: 80vw !important;
+    width: 85vw !important;
   }
 }
  

@@ -182,7 +182,7 @@ export default function CTAsection() {
             <label for="name"></label>
             <input
               type="text"
-              placeholder="My name is"
+              placeholder="NAME"
               name="name"
               id="name_input"
               required
@@ -192,7 +192,7 @@ export default function CTAsection() {
             <label for="email"></label>
             <input
               type="email"
-              placeholder="My e-mail is"
+              placeholder="E-MAIL"
               name="email"
               id="email_input"
               required
@@ -202,7 +202,7 @@ export default function CTAsection() {
             <label for="name"></label>
             <input
               type="text"
-              placeholder="My number is"
+              placeholder="Phone"
               name="telephone"
               id="telephone_input"
               required
