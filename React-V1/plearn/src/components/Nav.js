@@ -28,7 +28,7 @@ export default function Nav({ onUserAccountChange }) {
     }
   };
   const nav_list = [
-    { name: " Home" },
+    { name: "Home" },
     { name: "About" },
     { name: "Tokenomics" },
     { name: " Real Estate" },
