@@ -2,17 +2,18 @@ import "./App.css";
 import GameSection from "./components/GameSection";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import ShowCase from "./components/ShowCase";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import BreadCrums from "./components/BreadCrums";
-import CTAsection from "./components/CTAsection";
-import Hype from "./components/Hype";
-import Gamedes from "./components/Gamedes";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
-import Toke from "./components/toke";
+// import Hype from "./components/Hype";
+// import Gamedes from "./components/Gamedes";
+
 import styled from "styled-components";
 
+const ShowCase = lazy(() => import("./components/ShowCase"));
+const Toke = lazy(() => import("./components/toke"));
+const Faq = lazy(() => import("./components/Faq"));
+const CTAsection = lazy(() => import("./components/CTAsection"));
+const Footer = lazy(() => import("./components/Footer"));
 function App() {
   const [userAccount, setUserAccount] = useState(null);
 
@@ -34,39 +35,40 @@ function App() {
           <div
             aria-label="Orange and tan hamster running in a metal wheel"
             role="img"
-            class="wheel-and-hamster"
+            className="wheel-and-hamster"
           >
-            <div class="wheel"></div>
-            <div class="hamster">
-              <div class="hamster__body">
-                <div class="hamster__head">
-                  <div class="hamster__ear"></div>
-                  <div class="hamster__eye"></div>
-                  <div class="hamster__nose"></div>
+            <div className="wheel"></div>
+            <div className="hamster">
+              <div className="hamster__body">
+                <div className="hamster__head">
+                  <div className="hamster__ear"></div>
+                  <div className="hamster__eye"></div>
+                  <div className="hamster__nose"></div>
                 </div>
-                <div class="hamster__limb hamster__limb--fr"></div>
-                <div class="hamster__limb hamster__limb--fl"></div>
-                <div class="hamster__limb hamster__limb--br"></div>
-                <div class="hamster__limb hamster__limb--bl"></div>
-                <div class="hamster__tail"></div>
+                <div className="hamster__limb hamster__limb--fr"></div>
+                <div className="hamster__limb hamster__limb--fl"></div>
+                <div className="hamster__limb hamster__limb--br"></div>
+                <div className="hamster__limb hamster__limb--bl"></div>
+                <div className="hamster__tail"></div>
               </div>
             </div>
-            <div class="spoke"></div>
+            <div className="spoke"></div>
           </div>
           <p>Loading...</p>
         </Loader>
       ) : (
         <div>
           <Nav onUserAccountChange={handleUserAccountChange} />
-
           <div className="vidbg">
             <Header userAccount={userAccount} />
             <GameSection />
             {/* <Gamedes /> */} <BreadCrums />
-            <ShowCase style={{ marginTop: "10vw" }} />
-            <Toke />
-            <Faq />
-            <CTAsection />
+            <Suspense>
+              <ShowCase style={{ marginTop: "10vw" }} />
+              <Toke />
+              <Faq />
+              <CTAsection />
+            </Suspense>
           </div>
           <Footer />
         </div>

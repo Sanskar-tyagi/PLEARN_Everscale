@@ -1,16 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Styled from "styled-components";
 import bg from "../assets/logo-ionic.svg";
 import { logoIonic } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
 export default function CTAsection() {
-  const handlemail = (e) => {
-    setmail(e.target.value);
-  };
-  const [check, setcheck] = useState(false);
-  const handlecheck = () => {
-    setcheck(!check);
-  };
   const IonicLogo = () => {
     return (
       <IonIcon
@@ -21,152 +14,94 @@ export default function CTAsection() {
     );
   };
   const [name, setName] = useState("");
+  const [nameError, setnameError] = useState("");
   const [Email, setmail] = useState("");
+  const [emailError, setemailError] = useState("");
+  const [phonenumber, setPhonenumber] = useState("");
+  const [phoneNumberError, setphoneNumberError] = useState("");
+  const [emptyError, setEmptyerror] = useState("");
+  const [selectedOption, setSelectedOption] = useState("Subject line");
+  const [Message, setMessage] = useState("");
+  const [selectedOptionError, setSelectedOptionerror] = useState("");
+  const [Data, setData] = useState([
+    {
+      name: "",
+      phonenumber: "",
+      email: "",
+      Message: "",
+    },
+  ]);
+  const handleSubmit = () => {
+    if (name === "" || Email === "" || Message === " ") {
+      setEmptyerror("All fields are mondatory");
+      setTimeout(() => {
+        setEmptyerror("");
+      }, 1350);
+      return false;
+    }
+    if (!name.match(/^[A-Za-z ]+$/)) {
+      setnameError("Name should contain only Aphabets");
+      setTimeout(() => {
+        setnameError("");
+        setName("");
+      }, 1350);
+      return false;
+    }
+
+    if (!phonenumber.match(/^\d+$/)) {
+      setphoneNumberError(
+        "Phone number should contain only Numerals without any spaces"
+      );
+      setTimeout(() => {
+        setphoneNumberError("");
+        setPhonenumber("");
+      }, 1350);
+      return false;
+    }
+    if (phonenumber.charAt(0) === 0) {
+      setphoneNumberError("Phone number cannot start with 0");
+      setTimeout(() => {
+        setphoneNumberError("");
+        setPhonenumber("");
+      }, 1350);
+      return false;
+    }
+    if (!Email.includes("@")) {
+      setemailError("Email must contain @");
+      setTimeout(() => {
+        setemailError("");
+        setmail("");
+      }, 1350);
+      return false;
+    }
+    if (phonenumber.length !== 10) {
+      setphoneNumberError("Phone number must be of 10 digits");
+      setTimeout(() => {
+        setphoneNumberError("");
+        setPhonenumber("");
+      }, 1350);
+      return false;
+    }
+    if (selectedOption === "Subject line") {
+      setSelectedOptionerror("Please select an pption ");
+      setTimeout(() => {
+        setSelectedOptionerror("");
+        setSelectedOption("Subject line");
+      }, 1350);
+      return false;
+    }
+    setData([
+      {
+        name: name,
+        phonenumber: phonenumber,
+        email: Email,
+        Message: Message,
+      },
+    ]);
+    return true;
+  };
   return (
     <Container>
-      {/* <section className="section-item animated-box">
-        <div className="container">
-          <div className="section__content">
-            <div
-              className="promo-banner-fw"
-              style={{
-                backgroundImage: `url(${bg})`,
-              }}
-            >
-              <div className="block-title-inline">
-                <img
-                  src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/newsletter-i.png"
-                  alt="Newsletter icon"
-                  className="image"
-                />
-                <h4 className="heading-3">MY NEWSLETTER </h4>
-              </div>
-              <h2 className="promo-banner-fw__heading">
-                Subscribe! to our newsletter so you can always be up to date
-                with PLEARN{" "}
-              </h2>
-
-              <div className="tnp-subscription-nft animated-box">
-                <form method="post" className="sub-nft">
-                  <input type="hidden" name="nlang" value="" />
-                  <div className="tnp-field tnp-field-email">
-                    <input
-                      className="tnp-email"
-                      type="email"
-                      name="ne"
-                      value={mail}
-                      onChange={handlemail}
-                      placeholder="Enter your email"
-                      required=""
-                    />
-                  </div>
-
-                  <div className="tnp-field tnp-field-button">
-                    <input
-                      className="tnp-button"
-                      type="submit"
-                      value="Sign up now"
-                    />
-                  </div>
-                </form>{" "}
-                <div className="w-form">
-                  <div name="email-form" className="form">
-                    <label className="w-checkbox checkbox-field">
-                      <div className="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
-                        <span
-                          className={
-                            `material-symbols-outlined ` +
-                            (check === false ? "" : "d-none")
-                          }
-                        >
-                          done
-                        </span>
-                      </div>
-                      <input
-                        type="checkbox"
-                        name="Checkbox-2"
-                        className="w-chck"
-                        onClick={handlecheck}
-                      />
-                      <span
-                        className="checkbox-label w-form-label"
-                        for="Checkbox-2"
-                      >
-                        By entering your email, you agree to our{" "}
-                        <a
-                          href="/"
-                          className="link form__newsletter-link--green"
-                        >
-                          Terms &amp; Conditions
-                        </a>{" "}
-                        {`& `}
-                        <a
-                          href="#"
-                          className="link-2 form__newsletter-link--green"
-                        >
-                          Privacy Policy
-                        </a>
-                        .
-                      </span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* <div class="signupSection">
-        <div class="info">
-          <h2>Join The Conversation</h2>
-          <IonicLogo />
-          <p>The Future Is Here</p>
-        </div>
-        <form class="signupForm">
-          <h2>
-            {" "}
-            Let us know your thoughts and help us shape the game's future!
-          </h2>
-          <ul class="noBullet">
-            <li>
-              <label for="username"></label>
-              <input
-                type="text"
-                class="inputFields"
-                id="username"
-                name="username"
-                placeholder="Username"
-                value=""
-                required
-              />
-            </li>
-            <li>
-              <label for="email"></label>
-              <input
-                type="email"
-                class="inputFields"
-                id="email"
-                name="email"
-                placeholder="Email"
-                value=""
-                required
-              />
-            </li>
-            <li id="center-btn">
-              <input
-                type="submit"
-                id="join-btn"
-                name="join"
-                alt="Join"
-                value="Join"
-              />
-            </li>
-            <li>
-
-            </li>
-          </ul>
-        </form>
-      </div> */}
       <div id="container">
         <h1>&bull; Keep in Touch &bull;</h1>
         <div class="underline"></div>
@@ -177,36 +112,62 @@ export default function CTAsection() {
             <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
           </svg>
         </div>
-        <form action="#" method="post" id="contact_form">
+        <form autoComplete="off" action="#" method="post" id="contact_form">
           <div class="name">
             <label for="name"></label>
             <input
               type="text"
-              placeholder="NAME"
-              name="name"
+              autoComplete="off"
+              value={name}
+              placeholder="Name"
+              className={`Firstname ${
+                nameError.length > 0 || emptyError.length > 0 ? "invalid" : "."
+              } `}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
               id="name_input"
-              required
-            />
+            />{" "}
+            {nameError && <div className="error">{nameError}</div>}
           </div>
           <div class="email">
             <label for="email"></label>
             <input
               type="email"
-              placeholder="E-MAIL"
+              className={`email ${
+                emailError.length > 0 || emptyError.length > 0 ? "invalid" : "."
+              } `}
+              placeholder="Email"
+              value={Email}
+              onChange={(e) => {
+                setmail(e.target.value);
+              }}
               name="email"
               id="email_input"
-              required
-            />
+            />{" "}
+            {emailError && <div className="error">{emailError}</div>}
           </div>
           <div class="telephone">
             <label for="name"></label>
             <input
               type="text"
-              placeholder="Phone"
+              autoComplete="off"
+              className={`phone${
+                phoneNumberError.length > 0 || emptyError.length > 0
+                  ? "invalid"
+                  : "."
+              } `}
+              placeholder="Phone Number"
+              value={phonenumber}
+              onChange={(e) => {
+                setPhonenumber(e.target.value);
+              }}
               name="telephone"
               id="telephone_input"
-              required
             />
+            {phoneNumberError && (
+              <div className="error">{phoneNumberError}</div>
+            )}
           </div>
           <div class="subject">
             <label for="subject"></label>
@@ -214,7 +175,9 @@ export default function CTAsection() {
               placeholder="Subject line"
               name="subject"
               id="subject_input"
-              required
+              className={`${selectedOptionError.length > 0 ? "invalid" : "."} `}
+              value={selectedOption}
+              onChange={(event) => setSelectedOption(event.target.value)}
             >
               <option disabled hidden selected>
                 Subject line
@@ -222,7 +185,10 @@ export default function CTAsection() {
               <option>I'd like to GIVE A FEEDBACK</option>
               <option>I'd like to ask a question</option>
               <option>I'd like to make a proposal</option>
-            </select>
+            </select>{" "}
+            {selectedOptionError && (
+              <div className="error">{selectedOptionError}</div>
+            )}
           </div>
           <div class="message">
             <label for="message"></label>
@@ -231,18 +197,15 @@ export default function CTAsection() {
               placeholder="I'd like to chat about"
               id="message_input"
               cols="30"
+              value={Message}
+              onChange={(event) => setMessage(event.target.value)}
               rows="5"
-              required
             ></textarea>
           </div>
           <div class="submit">
-            <input
-              type="submit"
-              id="join-btn"
-              name="join"
-              alt="Join"
-              value="Send Message"
-            />
+            <div className="button" onClick={handleSubmit}>
+              Submit
+            </div>
           </div>
         </form>
       </div>{" "}
@@ -250,8 +213,98 @@ export default function CTAsection() {
   );
 }
 const Container = Styled.div`
- 
+.submit {
+  
+  .button {
+    cursor: pointer;
+    margin: 20px;
+    width: 100px;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    z-index: 1;
+  }
 
+  .button::after,
+  .button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all 0.4s;
+  }
+
+  .button::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+
+  .button::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+
+  .button:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+
+  .button:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+
+  .button:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+}
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: transparent!important;
+  color: Wheat !important;
+}
+.invalid {
+  animation: justshake 0.3s forwards;
+  color:  #03e9f4 !important;
+  border-bottom: 2px solid  #03e9f4 !important;
+}
+.error {
+  color: red; 
+  margin-bottom: 20px;
+}
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX-(5px);
+  }
+}
 button {
   overflow: visible;
 }
@@ -809,3 +862,147 @@ textarea {
     border-radius: 4px;
   }
 `;
+/* <section className="section-item animated-box">
+        <div className="container">
+          <div className="section__content">
+            <div
+              className="promo-banner-fw"
+              style={{
+                backgroundImage: `url(${bg})`,
+              }}
+            >
+              <div className="block-title-inline">
+                <img
+                  src="https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/newsletter-i.png"
+                  alt="Newsletter icon"
+                  className="image"
+                />
+                <h4 className="heading-3">MY NEWSLETTER </h4>
+              </div>
+              <h2 className="promo-banner-fw__heading">
+                Subscribe! to our newsletter so you can always be up to date
+                with PLEARN{" "}
+              </h2>
+
+              <div className="tnp-subscription-nft animated-box">
+                <form method="post" className="sub-nft">
+                  <input type="hidden" name="nlang" value="" />
+                  <div className="tnp-field tnp-field-email">
+                    <input
+                      className="tnp-email"
+                      type="email"
+                      name="ne"
+                      value={mail}
+                      onChange={handlemail}
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                  </div>
+
+                  <div className="tnp-field tnp-field-button">
+                    <input
+                      className="tnp-button"
+                      type="submit"
+                      value="Sign up now"
+                    />
+                  </div>
+                </form>{" "}
+                <div className="w-form">
+                  <div name="email-form" className="form">
+                    <label className="w-checkbox checkbox-field">
+                      <div className="w-checkbox-input w-checkbox-input--inputType-custom checkbox">
+                        <span
+                          className={
+                            `material-symbols-outlined ` +
+                            (check === false ? "" : "d-none")
+                          }
+                        >
+                          done
+                        </span>
+                      </div>
+                      <input
+                        type="checkbox"
+                        name="Checkbox-2"
+                        className="w-chck"
+                        onClick={handlecheck}
+                      />
+                      <span
+                        className="checkbox-label w-form-label"
+                        for="Checkbox-2"
+                      >
+                        By entering your email, you agree to our{" "}
+                        <a
+                          href="/"
+                          className="link form__newsletter-link--green"
+                        >
+                          Terms &amp; Conditions
+                        </a>{" "}
+                        {`& `}
+                        <a
+                          href="#"
+                          className="link-2 form__newsletter-link--green"
+                        >
+                          Privacy Policy
+                        </a>
+                        .
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */
+
+/* <div class="signupSection">
+        <div class="info">
+          <h2>Join The Conversation</h2>
+          <IonicLogo />
+          <p>The Future Is Here</p>
+        </div>
+        <form class="signupForm">
+          <h2>
+            {" "}
+            Let us know your thoughts and help us shape the game's future!
+          </h2>
+          <ul class="noBullet">
+            <li>
+              <label for="username"></label>
+              <input
+                type="text"
+                class="inputFields"
+                id="username"
+                name="username"
+                placeholder="Username"
+                value=""
+                required
+              />
+            </li>
+            <li>
+              <label for="email"></label>
+              <input
+                type="email"
+                class="inputFields"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value=""
+                required
+              />
+            </li>
+            <li id="center-btn">
+              <input
+                type="submit"
+                id="join-btn"
+                name="join"
+                alt="Join"
+                value="Join"
+              />
+            </li>
+            <li>
+
+            </li>
+          </ul>
+        </form>
+      </div> */

@@ -1,6 +1,6 @@
-import axios from "axios";
 import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
+import { Fade, Slide, FadeInRight } from "react-awesome-reveal";
 
 export default function Header({ userAccount }) {
   const startGame = async () => {
@@ -46,8 +46,6 @@ export default function Header({ userAccount }) {
                 settings, PLEARN offers endless possibilities. Join the fun and
                 become a financial literacy expert today!
               </p>
-
-              {/* remove extra texts and make it view more */}
 
               <div className="hero__intro-cta animated-box mss">
                 <button className="btnply" onClick={startGame}>

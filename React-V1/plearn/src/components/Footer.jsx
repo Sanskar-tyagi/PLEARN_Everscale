@@ -88,7 +88,10 @@ export default function Footer() {
                   >
                     {" "}
                     <div class="qodef-svg-icon-widget widget">
-                      <a href="https://www.twitch.tv/" target="_blank">
+                      <a
+                        href="https://www.instagram.com/cryptostein.official/"
+                        target="_blank"
+                      >
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
                             <svg
@@ -113,7 +116,7 @@ export default function Footer() {
                   >
                     {" "}
                     <div class="qodef-svg-icon-widget widget">
-                      <a href="https://twitter.com/CryptoStein2022">
+                      <a href="https://t.me/+q9Iz48nzpd4yN2Nk">
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
                             <svg
@@ -159,7 +162,7 @@ export default function Footer() {
                   >
                     {" "}
                     <div class="qodef-svg-icon-widget widget">
-                      <a href="https://www.facebook.com/cryptostein/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">
+                      <a href="https://www.linkedin.com/company/cryptostein1/">
                         <div class="qodef-m-holder">
                           <div class="qodef-m-icon">
                             <svg

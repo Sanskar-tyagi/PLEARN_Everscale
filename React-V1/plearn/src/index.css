@@ -12,7 +12,13 @@ html{
   --color-grey-ligher: #808191;
   --color-bodys: #acacac;
 }
-
+ 
+  input:-webkit-autofill{
+    -webkit-text-fill-color: wheat !important;
+ background-color: transparent !important;
+    transition: background-color 9999s ease-in-out 0s !important;
+}
+ 
 body {
   overflow-x: hidden;
   overflow-y: auto;

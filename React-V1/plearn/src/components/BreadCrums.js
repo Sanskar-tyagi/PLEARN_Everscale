@@ -61,6 +61,7 @@ export default function BreadCrums() {
             advance. Players could track their learning and playing progress
             through the game, while earning rewards and unlocking new areas.
           </p>
+
           <div className="news">
             <figure className={`article ${showText === true ? "." : "VIEW"}`}>
               <MyComponent className="ifm" />
