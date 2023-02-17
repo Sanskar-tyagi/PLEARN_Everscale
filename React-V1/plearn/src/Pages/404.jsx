@@ -6,7 +6,7 @@ export default function Error() {
     <Container>
       <div className="flex">
         <h1>Hey,Looks Like You are Lost..?</h1>
-        <h5>here's a way to get back</h5>
+        <h5>Here's a way to get back</h5>
         <button className="button"> Main Page</button>
       </div>
       <div className="box-of-star1">
@@ -132,6 +132,7 @@ const Container = styled.div`
   h1 {
     margin: 0;
   }
+
   @keyframes snow {
     0% {
       opacity: 0;

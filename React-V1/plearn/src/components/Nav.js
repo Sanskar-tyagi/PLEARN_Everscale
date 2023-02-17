@@ -31,26 +31,28 @@ export default function Nav({ onUserAccountChange }) {
     { name: "Home" },
     { name: "About" },
     { name: "Tokenomics" },
-    { name: " Real Estate" },
-    { name: "  Trading" },
-    { name: "  NFT" },
+    { name: "Real Estate" },
+    { name: "Trading" },
+    { name: "NFT" },
   ];
 
   const Navcomp = () => {
     const listItems = useMemo(() => {
-      return nav_list.map((item) => (
-        <li className="nav-item" key={item.name}>
-          <a
-            className="nav-link active"
-            aria-current="page"
-            href={`/${item.name.toLowerCase()}`}
-          >
-            {item.name}
-          </a>
-        </li>
-      ));
-    }, [nav_list]);
-
+      return nav_list.map((item) => {
+        const path = item.name.replace(/\s+/g, "");
+        return (
+          <li className="nav-item" key={item.name}>
+            <a
+              className="nav-link active"
+              aria-current="page"
+              href={`/${item.name === "Home" ? "" : path.toLowerCase()}`}
+            >
+              {item.name}
+            </a>
+          </li>
+        );
+      });
+    }, []);
     return <ul className="navbar-nav mb-2 mb-lg-0 me-auto">{listItems}</ul>;
   };
 
@@ -112,12 +114,12 @@ export default function Nav({ onUserAccountChange }) {
             <ul className="navbar-nav mb-2 mb-lg-0 me-auto">
               <li className="nav-item "></li>
             </ul>
-            <a
+            <div
               className="nav-link btn  px-3 py-2  wltBtn"
               onClick={connectWalletHandler}
             >
               {connButtonText}
-            </a>
+            </div>
             {isLoading ? (
               <span>
                 <ColorRing
