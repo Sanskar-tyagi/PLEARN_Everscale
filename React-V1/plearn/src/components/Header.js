@@ -5,12 +5,13 @@ import WalletContext from "../contexts/WalletContext";
 import { useContext } from "react";
 
 export default function Header() {
-  const userAccount = useContext(WalletContext)
+  const {userAccount} = useContext(WalletContext)
   const startGame = async () => {
     if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
     } else {
       // window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
+      console.log(userAccount);
       window.open(
         `https://singular-granita-0e1259.netlify.app?userAccount=${userAccount}`
       );
