@@ -2,6 +2,7 @@ import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 import { Fade, Slide, FadeInRight } from "react-awesome-reveal";
 import WalletContext from "../contexts/WalletContext";
+import { useContext } from "react";
 
 export default function Header() {
   const userAccount = useContext(WalletContext)
