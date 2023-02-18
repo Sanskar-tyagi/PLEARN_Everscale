@@ -3,6 +3,7 @@ import { lazy, useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "./components/Nav";
+import WalletContext from "./contexts/WalletContext";
 const Main = lazy(() => import("./Pages/Main"));
 const Error = lazy(() => import("./Pages/404"));
 function App() {
@@ -49,7 +50,7 @@ function App() {
   const renderRoutes = () => {
     return (
       <Routes>
-        <Route path={"/"} element={<Main userAccount={userAccount} />} />
+        <Route path={"/"} element={<Main />} />
         <Route path="*" element={<Error />} />
       </Routes>
     );
@@ -57,16 +58,18 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        {loading === true ? (
-          renderLoader()
-        ) : (
-          <>
-            <Nav onUserAccountChange={handleUserAccountChange} />{" "}
-            {renderRoutes()}
-          </>
-        )}
-      </BrowserRouter>
+      <WalletContext.Provider value={{userAccount, setUserAccount}}>
+        <BrowserRouter>
+          {loading === true ? (
+            renderLoader()
+          ) : (
+            <>
+              <Nav />{" "}
+              {renderRoutes()}
+            </>
+          )}
+        </BrowserRouter>
+      </WalletContext.Provider>
     </>
   );
 }

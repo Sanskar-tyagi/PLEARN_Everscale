@@ -4,10 +4,13 @@ import { ethers } from "ethers";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
 import toast from "react-hot-toast";
-export default function Nav({ onUserAccountChange }) {
-  const [userAccount, setUserAccount] = useState(null);
+import WalletContext from "../contexts/WalletContext";
+
+export default function Nav() {
+  // const [userAccount, setUserAccount] = useState(null);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   const [isLoading, setIsLoading] = useState(false);
+  const { userAccount, setUserAccount } = useContext(WalletContext);
 
   // const provider = new ethers.providers.Web3Provider(window.ethereum);
   const connectWalletHandler = () => {
@@ -59,7 +62,8 @@ export default function Nav({ onUserAccountChange }) {
   // update account, will cause component re-render
   const accountChangedHandler = (newAccount) => {
     setUserAccount(newAccount[0]);
-    onUserAccountChange(newAccount[0]); // Callback function - Passing the value to the parent component which is App.js
+    // onUserAccountChange(newAccount[0]); // Callback function - Passing the value to the parent component which is App.js
+
   };
 
   useEffect(() => {

@@ -9,12 +9,12 @@ const Toke = lazy(() => import("../components/toke"));
 const Faq = lazy(() => import("../components/Faq"));
 const CTAsection = lazy(() => import("../components/CTAsection"));
 const Footer = lazy(() => import("../components/Footer"));
-export default function Main({ userAccount }) {
+export default function Main() {
   return (
     <>
       <div>
         <div className="vidbg">
-          <Header userAccount={userAccount} />
+          <Header />
           <GameSection />
           {/* <Gamedes /> */} <BreadCrums />
           <Suspense>

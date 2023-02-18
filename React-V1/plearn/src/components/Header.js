@@ -1,8 +1,10 @@
 import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
 import { Fade, Slide, FadeInRight } from "react-awesome-reveal";
+import WalletContext from "../contexts/WalletContext";
 
-export default function Header({ userAccount }) {
+export default function Header() {
+  const userAccount = useContext(WalletContext)
   const startGame = async () => {
     if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
