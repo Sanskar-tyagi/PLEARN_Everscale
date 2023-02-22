@@ -58,14 +58,13 @@ function App() {
 
   return (
     <>
-      <WalletContext.Provider value={{userAccount, setUserAccount}}>
+      <WalletContext.Provider value={{ userAccount, setUserAccount }}>
         <BrowserRouter>
           {loading === true ? (
             renderLoader()
           ) : (
             <>
-              <Nav />{" "}
-              {renderRoutes()}
+              <Nav /> {renderRoutes()}
             </>
           )}
         </BrowserRouter>
@@ -440,5 +439,8 @@ const Loader = styled.div`
   }
   p {
     margin-top: 10px;
+  }
+  @media only screen and (max-width: 680px) {
+    left: 32vw;
   }
 `;
