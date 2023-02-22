@@ -371,8 +371,8 @@ const Container = styled.div`
         text-decoration: underline;
       }
     }
-    #qodef-page-footer-top-area-inner {
-      margin: 30px 30px 30px 30px;
+    #qodef-page-footer-top-area #qodef-page-footer-top-area-inner {
+      margin: 30px 30px 30px 30px !important;
     }
   }
 `;

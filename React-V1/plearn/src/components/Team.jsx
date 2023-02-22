@@ -80,7 +80,7 @@ const Container = styled.div`
   }
   @media only screen and (max-width: 700px) {
     .widget-container {
-      padding: 0% 0% 0% 17%;
+      padding: 0% 5% 0% 8%;
     }
   }
 `;
