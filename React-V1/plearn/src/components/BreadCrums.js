@@ -249,4 +249,13 @@ const Container = styled.div`
       font-size: 22px;
     }
   }
+  @media only screen and (max-width: 680px) {
+    p {
+      padding: 60px;
+      padding-top: 15px;
+      padding-bottom: 0px;
+      padding-right: 50px;
+      font-size: 12px !important;
+    }
+  }
 `;

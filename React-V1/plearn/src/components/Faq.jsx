@@ -107,8 +107,6 @@ export default function Faq() {
                   <div class="qodef-shortcode qodef-m">
                     <div class="qodef-m-image">
                       <img
-                        width="505"
-                        height="503"
                         src={NFT}
                         class="attachment-full size-full"
                         alt="d"
@@ -130,8 +128,8 @@ const Container = styled.div`
   .elementor-element {
     padding: 0 0 20px;
     .elementor-container {
-      width: 1400px;
-      max-width: 1400px;
+      width: 90vw;
+      max-width: 90vw;
       margin: 0 auto;
       align-items: center;
       padding-top: 5%;
