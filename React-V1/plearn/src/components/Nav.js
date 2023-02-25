@@ -27,7 +27,7 @@ export default function Nav() {
         });
     } else {
       console.log("Need to install MetaMask");
-      toast("Please install MetaMask extension.");
+      alert("Please install MetaMask extension.");
     }
   };
   const nav_list = [
