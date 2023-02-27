@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const playerDetailSchema = new mongoose.Schema({
     userAccount: {type: String},
     playerName: {type: String, default: ''},
-    coins: {type: Number, default: 0},
+    gameCoins: {type: Number, default: 1000},
     tileNumber: {type: Number, default: 0},
     characterID: {type: Number, default: -1},
     level: {type: Number, default: 0}
