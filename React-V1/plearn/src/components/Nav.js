@@ -5,6 +5,7 @@ import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
 import toast from "react-hot-toast";
 import WalletContext from "../contexts/WalletContext";
+import Navbtn from "./Navbtn";
 
 export default function Nav() {
   // const [userAccount, setUserAccount] = useState(null);
@@ -63,7 +64,6 @@ export default function Nav() {
   const accountChangedHandler = (newAccount) => {
     setUserAccount(newAccount[0]);
     // onUserAccountChange(newAccount[0]); // Callback function - Passing the value to the parent component which is App.js
-
   };
 
   useEffect(() => {
@@ -118,25 +118,34 @@ export default function Nav() {
             <ul className="navbar-nav mb-2 mb-lg-0 me-auto">
               <li className="nav-item "></li>
             </ul>
-            <div
-              className="nav-link btn  px-3 py-2  wltBtn"
-              onClick={connectWalletHandler}
-            >
-              {connButtonText}
+            <div className="flx ">
+              <Navbtn />
+              <div
+                className="nav-link btn  px-3 py-2  wltBtn"
+                onClick={connectWalletHandler}
+              >
+                {connButtonText}
+                {isLoading ? (
+                  <span>
+                    <ColorRing
+                      visible={true}
+                      height="40"
+                      width="40"
+                      ariaLabel="blocks-loading"
+                      wrapperStyle={{}}
+                      wrapperClass="blocks-wrapper"
+                      colors={[
+                        "purple",
+                        "purple",
+                        "purple",
+                        "purple",
+                        "purple",
+                      ]}
+                    />
+                  </span>
+                ) : null}
+              </div>
             </div>
-            {isLoading ? (
-              <span>
-                <ColorRing
-                  visible={true}
-                  height="40"
-                  width="40"
-                  ariaLabel="blocks-loading"
-                  wrapperStyle={{}}
-                  wrapperClass="blocks-wrapper"
-                  colors={["purple", "purple", "purple", "purple", "purple"]}
-                />
-              </span>
-            ) : null}
           </div>
         </div>
       </nav>

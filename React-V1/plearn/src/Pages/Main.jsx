@@ -2,6 +2,7 @@ import GameSection from "../components/GameSection";
 import Header from "../components/Header";
 import { lazy, Suspense } from "react";
 import BreadCrums from "../components/BreadCrums";
+// import Litepaper from "../components/Litepaper";
 // import Hype from "./components/Hype";
 // import Gamedes from "./components/Gamedes";
 const ShowCase = lazy(() => import("../components/ShowCase"));

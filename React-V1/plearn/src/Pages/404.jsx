@@ -6,8 +6,14 @@ export default function Error() {
     <Container>
       <div className="flex">
         <h1>Hey,Looks Like You are Lost..?</h1>
-        <h5>Here's a way to get back</h5>
-        <button className="button"> Main Page</button>
+        <button>
+          <div class="blackhole">
+            <span class="ring">
+              <span class="block"></span>
+            </span>
+          </div>
+          <span class="text">Don't get lost</span>
+        </button>
       </div>
       <div className="box-of-star1">
         <div className="star star-position1"></div>
@@ -67,63 +73,201 @@ const Container = styled.div`
     position: relative;
     z-index: 11;
     align-items: center;
-    .button {
-      cursor: pointer;
-      margin: 20px;
-      width: 120px;
-      padding: 15px 20px;
-      font-size: 16px;
-      font-weight: 800;
-      background: transparent;
-      border: none;
+    button {
+      margin-top: 4vh;
+      margin-bottom: 4vh;
+      --black-hole-color-2: rgb(242, 122, 42);
+      --black-hole-color: rgb(230, 148, 93);
+      font-size: 17px;
       position: relative;
-      color: #f0f0f0;
-      z-index: 1;
+      background: #212121;
+      padding: 0.5em;
+      border: 2px solid var(--black-hole-color);
+      border-radius: 8px;
     }
 
-    .button::after,
-    .button::before {
+    button:hover {
+      border: 2px solid var(--black-hole-color-2);
+      animation: alert 1s alternate infinite linear;
+    }
+
+    .blackhole {
+      padding: 3em;
+      background-color: black;
+      color: var(--black-hole-color);
+      position: absolute;
+      animation: wiggle 3s alternate-reverse infinite linear;
+      top: -1em;
+      left: -8em;
+    }
+
+    .blackhole,
+    .blackhole::after,
+    .blackhole::before,
+    .blackhole .ring,
+    .blackhole .ring::after {
+      content: "";
+      border: 2px solid var(--black-hole-color);
+      border-radius: 50%;
+      box-shadow: 0 0 3em, 0 0 1em;
+    }
+
+    .blackhole::after,
+    .blackhole::before {
+      animation: writhe 3s alternate-reverse infinite linear;
+    }
+
+    .blackhole::before {
+      position: absolute;
+      width: calc(100% + 0.5em);
+      height: calc(100% + 0.5em);
+      top: -9px;
+      left: -7px;
+    }
+
+    .blackhole::after {
+      position: absolute;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      top: -6px;
+      left: -5px;
+    }
+
+    .blackhole .ring,
+    .blackhole .ring::after {
       content: "";
       position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: -99999;
-      transition: all 0.4s;
+      left: -50%;
+      width: 200%;
+      border-top: none;
+      height: 2em;
+      border-width: 5px;
+      box-shadow: 0px 5px 10px var(--black-hole-color);
     }
 
-    .button::before {
-      transform: translate(0%, 0%);
-      width: 100%;
-      height: 100%;
-      background: rgb(197, 106, 232);
-      border-radius: 10px;
+    .blackhole .ring,
+    .blackhole .ring::after {
+      animation: ring-writhe 3s alternate-reverse infinite linear;
     }
 
-    .button::after {
-      transform: translate(10px, 10px);
-      width: 35px;
-      height: 35px;
-      background: #ffffff15;
-      backdrop-filter: blur(5px);
-      border-radius: 50px;
+    .blackhole .block {
+      position: absolute;
+      z-index: 90;
+      content: "";
+      background-color: black;
+      top: -20%;
+      left: 25%;
+      width: 50%;
+      height: 10px;
     }
 
-    .button:hover::before {
-      transform: translate(5%, 20%);
+    .blackhole .ring::after {
       width: 110%;
-      height: 110%;
+      left: -8%;
     }
 
-    .button:hover::after {
-      border-radius: 10px;
-      transform: translate(0, 0);
-      width: 100%;
-      height: 100%;
+    .blackhole .rocket {
+      fill: white;
+      height: 30px;
+      transform: rotate(-140deg);
+      animation: idle 1s alternate-reverse infinite linear;
     }
 
-    .button:active::after {
-      transition: 0s;
-      transform: translate(0, 5%);
+    button .text {
+      display: flex;
+      color: white;
+    }
+
+    @keyframes idle {
+      from {
+        transform: rotate(-130deg);
+      }
+
+      to {
+        transform: rotate(-140deg);
+      }
+    }
+
+    @keyframes alert {
+      from {
+        box-shadow: 0 0 0 var(--black-hole-color);
+      }
+
+      to {
+        box-shadow: 0 0 8px var(--black-hole-color);
+      }
+    }
+
+    @keyframes engine-start {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes descend {
+      from {
+        top: -60px;
+        right: -60px;
+        transform: scale(1);
+      }
+
+      to {
+        top: -10px;
+        right: -10px;
+        transform: scale(0.8);
+      }
+    }
+
+    @keyframes descend-dissapear {
+      from {
+        top: -10px;
+        right: -10px;
+        transform: scale(1);
+      }
+
+      to {
+        top: 20px;
+        right: 20px;
+        transform: scale(0);
+      }
+    }
+
+    @keyframes writhe {
+      from {
+        box-shadow: -4px -3px 35px var(--black-hole-color-2), -4px -3px 5px;
+        transform: translateX(-1px) scale(1);
+      }
+
+      to {
+        box-shadow: 4px 3px 35px, 4px 3px 5px var(--black-hole-color-2);
+        transform: translateX(1px) scale(0.95);
+      }
+    }
+
+    @keyframes wiggle {
+      from {
+        transform: translateX(-3px);
+      }
+
+      to {
+        transform: translateX(3px);
+      }
+    }
+
+    @keyframes ring-writhe {
+      from {
+        transform: translateX(-2px) scale(1);
+        box-shadow: -2px 5px 10px var(--black-hole-color);
+      }
+
+      to {
+        box-shadow: 2px 5px 10px var(--black-hole-color-2);
+        transform: translateX(2px) scale(0.95);
+      }
     }
   }
   width: 100vw;
