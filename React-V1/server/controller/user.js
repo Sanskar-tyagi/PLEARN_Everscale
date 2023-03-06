@@ -70,35 +70,21 @@ const saveDetails = (req,res) => {
     })
 };
 
-const characters = [
-    // { characterName: "Character1", cost: 10, level: 1 },
-    // { characterName: "Character2", cost: 10, level: 1 },
-    { characterName: "Character3", cost: 100, unlockLevel: 1 },
-    { characterName: "Character4", cost: 100, unlockLevel: 1 },
-    { characterName: "Character5", cost: 100, unlockLevel: 1 },
-    { characterName: "Character6", cost: 100, unlockLevel: 1 },
-    { characterName: "Character7", cost: 100, unlockLevel: 1 },
-    { characterName: "Character8", cost: 100, unlockLevel: 1 },
-    { characterName: "Character9", cost: 100, unlockLevel: 1 },
-    { characterName: "Character10", cost: 100, unlockLevel: 1 },
-    { characterName: "Character11", cost: 100, unlockLevel: 1 },
-    { characterName: "Character12", cost: 100, unlockLevel: 1 },
-    { characterName: "Character13", cost: 100, unlockLevel: 1 },
-    { characterName: "Character14", cost: 100, unlockLevel: 1 },
-  ];
-async function insertCharacters() {
-    try {
-        // Use insertMany() to insert multiple documents
-        const result = await characterDetail.insertMany(characters, { ordered: false });
-        console.log(`Inserted ${result.length} documents`);
-    } catch (error) {
-        // Handle duplicate key errors
-        if (error instanceof mongoose.Error && error.code === 11000) {
-            // console.error(`Duplicate key error: ${error.message}`);
-        } else {
-            // console.error(error);
-        }
-    }
+const insertCharacters = async () => {
+    // await characterDetail.upsert({ characterName: "Character1", cost: 10, unlockLevel: 1 });
+    // await characterDetail.upsert({ characterName: "Character2", cost: 10, unlockLevel: 1 });
+    await characterDetail.upsert({ characterName: "Character3", cost: 10, unlockLevel: 1 });
+    await characterDetail.upsert({ characterName: "Character4", cost: 10, unlockLevel: 1 });
+    await characterDetail.upsert({ characterName: "Character5", cost: 10, unlockLevel: 2 });
+    await characterDetail.upsert({ characterName: "Character6", cost: 10, unlockLevel: 2 });
+    await characterDetail.upsert({ characterName: "Character7", cost: 10, unlockLevel: 3 });
+    await characterDetail.upsert({ characterName: "Character8", cost: 10, unlockLevel: 3 });
+    await characterDetail.upsert({ characterName: "Character9", cost: 10, unlockLevel: 4 });
+    await characterDetail.upsert({ characterName: "Character10", cost: 10, unlockLevel: 4 });
+    await characterDetail.upsert({ characterName: "Character11", cost: 10, unlockLevel: 5 });
+    await characterDetail.upsert({ characterName: "Character12", cost: 10, unlockLevel: 5 });
+    await characterDetail.upsert({ characterName: "Character13", cost: 10, unlockLevel: 6 });
+    await characterDetail.upsert({ characterName: "Character14", cost: 10, unlockLevel: 6 });
 }
 insertCharacters();
 
