@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 
 const userDetail = require("../model/user");
 const playerDetail = require("../model/player");
+const characterDetail = require("../model/character");
 
 const app = express();
 
@@ -69,4 +70,51 @@ const saveDetails = (req,res) => {
     })
 };
 
-module.exports = {registerUser, getPlayer, saveDetails};
+const characters = [
+    // { characterName: "Character1", cost: 10, level: 1 },
+    // { characterName: "Character2", cost: 10, level: 1 },
+    { characterName: "Character3", cost: 100, unlockLevel: 1 },
+    { characterName: "Character4", cost: 100, unlockLevel: 1 },
+    { characterName: "Character5", cost: 100, unlockLevel: 1 },
+    { characterName: "Character6", cost: 100, unlockLevel: 1 },
+    { characterName: "Character7", cost: 100, unlockLevel: 1 },
+    { characterName: "Character8", cost: 100, unlockLevel: 1 },
+    { characterName: "Character9", cost: 100, unlockLevel: 1 },
+    { characterName: "Character10", cost: 100, unlockLevel: 1 },
+    { characterName: "Character11", cost: 100, unlockLevel: 1 },
+    { characterName: "Character12", cost: 100, unlockLevel: 1 },
+    { characterName: "Character13", cost: 100, unlockLevel: 1 },
+    { characterName: "Character14", cost: 100, unlockLevel: 1 },
+  ];
+async function insertCharacters() {
+    try {
+        // Use insertMany() to insert multiple documents
+        const result = await characterDetail.insertMany(characters, { ordered: false });
+        console.log(`Inserted ${result.length} documents`);
+    } catch (error) {
+        // Handle duplicate key errors
+        if (error instanceof mongoose.Error && error.code === 11000) {
+            // console.error(`Duplicate key error: ${error.message}`);
+        } else {
+            // console.error(error);
+        }
+    }
+}
+insertCharacters();
+
+const getCharacterDetails = (req, res) => {
+    characterDetail.find({}, (err, characters) => {
+        if(err) 
+        {
+          console.error(err);
+        }
+        else
+        {
+          res.send(characters);
+          console.log(characters);
+        }
+    });
+}
+
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails};
