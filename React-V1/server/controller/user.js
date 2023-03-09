@@ -59,15 +59,22 @@ const saveDetails = (req,res) => {
     const userAccount = req.body.userAccount;
     const playerName = req.body.playerName;
     const selectedCharacter = req.body.selectedCharacter;
+    const characterName = req.body.characterName;
 
-    playerDetail.updateOne({userAccount: userAccount}, {$set: {playerName: playerName, characterID: selectedCharacter} }, (err) => {
-        if(err)
-        {
-            console.error(err);
-            return res.sendStatus(500);
+    playerDetail.updateOne(
+        { userAccount: userAccount },
+        { 
+            $set: { playerName: playerName, characterID: selectedCharacter },
+            $push: { ownedCharacters: characterName }
+        },
+        (err) => {
+            if(err) {
+                console.error(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
         }
-        res.sendStatus(200);
-    })
+    );
 };
 
 const insertCharacters = async () => {
