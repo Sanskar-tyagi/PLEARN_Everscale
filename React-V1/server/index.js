@@ -18,29 +18,29 @@ app.use(helmet.frameguard({ action: 'SAMEORIGIN' }));
 //     optionsSuccessStatus: 200 
 // }));
 // app.options("*", cors());
-// var allowedOrigins = ['*'];
-// app.use(function (req, res, next) {
-//     var origin = req.headers.origin;
-//     if (allowedOrigins.indexOf(origin) > -1) {
-//         res.setHeader("Access-Control-Allow-Origin", origin);
-//         // res.setHeader('X-Frame-Options', 'allow');
-//         // res.setHeader('X-Frame-Options', 'SAMEORIGIN');
-//     }
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     res.header("Access-Control-Allow-Credentials", "true");
-//     next();
-//     });
-const allowedOrigins = ['https://singular-granita-0e1259.netlify.app', '*'];
-app.use(cors({
-  origin: function(origin, callback){
-    if(!origin) return callback(null, true);
-    if(allowedOrigins.indexOf(origin) === -1){
-      var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-      return callback(new Error(msg), false);
+var allowedOrigins = ['*', 'https://singular-granita-0e1259.netlify.app'];
+app.use(function (req, res, next) {
+    var origin = req.headers.origin;
+    if (allowedOrigins.indexOf(origin) > -1) {
+        res.setHeader("Access-Control-Allow-Origin", origin);
+        res.setHeader('X-Frame-Options', 'allow');
+        res.setHeader('X-Frame-Options', 'SAMEORIGIN');
     }
-    return callback(null, true);
-  }
-}));
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Credentials", "true");
+    next();
+    });
+// const allowedOrigins = ['https://singular-granita-0e1259.netlify.app', '*'];
+// app.use(cors({
+//   origin: function(origin, callback){
+//     if(!origin) return callback(null, true);
+//     if(allowedOrigins.indexOf(origin) === -1){
+//       var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+//       return callback(new Error(msg), false);
+//     }
+//     return callback(null, true);
+//   }
+// }));
 
 const router = require("./routes/routes");
 app.use("/", router);
