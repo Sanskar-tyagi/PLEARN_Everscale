@@ -30,7 +30,7 @@ app.use(cors());
 //     res.header("Access-Control-Allow-Credentials", "true");
 //     next();
 //     });
-const allowedOrigins = ['https://singular-granita-0e1259.netlify.app'];
+const allowedOrigins = ['https://singular-granita-0e1259.netlify.app', '*'];
 app.use(cors({
   origin: function(origin, callback){
     if(!origin) return callback(null, true);
