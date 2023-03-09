@@ -65,7 +65,7 @@ const saveDetails = (req,res) => {
         { userAccount: userAccount },
         { 
             $set: { playerName: playerName, characterID: selectedCharacter },
-            $push: { ownedCharacters: characterName }
+            // $push: { ownedCharacters: characterName }
         },
         (err) => {
             if(err) {
