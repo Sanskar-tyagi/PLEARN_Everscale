@@ -73,8 +73,8 @@ const saveDetails = (req,res) => {
 const insertCharacters = async () => {
     // await characterDetail.upsert({ characterName: "Character1", cost: 10, unlockLevel: 1 });
     // await characterDetail.upsert({ characterName: "Character2", cost: 10, unlockLevel: 1 });
-    await characterDetail.upsert({ characterName: "Character3", cost: 10, unlockLevel: 1 });
-    await characterDetail.upsert({ characterName: "Character4", cost: 10, unlockLevel: 1 });
+    await characterDetail.upsert({ characterName: "Character3", cost: 0, unlockLevel: 1 });
+    await characterDetail.upsert({ characterName: "Character4", cost: 0, unlockLevel: 1 });
     await characterDetail.upsert({ characterName: "Character5", cost: 10, unlockLevel: 2 });
     await characterDetail.upsert({ characterName: "Character6", cost: 10, unlockLevel: 2 });
     await characterDetail.upsert({ characterName: "Character7", cost: 10, unlockLevel: 3 });
