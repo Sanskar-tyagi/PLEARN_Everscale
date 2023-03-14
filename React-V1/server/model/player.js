@@ -8,7 +8,8 @@ const playerDetailSchema = new mongoose.Schema({
     tileNumber: {type: Number, default: 0},
     characterID: {type: Number, default: -1},
     level: {type: Number, default: 1},
-    ownedCharacters: {type: [String]}
+    ownedCharacters: {type: [String]},
+    ownedHouseID: {type: [Number]}
 })
 const playerDetail = new mongoose.model("player_detail_table", playerDetailSchema, "player_detail_table");
 

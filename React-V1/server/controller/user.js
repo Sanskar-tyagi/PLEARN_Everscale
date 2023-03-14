@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const userDetail = require("../model/user");
 const playerDetail = require("../model/player");
 const characterDetail = require("../model/character");
+const houseDetail = require("../model/house");
 
 const app = express();
 
@@ -77,6 +78,8 @@ const saveDetails = (req,res) => {
     );
 };
 
+
+//For inserting characters in the DB
 const insertCharacters = async () => {
     // await characterDetail.upsert({ characterName: "Character1", cost: 10, unlockLevel: 1 });
     // await characterDetail.upsert({ characterName: "Character2", cost: 10, unlockLevel: 1 });
@@ -110,4 +113,26 @@ const getCharacterDetails = (req, res) => {
 }
 
 
-module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails};
+//For adding houses in the DB.
+const insertHouses = async () => {
+    await houseDetail.upsert({ houseID: 0, houseName: "House1", cost: 600, insurancePrice: 100, taxPrice: 100, energyGain: 20});
+    await houseDetail.upsert({ houseID: 1, houseName: "House2", cost: 700, insurancePrice: 200, taxPrice: 200, energyGain: 40});
+    await houseDetail.upsert({ houseID: 2, houseName: "House3", cost: 800, insurancePrice: 300, taxPrice: 300, energyGain: 60});
+}
+insertHouses();
+
+const getHouseList = (req, res) => {
+    houseDetail.find({}, (err, houseList) => {
+        if(err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            res.send(houseList);
+            console.log(houseList);
+        }
+    })
+}
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList};
