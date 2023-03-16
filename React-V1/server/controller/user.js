@@ -135,4 +135,26 @@ const getHouseList = (req, res) => {
     })
 }
 
-module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList};
+//For updating house details
+const updateHouseDetails = (req,res) => {
+    const userAccount = req.body.userAccount;
+    const selectedHouseID = req.body.selectedHouseID;
+    const gameCoins = req.body.gameCoins;
+
+    playerDetail.updateOne(
+        { userAccount: userAccount },
+        { 
+            $set: { houseID: selectedHouseID, gameCoins: gameCoins },
+            $push: { ownedHouseID: selectedHouseID }
+        },
+        (err) => {
+            if(err) {
+                console.error(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
+        }
+    )
+}
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails};
