@@ -10,7 +10,8 @@ const playerDetailSchema = new mongoose.Schema({
     houseID: {type: Number, default: -1},   //currently selected house
     level: {type: Number, default: 1},
     ownedCharacters: {type: [String]},
-    ownedHouseID: {type: [Number]}
+    ownedHouseID: {type: [Number]},
+    energy: {type: Number, default: 100}
 })
 const playerDetail = new mongoose.model("player_detail_table", playerDetailSchema, "player_detail_table");
 
