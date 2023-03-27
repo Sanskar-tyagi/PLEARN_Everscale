@@ -194,6 +194,7 @@ const updateEnergyDetails = (req,res) => {
                 console.error(err);
                 return res.sendStatus(500);
             }
+            res.sendStatus(200);
         }
     )
 }
