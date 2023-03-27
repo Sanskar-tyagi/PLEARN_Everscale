@@ -5,6 +5,7 @@ const userDetail = require("../model/user");
 const playerDetail = require("../model/player");
 const characterDetail = require("../model/character");
 const houseDetail = require("../model/house");
+const energyDetail = require("../model/energy");
 
 const app = express();
 
@@ -112,7 +113,6 @@ const getCharacterDetails = (req, res) => {
     });
 }
 
-
 //For adding houses in the DB.
 const insertHouses = async () => {
     await houseDetail.upsert({ houseID: 0, houseName: "House1", cost: 600, insurancePrice: 100, taxPrice: 100, energyGain: 20});
@@ -152,9 +152,50 @@ const updateHouseDetails = (req,res) => {
                 console.error(err);
                 return res.sendStatus(500);
             }
-            res.sendStatus(200);
+            // res.sendStatus(200);
         }
     )
 }
 
-module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails};
+//For adding buyingEnergy options in DB.
+const insertEnergy = async () => {
+    await energyDetail.upsert({ energyID: 0, cost: 100, energyGain: 20});
+    await energyDetail.upsert({ energyID: 1, cost: 200, energyGain: 40});
+    await energyDetail.upsert({ energyID: 2, cost: 300, energyGain: 60});
+}
+insertEnergy();
+
+const getEnergyList = (req, res) => {
+    energyDetail.find({}, (err, energyList) => {
+        if(err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            res.send(energyList);
+            console.log(energyList);
+        }
+    })
+}
+
+const updateEnergyDetails = (req,res) => {
+    const userAccount = req.body.userAccount;
+    const gameCoins = req.body.gameCoins;
+
+    playerDetail.updateOne(
+        { userAccount: userAccount },
+        {
+            $set: { gameCoins: gameCoins },  
+        },
+        (err) => {
+            if(err)
+            {
+                console.error(err);
+                return res.sendStatus(500);
+            }
+        }
+    )
+}
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails};
