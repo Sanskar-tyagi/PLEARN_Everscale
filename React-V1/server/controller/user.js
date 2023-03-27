@@ -152,7 +152,7 @@ const updateHouseDetails = (req,res) => {
                 console.error(err);
                 return res.sendStatus(500);
             }
-            // res.sendStatus(200);
+            res.sendStatus(200);
         }
     )
 }
