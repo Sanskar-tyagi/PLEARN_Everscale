@@ -6,6 +6,7 @@ const playerDetail = require("../model/player");
 const characterDetail = require("../model/character");
 const houseDetail = require("../model/house");
 const energyDetail = require("../model/energy");
+const lfDetail = require("../model/lifeInsurance");
 
 const app = express();
 
@@ -199,4 +200,45 @@ const updateEnergyDetails = (req,res) => {
     )
 }
 
-module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails};
+//For adding lifeInsurance options in DB.
+const insertLF = async () => {
+    await lfDetail.upsert({lfID: 0, cost: 100, loanAgainstLF: 50})
+}
+insertLF();
+
+const getLFList = (req,res) => {
+    lfDetail.find({}, (err, lfList) => {
+        if(err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            res.send(lfList);
+            console.log(lfList);
+        }
+    })
+}
+
+const updateLFDetails = (req,res) => {
+    const userAccount = req.body.userAccount;
+    const selectedLFID = req.body.selectedLFID;
+    const lfBoughtAt = req.body.lfBoughtAt;
+    const gameCoins = req.body.gameCoins;
+
+    playerDetail.updateOne(
+        { userAccount: userAccount },
+        { 
+            $set: { lfID: selectedLFID, lfBoughtAt: lfBoughtAt, gameCoins: gameCoins },
+        },
+        (err) => {
+            if(err) {
+                console.error(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
+        }
+    )
+}
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails, getLFList, updateLFDetails};
