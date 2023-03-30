@@ -203,6 +203,8 @@ const updateEnergyDetails = (req,res) => {
 //For adding lifeInsurance options in DB.
 const insertLF = async () => {
     await lfDetail.upsert({lfID: 0, cost: 100, loanAgainstLF: 50})
+    await lfDetail.upsert({lfID: 1, cost: 200, loanAgainstLF: 60})
+    await lfDetail.upsert({lfID: 2, cost: 300, loanAgainstLF: 70})
 }
 insertLF();
 
