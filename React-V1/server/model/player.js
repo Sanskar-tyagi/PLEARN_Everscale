@@ -10,6 +10,7 @@ const playerDetailSchema = new mongoose.Schema({
     houseID: {type: Number, default: -1},   //currently selected house
     lfID: {type: Number, default: -1},  //currently selected LifeInsurance
     lfBoughtAt: {type: Number, default: 1},  //LifeInsurance bought at which LEVEL; will be used to calculate 'sell insurance amt(2x)'
+    loanAgainstLifeInsurance: {type: Number, default: 0},
     level: {type: Number, default: 1},
     ownedCharacters: {type: [String]},
     ownedHouseID: {type: [Number]},

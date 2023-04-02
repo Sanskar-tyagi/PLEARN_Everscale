@@ -208,6 +208,7 @@ const insertLF = async () => {
 }
 insertLF();
 
+// To fetch all Life Insurances available.
 const getLFList = (req,res) => {
     lfDetail.find({}, (err, lfList) => {
         if(err)
@@ -222,16 +223,18 @@ const getLFList = (req,res) => {
     })
 }
 
+// To update gameCoins/loanAgainstLF after buying/using LF.
 const updateLFDetails = (req,res) => {
     const userAccount = req.body.userAccount;
     const selectedLFID = req.body.selectedLFID;
     const lfBoughtAt = req.body.lfBoughtAt;
     const gameCoins = req.body.gameCoins;
+    const loanAgainstLF = req.body.loanAgainstLF;
 
     playerDetail.updateOne(
         { userAccount: userAccount },
         { 
-            $set: { lfID: selectedLFID, lfBoughtAt: lfBoughtAt, gameCoins: gameCoins },
+            $set: { lfID: selectedLFID, lfBoughtAt: lfBoughtAt, gameCoins: gameCoins, loanAgainstLF: loanAgainstLF },
         },
         (err) => {
             if(err) {
