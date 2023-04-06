@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "./components/Nav";
 import WalletContext from "./contexts/WalletContext";
+import MarketPlace from "./Pages/MarketPlace";
 const Main = lazy(() => import("./Pages/Main"));
 const Error = lazy(() => import("./Pages/404"));
 function App() {
@@ -11,7 +12,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 1500);
   }, []);
   const [userAccount, setUserAccount] = useState(null);
   const handleUserAccountChange = (newUserAccount) => {
@@ -52,6 +53,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Main />} />
         <Route path="*" element={<Error />} />
+        <Route path="/Marketplace" element={<MarketPlace />}></Route>
       </Routes>
     );
   };

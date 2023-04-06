@@ -7,6 +7,33 @@ import a4 from "../assets/Images/NFTS/nft (35).jpg";
 export default function ShowCase() {
   const eth =
     "https://nftly-theme.pxsquad.com/demo1/wp-content/themes/nftly/assets/images/crypto/ETH.png";
+  const items = [
+    {
+      id: 1,
+      name: "CASA BLANCA",
+      imageSrc: a1,
+      eth: "4,322",
+    },
+    {
+      id: 2,
+      name: "TAJ MAHAL",
+      imageSrc: a2,
+      eth: "1,502",
+    },
+    {
+      id: 3,
+      name: "ORANGE OASIS",
+      imageSrc: a3,
+      eth: "1,423",
+    },
+    {
+      id: 4,
+      name: "BEIGE BAY",
+      imageSrc: a4,
+      eth: "1,445",
+    },
+  ];
+
   return (
     <div>
       <section className="section-item   pb-20">
@@ -24,166 +51,48 @@ export default function ShowCase() {
           </div>
           <div className="section__content">
             <div className="marketplace__items">
-              <div className="marketplace__item ">
-                <div className="marketplace__image">
-                  <img
-                    width="378"
-                    height="390"
-                    src={a1}
-                    className="imgT"
-                    alt=""
-                  />{" "}
-                </div>
-                <div className="marketplace__meta">
-                  <div className="marketplace__meta-item">
-                    <div className="marketplace__meta-author">
-                      <h3 className="marketplace__meta-title">
-                        <a href="index.html" className="">
-                          CASA BLANCA
+              {items.map((item) => (
+                <div className="marketplace__item" key={item.id}>
+                  <div className="marketplace__image">
+                    <img
+                      width="378"
+                      height="390"
+                      src={item.imageSrc}
+                      className="imgT"
+                      alt=""
+                    />
+                  </div>
+                  <div className="marketplace__meta">
+                    <div className="marketplace__meta-item">
+                      <div className="marketplace__meta-author">
+                        <h3 className="marketplace__meta-title">
+                          <a href="index.html" className="">
+                            {item.name}
+                          </a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="marketplace_go-to">
+                    <div className="marketplace__favs">
+                      <div className="marketplace__additional-first">
+                        <img src={eth} alt="marketplace-icon" />
+                        <div>{item.eth} ETH</div>
+                      </div>
+                    </div>
+                    <div className="marketplace__additional">
+                      <div>
+                        <a className="btn btn--hypercolor" href="index.html">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>BUY NFT{" "}
                         </a>
-                      </h3>{" "}
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="marketplace_go-to">
-                  <div className="marketplace__favs">
-                    <div className="marketplace__additional-first">
-                      <img src={eth} alt="marketplace-icon" />
-                      <div>4,322 ETH </div>
-                    </div>
-                  </div>
-                  <div className="marketplace__additional">
-                    <div>
-                      <a className="btn btn--hypercolor" href="index.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>BUY NFT{" "}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="marketplace__item animated-box ">
-                <div className="marketplace__image">
-                  <img
-                    width="378"
-                    height="390"
-                    src={a2}
-                    className="imgT"
-                    alt=""
-                  />{" "}
-                </div>
-                <div className="marketplace__meta">
-                  <div className="marketplace__meta-item">
-                    <div className="marketplace__meta-author">
-                      <h3 className="marketplace__meta-title">
-                        <a href="index.html" className="">
-                          TAJ MAHAL
-                        </a>
-                      </h3>{" "}
-                    </div>
-                  </div>
-                </div>
-                <div className="marketplace_go-to">
-                  <div className="marketplace__favs">
-                    <div className="marketplace__additional-first">
-                      <img src={eth} alt="marketplace-icon" />
-                      <div>1,502 ETH </div>
-                    </div>
-                  </div>
-                  <div className="marketplace__additional">
-                    <div>
-                      <a className="btn btn--hypercolor" href="index.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>BUY NFT{" "}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="marketplace__item">
-                <div className="marketplace__image">
-                  <img
-                    width="378"
-                    height="390"
-                    src={a3}
-                    className="imgT"
-                    alt=""
-                  />{" "}
-                </div>
-                <div className="marketplace__meta">
-                  <div className="marketplace__meta-item">
-                    <div className="marketplace__meta-author">
-                      <h3 className="marketplace__meta-title">
-                        <a href="index.html" className="">
-                          ORANGE OASIS
-                        </a>
-                      </h3>{" "}
-                    </div>
-                  </div>
-                </div>
-                <div className="marketplace_go-to">
-                  <div className="marketplace__favs">
-                    <div className="marketplace__additional-first">
-                      <img src={eth} alt="marketplace-icon" />
-                      <div>14,523 ETH </div>
-                    </div>
-                  </div>
-                  <div className="marketplace__additional">
-                    <div>
-                      <a className="btn btn--hypercolor" href="index.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>BUY NFT{" "}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="marketplace__item ">
-                <div className="marketplace__image">
-                  <img
-                    width="378"
-                    height="390"
-                    src={a4}
-                    className="imgT"
-                    alt=""
-                  />{" "}
-                </div>
-                <div className="marketplace__meta">
-                  <div className="marketplace__meta-item">
-                    <div className="marketplace__meta-author">
-                      <h3 className="marketplace__meta-title">
-                        <a href="index.html" className="">
-                          BEIGE BAY
-                        </a>
-                      </h3>{" "}
-                    </div>
-                  </div>
-                </div>
-                <div className="marketplace_go-to">
-                  <div className="marketplace__favs">
-                    <div className="marketplace__additional-first">
-                      <img src={eth} alt="marketplace-icon" />
-                      <div>1,445 ETH </div>
-                    </div>
-                  </div>
-                  <div className="marketplace__additional">
-                    <div>
-                      <a className="btn btn--hypercolor" href="index.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>BUY NFT{" "}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

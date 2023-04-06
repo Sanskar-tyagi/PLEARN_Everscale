@@ -1759,3 +1759,6 @@ font-size: 22px;
   justify-content: center;
   align-items: center;
 }
+.swiper-pagination-bullet{
+  background-color: white !important;
+}

@@ -4,13 +4,9 @@ import a2 from "../assets/NFTs3/nfts (2).avif";
 import a3 from "../assets/NFTs3/nfts (1).avif";
 import a4 from "../assets/Images/NFTS/nsf (4).jpg";
 import a5 from "../assets/NFTs3/nfts (3).avif";
-import a6 from "../assets/Images/NFTS/nsf (6).jpg";
 import a7 from "../assets/NFTs V04/boots.jpeg";
-import a8 from "../assets/Images/NFTS/nsf (8).jpg";
 import a9 from "../assets/NFTs V04/Crown.avif";
 export default function GameSection() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   const text =
     "This brightly colored dice is a perfect choice, with its vibrant design and smooth edges, it will bring an added level of fun and excitement for you";
   return (
@@ -31,7 +27,7 @@ export default function GameSection() {
                         <div className="nft-showcase__overlay">
                           <h3>Summer PinkPeak Collection</h3>
                           <a href="/">
-                            BUY NOW{" "}
+                            BUY NOW!{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -44,7 +40,7 @@ export default function GameSection() {
                         <div className="nft-showcase__overlay">
                           <h3> DiceDash collection</h3>
                           <a href="/">
-                            BUY NOW
+                            BUY NOW!
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -66,7 +62,7 @@ export default function GameSection() {
                             stepped into a completely different world
                           </h3>
                           <a href="/">
-                            Know more{" "}
+                            BUY NOW!{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -77,7 +73,7 @@ export default function GameSection() {
                           <div className="nft-showcase__overlay">
                             <h3>IceRise collection</h3>
                             <a href="/">
-                              BUY NOW{" "}
+                              BUY NOW!{" "}
                               <span className="icon-arrow icon-arrow--white"></span>
                             </a>
                           </div>
@@ -90,7 +86,7 @@ export default function GameSection() {
                           <div className="nft-showcase__overlay">
                             <h3>SneakerStride collection</h3>
                             <a href="/">
-                              BUY NOW{" "}
+                              BUY NOW!{" "}
                               <span className="icon-arrow icon-arrow--white"></span>
                             </a>
                           </div>
@@ -109,7 +105,7 @@ export default function GameSection() {
                             fear
                           </h3>
                           <a href="/">
-                            Know more{" "}
+                            BUY NOW!{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>
@@ -126,7 +122,7 @@ export default function GameSection() {
                             powerful engine
                           </h3>
                           <a href="/">
-                            Know more{" "}
+                            BUY NOW!{" "}
                             <span className="icon-arrow icon-arrow--white"></span>
                           </a>
                         </div>

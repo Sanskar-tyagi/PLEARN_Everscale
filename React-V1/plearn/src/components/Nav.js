@@ -34,8 +34,8 @@ export default function Nav() {
   const nav_list = [
     { name: "Home" },
     { name: "About" },
+    { name: "MarketPlace" },
     { name: "Tokenomics" },
-    { name: "Real Estate" },
     { name: "Trading" },
     { name: "NFT" },
   ];

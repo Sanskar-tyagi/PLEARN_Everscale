@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export default function Card(props) {
   const { user } = props;
-  console.log(user);
   return (
     <Container>
       <div className="card">

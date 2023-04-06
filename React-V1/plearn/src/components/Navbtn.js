@@ -6,10 +6,10 @@ export default function Navbtn() {
     <Container>
       <a href="https://app.gitbook.com/o/MlSnEay3emUISovv9D7h/s/OPRW4CPO5R4nBSjK8YlR/">
         {" "}
-        <button class="cssbuttons-io-button">
+        <button className="cssbuttons-io-button">
           {" "}
           Litepaper
-          <div class="icon">
+          <div className="icon">
             <svg
               height="24"
               width="24"

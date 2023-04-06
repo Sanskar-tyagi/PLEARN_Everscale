@@ -33,9 +33,8 @@ const options = {
   storage: { enabled: false },
 };
 
-export default function BreadCrums() {
+export default React.memo(function BreadCrums() {
   const [showText, isShowText] = useState(true);
-  const [ButtonText, setButtonText] = useState("VIEW VIDEO");
 
   return (
     <Container>
@@ -81,14 +80,14 @@ export default function BreadCrums() {
       </div>
     </Container>
   );
-}
-export const MyComponent = () => {
+});
+export const MyComponent = React.memo(() => {
   return (
     <>
       <Plyr source={videoSrc} frameborder="0" options={options} />
     </>
   );
-};
+});
 const Container = styled.div`
   .txtcls {
     display: flex;
