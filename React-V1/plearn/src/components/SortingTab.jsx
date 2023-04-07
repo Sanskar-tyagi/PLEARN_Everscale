@@ -1,13 +1,22 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { filterCards, setSearchQuery } from "../Store/Slice/userSlice";
 
-export default function SortingTab() {
+export default function SortingTab({ ShopState }) {
+  const dispatch = useDispatch();
+  const handleSearch = (event) => {
+    dispatch(setSearchQuery(event.target.value));
+  };
   return (
     <Container className="container">
       <div className="left">
         <h1>SHOP</h1>
       </div>
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        style={{ display: `${ShopState ? "None" : "Inherit"}` }}
+      >
         <div className="input-wrapper">
           <button className="icon">
             <svg
@@ -38,6 +47,7 @@ export default function SortingTab() {
             className="input"
             name="text"
             type="text"
+            onChange={handleSearch}
           />
         </div>
       </div>

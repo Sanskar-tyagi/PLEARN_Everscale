@@ -1,22 +1,38 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import { filterCards, setSortBy } from "../../Store/Slice/userSlice";
+import Swiper, { Pagination } from "swiper";
+import { SwiperSlide } from "swiper/react";
 export default function Category() {
-  const Category = ({ setFilter }) => {
-    return (
-      <Cat className="Cat">
-        <button onClick={() => setFilter("all")}>ALL</button>
-        <button onClick={() => setFilter("Accessories")}>Accessories</button>
-        <button onClick={() => setFilter("Character")}>Character</button>
-        <button onClick={() => setFilter("Dice")}>Dice</button>
-      </Cat>
-    );
+  const dispatch = useDispatch();
+  const categories = useSelector((state) => {
+    const allCategories = state.tools.cards.map((card) => card.Category);
+    return ["All", ...new Set(allCategories)];
+  });
+  const handleSort = (event) => {
+    dispatch(setSortBy(event.target.value));
   };
+  const handleFilterClick = (category) => {
+    dispatch(filterCards(category));
+  };
+  return (
+    <div>
+      <Cat className="categories">
+        {categories.map((category) => (
+          <button key={category} onClick={() => handleFilterClick(category)}>
+            {category}
+          </button>
+        ))}
+      </Cat>
+    </div>
+  );
 }
-
+const Sort = styled.div``;
 const Cat = styled.div`
   display: flex;
   display: flex;
-  min-width: 40vw;
+  max-width: 40vw;
   margin-top: 40px;
   justify-content: space-evenly;
   button {

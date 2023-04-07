@@ -3,29 +3,38 @@ import data from "../../utils/data";
 const initialState = {
   cards: data,
   filteredCards: [],
-  filterActive: false,
+  searchQuery: "",
+  sortBy: "",
 };
-
 const Tools = createSlice({
   name: "Tool",
   initialState,
   reducers: {
     filterCards(state, action) {
-      if (state.filteredCards.includes(action.payload)) {
-        // Remove category if it already exists in the array
-        state.filteredCards = state.filteredCards.filter(
-          (category) => category !== action.payload
-        );
+      if (action.payload === "All" && state.searchQuery.length === 0) {
+        state.filteredCards = data;
       } else {
-        // Add category to the array
-        state.filteredCards.push(action.payload);
+        state.filteredCards = state.cards.filter(
+          (card) => card.Category === action.payload
+        );
       }
+      state.filterActive = true;
     },
-    // resetAll(state, action) {},
-    setFilterActive: (state, action) => {
-      state.filterActive = action.payload;
+    setSearchQuery(state, action) {
+      state.searchQuery = action.payload;
+      state.filterActive = true;
+      state.filteredCards = state.cards.filter(
+        (card) =>
+          card.Name.includes(action.payload) ||
+          card.Category.includes(action.payload)
+      );
+    },
+
+    setSortBy(state, action) {
+      state.sortBy = action.payload;
     },
   },
 });
-export const { filterCards, setFilterActive } = Tools.actions;
+
+export const { filterCards, setSearchQuery, setSortBy } = Tools.actions;
 export { Tools };

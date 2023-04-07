@@ -1,5 +1,8 @@
-import a1 from "../assets/Images/NFTS/nft (32).jpg";
-import a2 from "../assets/Images/NFTS/nft (33).jpg";
+import RnB from "../assets/MarketPlace/RnB.avif";
+import a2 from "../assets/Images/Property/CAM.jpg";
+import bay from "../assets/Images/Property/Bay.jpg";
+import Oa from "../assets/Images/Property/Oa.jpg";
+import Taj from "../assets/Images/Property/Taj.jpg";
 import a3 from "../assets/Sneaker.jpg";
 import a4 from "../assets/NFTs V04/boots.jpeg";
 import Crown from "../assets/NFTs V04/Crown.avif";
@@ -51,8 +54,7 @@ const data = [
     Name: "TAJ MAHAL",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolores suscipit culpa cum non blanditiis, saepe enim quisquam consequuntur, laboriosam repudiandae quas recusandae placeat qui quo deleniti odio praesentium doloribus?",
     id: "Unique1",
-    ImgUri:
-      "https://uploads-ssl.webflow.com/63994dae1033718bee6949ce/63af21cf6205071b9e358dcd_og.png",
+    ImgUri: Taj,
     price: 1502,
     Category: "Properties",
   },
@@ -61,7 +63,7 @@ const data = [
     desc: "This luxury dice is a cube-shaped object with smooth edges and a glossy finish. Each side of the dice is marked with white dots, ranging from one to six, representing the potential outcomes of a roll. The black color gives it a sleek and sophisticated appearance, making it a unique addition to the game. ",
     id: "Unique2",
     ImgUri:
-      "https://uploads-ssl.webflow.com/63994dae1033718bee6949ce/63f757045952154e808b4edc_steosvoice-cybervoice-logo.png",
+      "https://media.istockphoto.com/id/1198393778/photo/black-casino-dice.jpg?s=612x612&w=0&k=20&c=eVtjdMPx8OoetX_DF9Oj1ZXMTbPHZU1tdHGoluIC1LU=",
     price: 23,
     Category: "Dices",
   },
@@ -69,8 +71,7 @@ const data = [
     Name: "ORANGE OASIS",
     desc: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolores suscipit culpa cum non blanditiis, saepe enim quisquam consequuntur, laboriosam repudiandae quas recusandae placeat qui quo deleniti odio praesentium doloribus?",
     id: "Unique3",
-    ImgUri:
-      "https://uploads-ssl.webflow.com/63994dae1033718bee6949ce/63f57d9e6d56c22b47d2ce97_https%253A%252F%252Fs3.amazonaws.com%252Fappforest_uf%252Ff1676928090744x318747181421730600%252Fmeta-ask-ai.png",
+    ImgUri: Oa,
     price: 1423,
     Category: "Properties",
   },
@@ -78,8 +79,7 @@ const data = [
     Name: "Red N Black",
     desc: "This luxury dice is a cube-shaped object with smooth edges and a glossy finish. Each side of the dice is marked with white dots, ranging from one to six, representing the potential outcomes of a roll. The black color gives it a sleek and sophisticated appearance, making it a unique addition to the game. ",
     id: "Unique4",
-    ImgUri:
-      "https://uploads-ssl.webflow.com/63994dae1033718bee6949ce/63d96af4e845e701246f64fc_about_1.webp",
+    ImgUri: RnB,
     price: 0,
     Category: "Dices",
   },
@@ -87,8 +87,7 @@ const data = [
     Name: "BEIGE BAY",
     desc: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolores suscipit culpa cum non blanditiis, saepe enim quisquam consequuntur, laboriosam repudiandae quas recusandae placeat qui quo deleniti odio praesentium doloribus?",
     id: "Unique5",
-    ImgUri:
-      "https://uploads-ssl.webflow.com/63994dae1033718bee6949ce/63ecc0b2d4a28e27d832a32c_heycli-logo.png",
+    ImgUri: bay,
     price: 1445,
     Category: "Properties",
   },

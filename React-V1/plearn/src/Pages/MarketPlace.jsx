@@ -2,24 +2,17 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import CardLoader from "../components/CardLoader";
 import Header from "../components/MarketPlace/Header";
-import c1 from "../assets/MarketPlace/Card/Frame-275.jpg";
-import c2 from "../assets/MarketPlace/Card/Frame-268-1.jpg";
-import c3 from "../assets/MarketPlace/Card/Frame-269-1.jpg";
-import c4 from "../assets/MarketPlace/Card/Frame-270-2.jpg";
-import c5 from "../assets/MarketPlace/Card/Frame-273.jpg";
-import c6 from "../assets/MarketPlace/Card/Frame-274.jpg";
 import SortingTab from "../components/SortingTab";
 import Cards from "../components/MarketPlace/Cards";
-import Swiper from "swiper";
-import Category from "../components/MarketPlace/Category";
 import { useDispatch, useSelector } from "react-redux";
 import { setFilterActive, filterCards } from "../Store/Slice/userSlice";
+import Category from "../components/MarketPlace/Category";
 export default function MarketPlace() {
   const filterActive = useSelector((state) => state.tools.filterActive);
   const card = useSelector((state) => state.tools.cards);
   const filteredCards = useSelector((state) => state.tools.filteredCards);
   console.log(filterActive);
-
+  const cardData = filterActive ? filteredCards : card;
   const [ShopState, SetShop] = useState(true);
   function Root() {
     const cardsByCategory = card.reduce((accumulator, currentCard) => {
@@ -60,15 +53,18 @@ export default function MarketPlace() {
   return (
     <Main>
       <Header />
-      <SortingTab />
+      <SortingTab ShopState={ShopState} />
       <Market>
         <div className="left">
           {ShopState === false ? (
-            <ShopAll>
-              {card.map((Category) => (
-                <Cards data={Category} />
-              ))}
-            </ShopAll>
+            <>
+              <Category />
+              <ShopAll>
+                {cardData.map((Category) => (
+                  <Cards data={Category} />
+                ))}
+              </ShopAll>
+            </>
           ) : (
             <Root />
           )}
