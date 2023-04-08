@@ -31,4 +31,4 @@ bankDepositSchema.statics.upsert = async function (record){
 
 const bankDeposit = new mongoose.model("bank_deposit_table",bankDepositSchema,"bank_deposit_table")
 
-module.exports = {bankLoan, bankDeposit};
+module.exports = bankLoan;
