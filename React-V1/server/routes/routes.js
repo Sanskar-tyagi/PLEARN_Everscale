@@ -1,7 +1,7 @@
 const express = require("express");
 
 const router = express();
-const {registerUser, getLFList} = require("../controller/user");
+const {registerUser, getLFList, getDepositList} = require("../controller/user");
 const {getPlayer} = require("../controller/user");
 const {saveDetails} = require("../controller/user");
 const {getCharacterDetails} = require("../controller/user");
@@ -10,6 +10,8 @@ const {updateHouseDetails} = require("../controller/user")
 const {getEnergyList} = require("../controller/user");
 const {updateEnergyDetails} = require("../controller/user");
 const {updateLFDetails} = require("../controller/user");
+const {getLoanList} = require("../controller/user");
+const {updateBankLoan} = require("../controller/user");
 
 router.post("/", registerUser);
 
@@ -30,5 +32,11 @@ router.post('/updateEnergyDetails', updateEnergyDetails);
 router.get('/getLFList', getLFList);
 
 router.post('/updateLFDetails', updateLFDetails);
+
+router.get('/getLoanList', getLoanList);
+
+router.post('/updateBankLoan', updateBankLoan);
+
+router.get('/getDepositList', getDepositList);
 
 module.exports = router;

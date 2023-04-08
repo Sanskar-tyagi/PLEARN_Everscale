@@ -7,6 +7,8 @@ const characterDetail = require("../model/character");
 const houseDetail = require("../model/house");
 const energyDetail = require("../model/energy");
 const lfDetail = require("../model/lifeInsurance");
+const bankLoan = require("../model/bank");
+const bankDeposit = require("../model/bank");
 
 const app = express();
 
@@ -246,4 +248,71 @@ const updateLFDetails = (req,res) => {
     )
 }
 
-module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails, getLFList, updateLFDetails};
+//For adding loans in DB.
+const insertLoans = async () => {
+    await bankLoan.upsert({loanID: 0, gameCoins: 50, interestRate: 2});
+    await bankLoan.upsert({loanID: 1, gameCoins: 75, interestRate: 4});
+    await bankLoan.upsert({loanID: 2, gameCoins: 100, interestRate: 6});
+}
+insertLoans();
+
+//To fetch all loans available.
+const getLoanList = (req,res) => {
+    bankLoan.find({}, (err, loanList) => {
+        if(err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            res.send(loanList);
+            console.log(loanList);
+        }
+    })
+}
+
+//To update bankLoan and Gamecoins after taking loan from bank.
+const updateBankLoan = (req,res) => {
+    const userAccount = req.body.userAccount;
+    const bankLoan = req.body.bankLoan;
+    const gameCoins = req.body.gameCoins;
+
+    playerDetail.updateOne(
+        { userAccount: userAccount },
+        { 
+            $set: { bankLoan: bankLoan, gameCoins: gameCoins },
+        },
+        (err) => {
+            if(err) {
+                console.error(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
+        }
+    )
+}
+
+//For adding deposit list in DB.
+const insertDeposit = async () => {
+    await bankDeposit.upsert({depositID: 0, time: 1, interestRate: 10});
+    await bankDeposit.upsert({depositID: 1, time: 2, interestRate: 15});
+    await bankDeposit.upsert({depositID: 2, time: 3, interestRate: 20});
+}
+insertDeposit();
+
+//To fetch deposit list
+const getDepositList = (req,res) => {
+    bankDeposit.find({}, (err, depositList) => {
+        if(err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            res.send(depositList);
+            console.log(depositList);
+        }
+    })
+}
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails, getLFList, updateLFDetails, getLoanList, updateBankLoan, getDepositList};
