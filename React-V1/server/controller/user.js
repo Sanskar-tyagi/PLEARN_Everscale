@@ -7,8 +7,7 @@ const characterDetail = require("../model/character");
 const houseDetail = require("../model/house");
 const energyDetail = require("../model/energy");
 const lfDetail = require("../model/lifeInsurance");
-const bankLoan = require("../model/bank");
-const bankDeposit = require("../model/bank");
+const {bankLoan, bankDeposit} = require("../model/bank");
 
 const app = express();
 
@@ -250,9 +249,9 @@ const updateLFDetails = (req,res) => {
 
 //For adding loans in DB.
 const insertLoans = async () => {
-    await bankLoan.upsert({loanID: 0, gameCoins: 50, interestRate: 2});
-    await bankLoan.upsert({loanID: 1, gameCoins: 75, interestRate: 4});
-    await bankLoan.upsert({loanID: 2, gameCoins: 100, interestRate: 6});
+    await bankLoan.upsert({loanID: 0, gameCoins: 50, interestRate: 2})
+    await bankLoan.upsert({loanID: 1, gameCoins: 75, interestRate: 4})
+    await bankLoan.upsert({loanID: 2, gameCoins: 100, interestRate: 6})
 }
 insertLoans();
 

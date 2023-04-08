@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const bankLoanSchema = mongoose.Schema({
-    loanID: {type: Number},
+const bankLoanSchema = new mongoose.Schema({
+    loanID: {type: Number, unique: true},
     gameCoins: {type: Number},
     interestRate: {type: Number},
 });
@@ -16,7 +16,7 @@ bankLoanSchema.statics.upsert = async function (record){
 const bankLoan = new mongoose.model("bank_loan_table",bankLoanSchema,"bank_loan_table");
 
 
-const bankDepositSchema = mongoose.Schema({
+const bankDepositSchema = new mongoose.Schema({
     depositID: {type: Number},
     time: {type: Number},
     interestRate: {type: Number}
@@ -31,7 +31,4 @@ bankDepositSchema.statics.upsert = async function (record){
 
 const bankDeposit = new mongoose.model("bank_deposit_table",bankDepositSchema,"bank_deposit_table")
 
-module.exports = {
-    bankLoan: bankLoan,
-    bankDeposit: bankDeposit
-}
+module.exports = {bankLoan, bankDeposit};
