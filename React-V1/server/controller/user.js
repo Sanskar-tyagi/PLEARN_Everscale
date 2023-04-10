@@ -315,4 +315,25 @@ const getDepositList = (req,res) => {
     })
 }
 
-module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails, getLFList, updateLFDetails, getLoanList, updateBankLoan, getDepositList};
+const updateBankDeposit = (req,res) => {
+    const userAccount = req.body.userAccount;
+    const gameCoins = req.body.gameCoins;
+    const timeRemainingBeforeWithdrawal = req.body.timeRemainingBeforeWithdrawal;
+    const depositAmount = req.body.depositAmount;
+
+    playerDetail.updateOne(
+        { userAccount: userAccount },
+        { 
+            $set: { timeRemainingBeforeWithdrawal: timeRemainingBeforeWithdrawal, gameCoins: gameCoins, bankDeposit: depositAmount },
+        },
+        (err) => {
+            if(err) {
+                console.error(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
+        }
+    )
+}
+
+module.exports = {registerUser, getPlayer, saveDetails, getCharacterDetails, getHouseList, updateHouseDetails, getEnergyList, updateEnergyDetails, getLFList, updateLFDetails, getLoanList, updateBankLoan, getDepositList, updateBankDeposit};

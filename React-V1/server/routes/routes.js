@@ -1,7 +1,7 @@
 const express = require("express");
 
 const router = express();
-const {registerUser, getLFList, getDepositList} = require("../controller/user");
+const {registerUser, getLFList, getDepositList, updateBankDeposit} = require("../controller/user");
 const {getPlayer} = require("../controller/user");
 const {saveDetails} = require("../controller/user");
 const {getCharacterDetails} = require("../controller/user");
@@ -38,5 +38,7 @@ router.get('/getLoanList', getLoanList);
 router.post('/updateBankLoan', updateBankLoan);
 
 router.get('/getDepositList', getDepositList);
+
+router.post('/updateBankDeposit', updateBankDeposit);
 
 module.exports = router;
