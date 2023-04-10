@@ -4,6 +4,7 @@ const bankLoanSchema = new mongoose.Schema({
     loanID: {type: Number, unique: true},
     gameCoins: {type: Number},
     interestRate: {type: Number},
+    timeToPay: {type: Number}   //how many level window to repay the loan
 });
 
 bankLoanSchema.statics.upsert = async function (record){

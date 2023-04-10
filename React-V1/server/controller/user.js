@@ -249,9 +249,9 @@ const updateLFDetails = (req,res) => {
 
 //For adding loans in DB.
 const insertLoans = async () => {
-    await bankLoan.upsert({loanID: 0, gameCoins: 50, interestRate: 2})
-    await bankLoan.upsert({loanID: 1, gameCoins: 75, interestRate: 4})
-    await bankLoan.upsert({loanID: 2, gameCoins: 100, interestRate: 6})
+    await bankLoan.upsert({loanID: 0, gameCoins: 50, interestRate: 2, timeToPay: 2})
+    await bankLoan.upsert({loanID: 1, gameCoins: 75, interestRate: 4, timeToPay: 4})
+    await bankLoan.upsert({loanID: 2, gameCoins: 100, interestRate: 6, timeToPay: 6})
 }
 insertLoans();
 
@@ -275,11 +275,12 @@ const updateBankLoan = (req,res) => {
     const userAccount = req.body.userAccount;
     const bankLoan = req.body.bankLoan;
     const gameCoins = req.body.gameCoins;
+    const payLoanByLevel = req.body.payLoanByLevel;
 
     playerDetail.updateOne(
         { userAccount: userAccount },
         { 
-            $set: { bankLoan: bankLoan, gameCoins: gameCoins },
+            $set: { bankLoan: bankLoan, gameCoins: gameCoins, payLoanByLevel: payLoanByLevel },
         },
         (err) => {
             if(err) {
