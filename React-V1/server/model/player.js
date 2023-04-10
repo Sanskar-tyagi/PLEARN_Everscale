@@ -17,7 +17,8 @@ const playerDetailSchema = new mongoose.Schema({
     energy: {type: Number, default: 100},
     bankLoan: {type: Number, default: 0},
     payLoanByLevel: {type: Number, default: -1},    //determined by 'timeToPay' in bank loan schema
-    bankDeposit: {type: Number, default: 0}
+    bankDeposit: {type: Number, default: 0},
+    timeRemainingBeforeWithdrawal: {type: Date, default: Date.now},
 })
 const playerDetail = new mongoose.model("player_detail_table", playerDetailSchema, "player_detail_table");
 

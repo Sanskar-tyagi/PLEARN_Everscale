@@ -294,9 +294,9 @@ const updateBankLoan = (req,res) => {
 
 //For adding deposit list in DB.
 const insertDeposit = async () => {
-    await bankDeposit.upsert({depositID: 0, time: 1, interestRate: 10});
-    await bankDeposit.upsert({depositID: 1, time: 2, interestRate: 15});
-    await bankDeposit.upsert({depositID: 2, time: 3, interestRate: 20});
+    await bankDeposit.upsert({depositID: 0, time: 1440, interestRate: 10});
+    await bankDeposit.upsert({depositID: 1, time: 2880, interestRate: 15});
+    await bankDeposit.upsert({depositID: 2, time: 4320, interestRate: 20});
 }
 insertDeposit();
 

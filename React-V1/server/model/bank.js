@@ -19,8 +19,8 @@ const bankLoan = new mongoose.model("bank_loan_table",bankLoanSchema,"bank_loan_
 
 const bankDepositSchema = new mongoose.Schema({
     depositID: {type: Number},
-    time: {type: Number},
-    interestRate: {type: Number}
+    time: {type: Number},   //minutes
+    interestRate: {type: Number},
 });
 
 bankDepositSchema.statics.upsert = async function (record){
