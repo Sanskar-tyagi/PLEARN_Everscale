@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Error() {
+export default React.memo(function Error() {
   return (
     <Container>
       <div className="flex">
@@ -64,7 +64,7 @@ export default function Error() {
       </div>
     </Container>
   );
-}
+});
 const Container = styled.div`
   .flex {
     display: flex;

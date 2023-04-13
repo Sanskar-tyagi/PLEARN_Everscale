@@ -4,14 +4,6 @@ import Carousel from "../utils/slider";
 
 export default function Gamedes() {
   const [index, setIndex] = useState(0);
-  // "Virtual board game that teaches financial literacy",
-  //   "Customizable game settings and different rules to keep gameplay fresh and challenging",
-  //   "Variety of NFTs to purchase and collect",
-  //   "Customizable dice and game boards for a personalized gaming experience",
-  //   "In-game knowledge templates to learn while playing",
-  //   "Opportunities to earn through buying NFTs, properties, and virtual land",
-
-  //through investing, buying and selling real estate, and owning and upgrading NFTs
   const text1_options = [
     "This brightly colored dice is a perfect choice, with its vibrant design and smooth edges,",
     "This stylish hat, crafted with a unique modern look.",
@@ -31,41 +23,41 @@ export default function Gamedes() {
       <div className="ms">
         <Carousel />
         <div
-          class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9f81c8"
+          className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9f81c8"
           data-id="b9f81c8"
           data-element_type="column"
         >
-          <div class="elementor-widget-wrap elementor-element-populated">
+          <div className="elementor-widget-wrap elementor-element-populated">
             <div
-              class="elementor-element elementor-element-4ef84bb elementor-widget elementor-widget-artorias_core_section_title"
+              className="elementor-element elementor-element-4ef84bb elementor-widget elementor-widget-artorias_core_section_title"
               data-id="4ef84bb"
               data-element_type="widget"
               data-widget_type="artorias_core_section_title.default"
             >
-              <div class="elementor-widget-container">
-                <div class="qodef-shortcode qodef-m qodef-section-title qodef-alignment--right qodef--has-appear qodef--appeared">
-                  <span class="qodef-m-tagline">
-                    <span class="qodef-m-tagline-inner">PLEARN </span>
+              <div className="elementor-widget-container">
+                <div className="qodef-shortcode qodef-m qodef-section-title qodef-alignment--right qodef--has-appear qodef--appeared">
+                  <span className="qodef-m-tagline">
+                    <span className="qodef-m-tagline-inner">PLEARN </span>
                   </span>
-                  <h2 class="qodef-m-title">
-                    <span class="qodef-m-title-inner">
+                  <h2 className="qodef-m-title">
+                    <span className="qodef-m-title-inner">
                       {text1_options[index]}
                     </span>
                   </h2>
-                  <p class="qodef-m-text-area">
+                  <p className="qodef-m-text-area">
                     PLEARN is a 3D game that teaches players the basics of
                     managing money and investments. PLEARN has a varity of
                     features, interactive graphics, realistic scenarios, and
                     entertaining educational elements that keep players engaged.
                   </p>
-                  <div class="btm btn">
+                  <div className="btm btn">
                     <a
-                      class="qodef-shortcode qodef-m  qodef-button qodef-layout--outlined  qodef-html--link"
+                      className="qodef-shortcode qodef-m  qodef-button qodef-layout--outlined  qodef-html--link"
                       href="https://artorias.qodeinteractive.com/about-us/"
                       target="_self"
                     >
                       {" "}
-                      <span class="qodef-m-text">KNOW MORE</span>
+                      <span className="qodef-m-text">KNOW MORE</span>
                     </a>{" "}
                   </div>
                 </div>

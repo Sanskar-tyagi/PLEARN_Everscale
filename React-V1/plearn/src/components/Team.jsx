@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-export default function Team() {
+export default React.memo(function Team() {
   return (
     <Container>
       <div class="widget-container">
@@ -21,7 +21,7 @@ export default function Team() {
       </div>
     </Container>
   );
-}
+});
 const Container = styled.div`
   .widget-container {
     display: grid;

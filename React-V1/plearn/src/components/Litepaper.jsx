@@ -3,7 +3,7 @@ import styled from "styled-components";
 import bg from "../assets/logo-ionic.svg";
 import { logoIonic } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
-export default function Litepaper() {
+export default React.memo(function Litepaper() {
   const IonicLogo = () => {
     return (
       <IonIcon
@@ -163,7 +163,7 @@ export default function Litepaper() {
       </div>
     </Container>
   );
-}
+});
 const Container = styled.div`
   .card {
     position: relative;

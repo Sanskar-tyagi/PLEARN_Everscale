@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import coin from "../../assets/MarketPlace/A (5).png";
-import { motion } from "framer-motion";
 export default React.memo(function Cards(props) {
   const { Category, Name, id, ImgUri, desc, price } = props.data;
-  console.log(ImgUri);
   return (
     <Container>
-      <div key={Category} class="card">
+      <div key={Category} className="card">
         <>
-          <div class="type">
-            <img class="icon" src={coin} height="30px" />
+          <div className="type">
+            <img className="icon" src={coin} height="30px" />
             <p>{price} ETH</p>
           </div>
           <div
@@ -18,10 +16,10 @@ export default React.memo(function Cards(props) {
             id={id}
             style={{ background: `url(${ImgUri})` }}
           ></div>
-          <div class="card-body">
+          <div className="card-body">
             <h1>{Name}</h1>
             <p className="desp">{desc}</p>
-            <div class="details"></div>
+            <div className="details"></div>
             <div className="product">
               <a href="" className="btn">
                 Buy now

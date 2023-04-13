@@ -1,162 +1,161 @@
-import React, { useState } from "react";
+import React from "react";
 import Styled from "styled-components";
 export default function Hype() {
   return (
     <Container>
-      <section class="section-item section-item__community-feedback mt-0">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="section__header-title">Community hype </h2>
+      <section className="section-item section-item__community-feedback mt-0">
+        <div className="container">
+          <div className="section__head">
+            <h2 className="section__header-title">Community hype </h2>
           </div>
-          <div class="section__content">
-            <div class="community-feedback__items">
+          <div className="section__content">
+            <div className="community-feedback__items">
               <div
-                class="community-feedback__item animated-box"
+                className="community-feedback__item animated-box"
                 data-elapsed="200"
-                // style="transform: translateY(0px); opacity: 1;"
               >
-                <div class="community-feedback__item-stars"></div>
+                <div className="community-feedback__item-stars"></div>
                 <h5>
                   PLEARN is a great community and marketplace. I love being a
                   member here truly, nothing but love for this website!{" "}
                 </h5>
-                <div class="community-feedback__item-meta">
-                  <div class="community-feedback__item-meta-author">
-                    <h6 class="heading-5">NUMBER ONE MARKETPLACE</h6>
-                    <div class="text-block-2">Boris Wick</div>
+                <div className="community-feedback__item-meta">
+                  <div className="community-feedback__item-meta-author">
+                    <h6 className="heading-5">NUMBER ONE MARKETPLACE</h6>
+                    <div className="text-block-2">Boris Wick</div>
                   </div>
-                  <div class="community-feedback__item-meta-avatar">
+                  <div className="community-feedback__item-meta-avatar">
                     <img
                       src="https://nftly-theme.pxsquad.com/demo2/wp-content/uploads/2022/06/Polygon-58-3.png"
                       sizes="39.6328125px"
                       alt="Boris Wick's avatar"
-                      class="hex-image"
+                      className="hex-image"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="community-feedback__item animated-box"
+                className="community-feedback__item animated-box"
                 data-elapsed="200"
                 // style="transform: translateY(0px); opacity: 1;"
               >
-                <div class="community-feedback__item-stars"></div>
+                <div className="community-feedback__item-stars"></div>
                 <h5>
                   I love the dedication the Pxsquad.com team has when they
                   create WordPress themes. This Web3 theme is 10+ from me, but I
                   can only give 5 stars.
                 </h5>
-                <div class="community-feedback__item-meta">
-                  <div class="community-feedback__item-meta-author">
-                    <h6 class="heading-5">Big love from Ante</h6>
-                    <div class="text-block-2">Antevante Joris</div>
+                <div className="community-feedback__item-meta">
+                  <div className="community-feedback__item-meta-author">
+                    <h6 className="heading-5">Big love from Ante</h6>
+                    <div className="text-block-2">Antevante Joris</div>
                   </div>
-                  <div class="community-feedback__item-meta-avatar">
+                  <div className="community-feedback__item-meta-avatar">
                     <img
                       src="https://nftly-theme.pxsquad.com/demo2/wp-content/uploads/2022/06/Polygon-58-6.png"
                       sizes="39.6328125px"
                       alt="Boris Wick's avatar"
-                      class="hex-image"
+                      className="hex-image"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="community-feedback__item animated-box"
+                className="community-feedback__item animated-box"
                 data-elapsed="200"
                 // style="transform: translateY(0px); opacity: 1;"
               >
-                <div class="community-feedback__item-stars"></div>
+                <div className="community-feedback__item-stars"></div>
                 <h5>
                   PLEARN is a great community and marketplace. I love being a
                   member here truly, nothing but love for this website!{" "}
                 </h5>
-                <div class="community-feedback__item-meta">
-                  <div class="community-feedback__item-meta-author">
-                    <h6 class="heading-5">NUMBER ONE MARKETPLACE</h6>
-                    <div class="text-block-2">Boris Wick</div>
+                <div className="community-feedback__item-meta">
+                  <div className="community-feedback__item-meta-author">
+                    <h6 className="heading-5">NUMBER ONE MARKETPLACE</h6>
+                    <div className="text-block-2">Boris Wick</div>
                   </div>
-                  <div class="community-feedback__item-meta-avatar">
+                  <div className="community-feedback__item-meta-avatar">
                     <img
                       src="https://nftly-theme.pxsquad.com/demo2/wp-content/uploads/2022/06/Polygon-58-4.png"
                       sizes="39.6328125px"
                       alt="Boris Wick's avatar"
-                      class="hex-image"
+                      className="hex-image"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="community-feedback__item animated-box"
+                className="community-feedback__item animated-box"
                 data-elapsed="200"
                 // style="transform: translateY(0px); opacity: 1;"
               >
-                <div class="community-feedback__item-stars"></div>
+                <div className="community-feedback__item-stars"></div>
                 <h5>
                   PLEARN is a great community and marketplace. I love being a
                   member here truly, nothing but love for this website!{" "}
                 </h5>
-                <div class="community-feedback__item-meta">
-                  <div class="community-feedback__item-meta-author">
-                    <h6 class="heading-5">NUMBER ONE MARKETPLACE</h6>
-                    <div class="text-block-2">Boris Wick</div>
+                <div className="community-feedback__item-meta">
+                  <div className="community-feedback__item-meta-author">
+                    <h6 className="heading-5">NUMBER ONE MARKETPLACE</h6>
+                    <div className="text-block-2">Boris Wick</div>
                   </div>
-                  <div class="community-feedback__item-meta-avatar">
+                  <div className="community-feedback__item-meta-avatar">
                     <img
                       src="https://nftly-theme.pxsquad.com/demo2/wp-content/uploads/2022/06/Polygon-58-5.png"
                       sizes="39.6328125px"
                       alt="Boris Wick's avatar"
-                      class="hex-image"
+                      className="hex-image"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="community-feedback__item animated-box"
+                className="community-feedback__item animated-box"
                 data-elapsed="200"
                 // style="transform: translateY(0px); opacity: 1;"
               >
-                <div class="community-feedback__item-stars"></div>
+                <div className="community-feedback__item-stars"></div>
                 <h5>
                   PLEARN is a great community and marketplace. I love being a
                   member here truly, nothing but love for this website!{" "}
                 </h5>
-                <div class="community-feedback__item-meta">
-                  <div class="community-feedback__item-meta-author">
-                    <h6 class="heading-5">NUMBER ONE MARKETPLACE</h6>
-                    <div class="text-block-2">Boris Wick</div>
+                <div className="community-feedback__item-meta">
+                  <div className="community-feedback__item-meta-author">
+                    <h6 className="heading-5">NUMBER ONE MARKETPLACE</h6>
+                    <div className="text-block-2">Boris Wick</div>
                   </div>
-                  <div class="community-feedback__item-meta-avatar">
+                  <div className="community-feedback__item-meta-avatar">
                     <img
                       src="https://nftly-theme.pxsquad.com/demo2/wp-content/uploads/2022/06/Polygon-58.png"
                       sizes="39.6328125px"
                       alt="Boris Wick's avatar"
-                      class="hex-image"
+                      className="hex-image"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="community-feedback__item animated-box"
+                className="community-feedback__item animated-box"
                 data-elapsed="200"
                 // style="transform: translateY(0px); opacity: 1;"
               >
-                <div class="community-feedback__item-stars"></div>
+                <div className="community-feedback__item-stars"></div>
                 <h5>
                   PLEARN is a great community and marketplace. I love being a
                   member here truly, nothing but love for this website!{" "}
                 </h5>
-                <div class="community-feedback__item-meta">
-                  <div class="community-feedback__item-meta-author">
-                    <h6 class="heading-5">NUMBER ONE MARKETPLACE</h6>
-                    <div class="text-block-2">Boris Wick</div>
+                <div className="community-feedback__item-meta">
+                  <div className="community-feedback__item-meta-author">
+                    <h6 className="heading-5">NUMBER ONE MARKETPLACE</h6>
+                    <div className="text-block-2">Boris Wick</div>
                   </div>
-                  <div class="community-feedback__item-meta-avatar">
+                  <div className="community-feedback__item-meta-avatar">
                     <img
                       src="https://nftly-theme.pxsquad.com/demo2/wp-content/uploads/2022/06/Polygon-58-1.png"
                       sizes="39.6328125px"
                       alt="Boris Wick's avatar"
-                      class="hex-image"
+                      className="hex-image"
                     />
                   </div>
                 </div>

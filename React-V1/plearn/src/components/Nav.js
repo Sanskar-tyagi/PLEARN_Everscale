@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import logo_plearn from "../assets/Images/Logo_Plearn.png";
-import { ethers } from "ethers";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
-import toast from "react-hot-toast";
 import WalletContext from "../contexts/WalletContext";
 import Navbtn from "./Navbtn";
 
@@ -133,7 +131,7 @@ export default function Nav() {
                       width="40"
                       ariaLabel="blocks-loading"
                       wrapperStyle={{}}
-                      wrapperClass="blocks-wrapper"
+                      wrapperclassName="blocks-wrapper"
                       colors={[
                         "purple",
                         "purple",

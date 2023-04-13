@@ -26,10 +26,7 @@ body {
   padding: 0;
   color: #fff;
   font-family: 'Bai Jamjuree', sans-serif;
-  /* background:
-  linear-gradient(45deg,
-    rgba(245,70,66, 0.55),
-    rgba(8,83,156, 0.75)), url(./assets/Images/bgms.jpg); */
+ 
   background: url(./assets/Images/bgms.jpg);
   background-attachment: fixed;
   background-position: center;

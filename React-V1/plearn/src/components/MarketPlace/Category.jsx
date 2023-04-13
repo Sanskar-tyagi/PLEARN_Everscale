@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { filterCards, setSortBy } from "../../Store/Slice/userSlice";
-import Swiper, { Pagination } from "swiper";
-import { SwiperSlide } from "swiper/react";
-export default function Category() {
+
+export default React.memo(function Category() {
   const dispatch = useDispatch();
   const categories = useSelector((state) => {
     const allCategories = state.tools.cards.map((card) => card.Category);
     return ["All", ...new Set(allCategories)];
   });
-  const handleSort = (event) => {
-    dispatch(setSortBy(event.target.value));
-  };
   const handleFilterClick = (category) => {
     dispatch(filterCards(category));
   };
@@ -27,7 +23,7 @@ export default function Category() {
       </Cat>
     </div>
   );
-}
+});
 const Sort = styled.div``;
 const Cat = styled.div`
   display: flex;

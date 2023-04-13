@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import NFT from "../assets/Images/NFT_Card.png";
-export default function Faq() {
+export default React.memo(function Faq() {
   const [open, setOpen] = useState({});
 
   const handleClick = (id) => {
@@ -36,14 +36,14 @@ export default function Faq() {
   return (
     <Container>
       {" "}
-      <section class="elementor-element">
-        <div class="elementor-container">
+      <section className="elementor-element">
+        <div className="elementor-container">
           <div>
-            <div class="elementor-widget-wrap ">
-              <div class="elementor-element elementor-widget ">
-                <div class="">
+            <div className="elementor-widget-wrap ">
+              <div className="elementor-element elementor-widget ">
+                <div className="">
                   <div
-                    class="qodef-shortcode qodef-m qodef-accordion clear qodef-behavior--accordion qodef-layout--simple ui-accordion ui-widget ui-helper-reset qodef--init"
+                    className="qodef-shortcode qodef-m qodef-accordion clear qodef-behavior--accordion qodef-layout--simple ui-accordion ui-widget ui-helper-reset qodef--init"
                     role="tablist"
                   >
                     {accordionData.map((data) => (
@@ -100,15 +100,15 @@ export default function Faq() {
               </div>
             </div>
           </div>
-          <div class="elementor-col-50  elementor-element">
-            <div class="elementor-widget-wrap ">
-              <div class="elementor-element ">
-                <div class="">
-                  <div class="qodef-shortcode qodef-m">
-                    <div class="qodef-m-image">
+          <div className="elementor-col-50  elementor-element">
+            <div className="elementor-widget-wrap ">
+              <div className="elementor-element ">
+                <div className="">
+                  <div className="qodef-shortcode qodef-m">
+                    <div className="qodef-m-image">
                       <img
                         src={NFT}
-                        class="attachment-full size-full"
+                        className="attachment-full size-full"
                         alt="d"
                         sizes="(max-width: 505px) 100vw, 505px"
                       />{" "}
@@ -122,7 +122,7 @@ export default function Faq() {
       </section>
     </Container>
   );
-}
+});
 
 const Container = styled.div`
   .elementor-element {

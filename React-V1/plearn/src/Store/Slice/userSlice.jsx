@@ -25,8 +25,8 @@ const Tools = createSlice({
       state.filterActive = true;
       state.filteredCards = state.cards.filter(
         (card) =>
-          card.Name.includes(action.payload) ||
-          card.Category.includes(action.payload)
+          card.Name.toLowerCase().includes(action.payload.toLowerCase()) ||
+          card.Category.toLowerCase().includes(action.payload.toLowerCase())
       );
     },
 

@@ -17,7 +17,7 @@ export default function Main() {
         <div className="vidbg">
           <Header />
           <GameSection />
-          {/* <Gamedes /> */} <BreadCrums />
+          <BreadCrums />
           <Suspense>
             <ShowCase style={{ marginTop: "10vw" }} />
             <Toke />

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HeaderPfp from "./HeaderPfp";
 import homeBg from "../../assets/MarketPlace/COVER-17.jpg";
-export default function Header() {
+export default React.memo(function Header() {
   return (
     <Container className="p-5" style={{ background: `url(${homeBg})` }}>
       <div className="w-full  rounded-md bg-center bg-cover flex flex-col justify-center px-4">
@@ -17,7 +17,7 @@ export default function Header() {
       <HeaderPfp />
     </Container>
   );
-}
+});
 const Container = styled.div`
   display: flex;
   height: 80vh;

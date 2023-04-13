@@ -1,5 +1,5 @@
 import "./App.css";
-import { lazy, useState, useEffect } from "react";
+import React, { lazy, useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "./components/Nav";
@@ -7,7 +7,7 @@ import WalletContext from "./contexts/WalletContext";
 import MarketPlace from "./Pages/MarketPlace";
 const Main = lazy(() => import("./Pages/Main"));
 const Error = lazy(() => import("./Pages/404"));
-function App() {
+export default React.memo(function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -73,9 +73,7 @@ function App() {
       </WalletContext.Provider>
     </>
   );
-}
-
-export default App;
+});
 const Loader = styled.div`
   position: absolute;
   top: 40vh;

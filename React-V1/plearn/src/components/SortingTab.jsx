@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
-import { filterCards, setSearchQuery } from "../Store/Slice/userSlice";
+import { setSearchQuery } from "../Store/Slice/userSlice";
 
-export default function SortingTab({ ShopState }) {
+export default React.memo(function SortingTab({ ShopState }) {
   const dispatch = useDispatch();
   const handleSearch = (event) => {
     dispatch(setSearchQuery(event.target.value));
@@ -53,7 +53,7 @@ export default function SortingTab({ ShopState }) {
       </div>
     </Container>
   );
-}
+});
 const Container = styled.div`
   margin-top: 10vh;
   display: flex;

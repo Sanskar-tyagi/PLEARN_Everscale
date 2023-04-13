@@ -1,17 +1,16 @@
 import React from "react";
 import boxicon from "../assets/Images/icon-box.svg";
-import { Fade, Slide, FadeInRight } from "react-awesome-reveal";
 import WalletContext from "../contexts/WalletContext";
 import { useContext } from "react";
 
 export default function Header() {
-  const {userAccount} = useContext(WalletContext)
+  const { userAccount } = useContext(WalletContext);
   const startGame = async () => {
     if (userAccount == null) {
       alert("Please connect MetaMask wallet in order to start the game.");
     } else {
       // window.open(`http://127.0.0.1:5500/index.html?userAccount=${userAccount}`); // Opening the game, sending userAccount.
-      console.log(userAccount);
+
       window.open(
         `https://singular-granita-0e1259.netlify.app?userAccount=${userAccount}`
       );
@@ -55,13 +54,13 @@ export default function Header() {
                 <button className="btnply" onClick={startGame}>
                   Play Now{" "}
                   <div id="clip">
-                    <div id="leftTop" class="corner"></div>
-                    <div id="rightBottom" class="corner"></div>
-                    <div id="rightTop" class="corner"></div>
-                    <div id="leftBottom" class="corner"></div>
+                    <div id="leftTop" className="corner"></div>
+                    <div id="rightBottom" className="corner"></div>
+                    <div id="rightTop" className="corner"></div>
+                    <div id="leftBottom" className="corner"></div>
                   </div>
-                  <span id="rightArrow" class="arrow"></span>
-                  <span id="leftArrow" class="arrow"></span>
+                  <span id="rightArrow" className="arrow"></span>
+                  <span id="leftArrow" className="arrow"></span>
                 </button>
               </div>
 
