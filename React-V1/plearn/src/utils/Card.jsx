@@ -7,17 +7,6 @@ export default function Card(props) {
     <Container>
       <div className="card">
         {" "}
-        {/* <div class="tools">
-          <div class="circle">
-            <span class="red box"></span>
-          </div>
-          <div class="circle">
-            <span class="yellow box"></span>
-          </div>
-          <div class="circle">
-            <span class="green box"></span>
-          </div>
-        </div> */}
         <img src={`${user.Image}`} alt="" />
         <div className="content">
           <p className="title">

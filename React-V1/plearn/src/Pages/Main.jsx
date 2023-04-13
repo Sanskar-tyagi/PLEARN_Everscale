@@ -1,6 +1,6 @@
 import GameSection from "../components/GameSection";
 import Header from "../components/Header";
-import { lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import BreadCrums from "../components/BreadCrums";
 // import Litepaper from "../components/Litepaper";
 // import Hype from "./components/Hype";
@@ -10,7 +10,7 @@ const Toke = lazy(() => import("../components/toke"));
 const Faq = lazy(() => import("../components/Faq"));
 const CTAsection = lazy(() => import("../components/CTAsection"));
 const Footer = lazy(() => import("../components/Footer"));
-export default function Main() {
+export default React.memo(function Main() {
   return (
     <>
       <div>
@@ -29,4 +29,4 @@ export default function Main() {
       </div>
     </>
   );
-}
+});

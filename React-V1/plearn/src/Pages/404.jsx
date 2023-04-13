@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default React.memo(function Error() {
+export default React.memo(function Error({ Navv }) {
   return (
     <Container>
       <div className="flex">
@@ -12,7 +12,11 @@ export default React.memo(function Error() {
               <span class="block"></span>
             </span>
           </div>
-          <span class="text">Don't get lost</span>
+          <span class="text">
+            <a className="link" href="/">
+              Don't get lost
+            </a>
+          </span>
         </button>
       </div>
       <div className="box-of-star1">

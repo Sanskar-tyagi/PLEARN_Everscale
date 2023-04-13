@@ -35,7 +35,6 @@ export default React.memo(function Faq() {
   ];
   return (
     <Container>
-      {" "}
       <section className="elementor-element">
         <div className="elementor-container">
           <div>

@@ -134,4 +134,36 @@ width: 100%;
  
   color: aliceblue;
 }
- 
+ .shopAll{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ }
+ .Mainfold{
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  margin-top: 20px;
+  overflow: auto;
+ }
+ .Mainfold .span {
+  display: inline-block;
+  cursor: pointer;
+
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.Mainfold  .Head {
+  display: flex;
+  height: 5vh;
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+.Head h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 36px;
+  line-height: 0px;
+  font-weight: 600;
+  color: #cacaca;
+}
