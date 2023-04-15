@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useContext } from "react";
-import logo_plearn from "../assets/Images/Logo_Plearn.png";
+import logo_plearn from "../assets/Logo.png";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
 import WalletContext from "../contexts/WalletContext";

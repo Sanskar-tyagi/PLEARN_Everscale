@@ -71,7 +71,7 @@ body {
 }
 
 .logo-thumbnail img {
-  max-height: 60px;
+  max-height: 80px;
   object-fit: cover;
 }
 
@@ -715,6 +715,11 @@ p {
   .section-item {
     margin-top: 35px;
   }
+  
+.marketplace__items {
+  grid-row-gap: 13px;
+  justify-content: flex-start !important;
+}
 }
 
 .marketplace__items {
@@ -723,6 +728,7 @@ p {
   grid-column-gap: 13px;
   grid-row-gap: 13px;
   justify-content: space-around;
+   
 }
 
 .marketplace__item {

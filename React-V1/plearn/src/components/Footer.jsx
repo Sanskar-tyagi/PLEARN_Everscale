@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bg from "../assets/1.png";
+import bg from "../assets/Logo.png";
 export default React.memo(function Footer() {
   return (
     <Container>
@@ -26,8 +26,8 @@ export default React.memo(function Footer() {
                           <img
                             itemprop="image"
                             src={bg}
-                            width="276"
-                            height="210"
+                            width="231"
+                            height="193"
                             alt=""
                           />{" "}
                         </a>{" "}
